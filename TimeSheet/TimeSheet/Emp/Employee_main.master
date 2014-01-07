@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Employee_main.master.cs" Inherits="TimeSheet.Dept_Manager.Employee_main" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+    <style type="text/css">
+        .auto-style1
+        {
+            text-align: left;
+        }
+    </style>
+</asp:Content>
+
+<asp:Content runat="server" ID="FeaturedContent" ContentPlaceHolderID="FeaturedContent">
+    <section class="featured">
+        <div class="content-wrapper">
+            <ul id="menu" class="auto-style1">
+                <li><a id="A100" runat="server" href="~/Timesheet/Add_timesheet.aspx">Add </a></li>
+                <li><a id="A101" runat="server" href="~/Timesheet/Modify_timesheet.aspx">Modify/Read</a></li>
+            </ul>
+        </div>
+    </section>
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+</asp:Content>

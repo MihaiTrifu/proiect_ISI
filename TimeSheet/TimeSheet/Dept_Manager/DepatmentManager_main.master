@@ -1,0 +1,20 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="DepatmentManager_main.master.cs" Inherits="TimeSheet.Dept_Manager.DepatmentManager_main" %>
+
+
+<asp:Content runat="server" ID="FeaturedContent" ContentPlaceHolderID="FeaturedContent">
+    <section class="featured">
+        <div class="content-wrapper">
+            <ul id="menu" class="auto-style1">
+                <li><a id="A111" runat="server" href="Dept_Personal.aspx">Personal</a></li>
+                <li><a id="A112" runat="server" href="Dept_EmpTimesheet.aspx">Employees</a></li>
+                <li><a id="A113" runat="server" href="Dept_report.aspx">Reports</a></li>
+                <li><a id="A114" runat="server" href="Dept_management.aspx">Management</a></li>
+            </ul>
+        </div>
+    </section>
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+</asp:Content>
+
