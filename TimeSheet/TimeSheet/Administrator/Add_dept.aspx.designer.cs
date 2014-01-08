@@ -49,31 +49,85 @@ namespace TimeSheet.Admin {
         protected global::System.Web.UI.WebControls.Panel Panel1;
         
         /// <summary>
-        /// DeptName control.
+        /// DepartmentNameLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox DeptName;
+        protected global::System.Web.UI.WebControls.Label DepartmentNameLabel;
         
         /// <summary>
-        /// DepartID control.
+        /// DepartmentName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox DepartID;
+        protected global::System.Web.UI.WebControls.TextBox DepartmentName;
         
         /// <summary>
-        /// ManName control.
+        /// DepartmentNameRequired control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ManName;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator DepartmentNameRequired;
+        
+        /// <summary>
+        /// DepartmentIDLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label DepartmentIDLabel;
+        
+        /// <summary>
+        /// DepartmentID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox DepartmentID;
+        
+        /// <summary>
+        /// DepartmentIDRequired control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator DepartmentIDRequired;
+        
+        /// <summary>
+        /// ManagerIDLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ManagerIDLabel;
+        
+        /// <summary>
+        /// EmployeesList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList EmployeesList;
+        
+        /// <summary>
+        /// DivisionListLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label DivisionListLabel;
         
         /// <summary>
         /// DivisionsList control.
@@ -83,6 +137,24 @@ namespace TimeSheet.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList DivisionsList;
+        
+        /// <summary>
+        /// ConfirmMessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ConfirmMessage;
+        
+        /// <summary>
+        /// DuplicateError control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label DuplicateError;
         
         /// <summary>
         /// Button1 control.

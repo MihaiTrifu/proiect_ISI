@@ -15,35 +15,56 @@
     <asp:Panel ID="Panel1" runat="server" Height="398px" Width="559px">
         <table align="left" style="width: 99%; float: left; font-family: Verdana; margin-right: 0px; height: 230px;">
             <tr>
-                <td style="width: 179px; font-size: medium; font-weight: 700;">Department Name:</td>
+                <td align="right" style="width: 179px">
+                    <asp:Label ID="DepartmentNameLabel" runat="server" AssociatedControlID="DepartmentName">Department Name:</asp:Label>
+                </td>
                 <td>
-                    <asp:TextBox ID="DeptName" runat="server" Height="20px" Width="280px" EnableTheming="False"></asp:TextBox>
-                    *</td>
+                    <asp:TextBox ID="DepartmentName" runat="server" Height="20px" Width="280px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="DepartmentNameRequired" runat="server" ControlToValidate="DepartmentName" CssClass="field-validation-error" ErrorMessage="*" />
+                </td>
             </tr>
             <tr>
-                <td style="width: 179px; font-size: medium; font-weight: 700;">Department ID:</td>
+                <td align="right" style="width: 179px">
+                    <asp:Label ID="DepartmentIDLabel" runat="server" AssociatedControlID="DepartmentID">Department ID:</asp:Label>
+                </td>
                 <td>
-                    <asp:TextBox ID="DepartID" runat="server" Height="20px" Width="280px"></asp:TextBox>
-                    *</td>
+                    <asp:TextBox ID="DepartmentID" runat="server" Height="20px" Width="280px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="DepartmentIDRequired" runat="server" ControlToValidate="DepartmentID" CssClass="field-validation-error" ErrorMessage="*" />
+                </td>
             </tr>
             <tr>
-                <td style="width: 179px"><span style="font-size: medium; border-width: 0; padding-right: 2em"><b>Manager Name:&nbsp;</b></span></td>
-                <td>
-                    <asp:TextBox ID="ManName" runat="server" Height="20px" Width="280px"></asp:TextBox>
-                    *</td>
+                <td align="right" style="width: 179px">
+                    <asp:Label ID="ManagerIDLabel" runat="server">Manager ID:</asp:Label>
+                </td>
+                <td style="height: 48px">
+                    <asp:DropDownList ID="EmployeesList" runat="server" Height="19px" style="margin-left: 12px" ViewStateMode="Enabled" Width="283px">
+                    </asp:DropDownList>
+                </td>
             </tr>
             <tr>
-                <td style="width: 179px; font-size: medium; font-weight: 700; height: 48px;">Division<span style="font-size: medium; border-width: 0; padding-right: 2em"><b>:&nbsp;</b></span></td>
+                <td align="right" style="width: 179px">
+                    <asp:Label ID="DivisionListLabel" runat="server">Division ID:</asp:Label>
+                </td>
                 <td style="height: 48px">
                     <asp:DropDownList ID="DivisionsList" runat="server" Height="19px" style="margin-left: 12px" ViewStateMode="Enabled" Width="283px">
                     </asp:DropDownList>
                 </td>
             </tr>
             <tr>
+                <td align="center" colspan="2">
+                    <asp:Label ID="ConfirmMessage" runat="server" ForeColor="Blue" Visible="false" Font-Bold="True">Department successfully added</asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <asp:Label ID="DuplicateError" runat="server" ForeColor="Red" Visible="false" Font-Bold="True">Department Name or ID already exist</asp:Label>
+                </td>
+            </tr>
+            <tr>
                 <td style="width: 179px">&nbsp;</td>
                 <td>
                     <p style="text-align: right">
-                        <asp:Button ID="Button1" runat="server" Text="Create" />
+                        <asp:Button ID="Button1" runat="server" Text="Create" OnClick="addDepartment" />
                     </p>
                 </td>
             </tr>

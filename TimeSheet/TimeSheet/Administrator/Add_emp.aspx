@@ -13,70 +13,107 @@
         </ul>
     </aside>
     <asp:Panel ID="Panel1" runat="server" Height="400px" Width="546px">
-        <asp:CreateUserWizard ID="CreateUserWizard1" runat="server" Width="523px">
-            <WizardSteps>
-                <asp:CreateUserWizardStep runat="server">
-                    <ContentTemplate>
-                        <table>
-                            <tr>
-                                <td align="right" style="width: 179px">
-                                    <asp:Label ID="UserNameLabel" runat="server" AssociatedControlID="UserName" Height="20px">User Name:</asp:Label>
-                                </td>
-                                <td style="width: 308px">
-                                    <asp:TextBox ID="UserName" runat="server" Width="281px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="UserNameRequired" runat="server" ControlToValidate="UserName" ErrorMessage="User Name is required." ToolTip="User Name is required." ValidationGroup="CreateUserWizard1">*</asp:RequiredFieldValidator>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="right" style="width: 179px">
-                                    <asp:Label ID="PasswordLabel" runat="server" AssociatedControlID="Password">Password:</asp:Label>
-                                </td>
-                                <td style="width: 308px">
-                                    <asp:TextBox ID="Password" runat="server" TextMode="Password" Width="280px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="PasswordRequired" runat="server" ControlToValidate="Password" ErrorMessage="Password is required." ToolTip="Password is required." ValidationGroup="CreateUserWizard1">*</asp:RequiredFieldValidator>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="right" style="width: 179px">
-                                    <asp:Label ID="ConfirmPasswordLabel" runat="server" AssociatedControlID="ConfirmPassword">Confirm Password:</asp:Label>
-                                </td>
-                                <td style="width: 308px">
-                                    <asp:TextBox ID="ConfirmPassword" runat="server" TextMode="Password" Width="280px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="ConfirmPasswordRequired" runat="server" ControlToValidate="ConfirmPassword" ErrorMessage="Confirm Password is required." ToolTip="Confirm Password is required." ValidationGroup="CreateUserWizard1">*</asp:RequiredFieldValidator>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="right" style="width: 179px">
-                                    <asp:Label ID="EmailLabel" runat="server" AssociatedControlID="Email">E-mail:</asp:Label>
-                                </td>
-                                <td style="width: 308px">
-                                    <asp:TextBox ID="Email" runat="server" Width="280px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="EmailRequired" runat="server" ControlToValidate="Email" ErrorMessage="E-mail is required." ToolTip="E-mail is required." ValidationGroup="CreateUserWizard1">*</asp:RequiredFieldValidator>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="right" style="width: 179px">&nbsp;</td>
-                                <td style="width: 308px">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td align="right" style="width: 179px"></td>
-                                <td style="width: 308px"></td>
-                            </tr>
-                            <tr>
-                                <td align="center" colspan="2">
-                                    <asp:CompareValidator ID="PasswordCompare" runat="server" ControlToCompare="Password" ControlToValidate="ConfirmPassword" Display="Dynamic" ErrorMessage="The Password and Confirmation Password must match." ValidationGroup="CreateUserWizard1"></asp:CompareValidator>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="center" colspan="2" style="color:Red; height: 22px;">
-                                    <asp:Literal ID="ErrorMessage" runat="server" EnableViewState="False"></asp:Literal>
-                                </td>
-                            </tr>
-                        </table>
-                    </ContentTemplate>
-                </asp:CreateUserWizardStep>
-                <asp:CompleteWizardStep runat="server" />
-            </WizardSteps>
-        </asp:CreateUserWizard>
+        <table>
+            <tr>
+                <td align="right" style="width: 179px">
+                    <asp:Label ID="FirstNameLabel" runat="server" AssociatedControlID="FirstName" Height="20px">First Name:</asp:Label>
+                </td>
+                <td style="width: 308px">
+                    <asp:TextBox ID="FirstName" runat="server" Width="281px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="FirstNameRequired" runat="server" ControlToValidate="FirstName" CssClass="field-validation-error" ErrorMessage="*" />
+                </td>
+            </tr>
+            <tr>
+                <td align="right" style="width: 179px">
+                    <asp:Label ID="LastNameLabel" runat="server" AssociatedControlID="LastName" Height="20px">Last Name:</asp:Label>
+                </td>
+                <td style="width: 308px">
+                    <asp:TextBox ID="LastName" runat="server" Width="281px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="LastNameRequired" runat="server" ControlToValidate="LastName" CssClass="field-validation-error" ErrorMessage="*" />
+                </td>
+            </tr>
+            <tr>
+                <td align="right" style="width: 179px">
+                    <asp:Label ID="UserIDLabel" runat="server" AssociatedControlID="UserID" Height="20px">User ID:</asp:Label>
+                </td>
+                <td style="width: 308px">
+                    <asp:TextBox ID="UserID" runat="server" Width="281px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="UserIDRequired" runat="server" ControlToValidate="UserID" CssClass="field-validation-error" ErrorMessage="*" />
+                </td>
+            </tr>
+            <tr>
+                <td align="right" style="width: 179px">
+                    <asp:Label ID="PasswordLabel" runat="server" AssociatedControlID="Password">Password:</asp:Label>
+                </td>
+                <td style="width: 308px">
+                    <asp:TextBox ID="Password" runat="server" TextMode="Password" Width="280px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="PasswordRequired" runat="server" ControlToValidate="Password" CssClass="field-validation-error" ErrorMessage="*" />
+                </td>
+            </tr>
+            <tr>
+                <td align="right" style="width: 179px">
+                    <asp:Label ID="ConfirmPasswordLabel" runat="server" AssociatedControlID="ConfirmPassword">Confirm Password:</asp:Label>
+                </td>
+                <td style="width: 308px">
+                    <asp:TextBox ID="ConfirmPassword" runat="server" TextMode="Password" Width="280px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="ConfirmPasswordRequired" runat="server" ControlToValidate="ConfirmPassword" CssClass="field-validation-error" ErrorMessage="*" />
+                </td>
+            </tr>
+            <tr>
+                <td align="right" style="width: 179px">
+                    <asp:Label ID="EmailLabel" runat="server" AssociatedControlID="Email">E-mail:</asp:Label>
+                </td>
+                <td style="width: 308px">
+                    <asp:TextBox ID="Email" runat="server" Width="280px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="EmailRequired" runat="server" ControlToValidate="Email" CssClass="field-validation-error" ErrorMessage="*" />
+                </td>
+            </tr>
+            <tr>
+                <td align="right" style="width: 179px">
+                    <asp:Label ID="JobLabel" runat="server">Job:</asp:Label>
+                </td>
+                <td style="height: 48px">
+                    <asp:DropDownList ID="JobList" runat="server" Height="19px" style="margin-left: 12px" ViewStateMode="Enabled" Width="283px">
+                        <asp:ListItem Text="Angajat" Value="Angajat"></asp:ListItem>
+                        <asp:ListItem Text="Sef Departament" Value="Sef Departament"></asp:ListItem>
+                        <asp:ListItem Text="Sef Divizie" Value="Sef Divizie"></asp:ListItem>
+                        <asp:ListItem Text="Director" Value="Director"></asp:ListItem>
+                        <asp:ListItem Text="Administrator" Value="Administrator"></asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
+                <td align="right" style="width: 179px">&nbsp;</td>
+                <td style="width: 308px">&nbsp;</td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <asp:Label ID="ConfirmMessage" runat="server" ForeColor="Blue" Visible="false" Font-Bold="True">Employee successfully added</asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <asp:Label ID="DuplicateError" runat="server" ForeColor="Red" Visible="false" Font-Bold="True">User ID must be unique</asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <asp:CompareValidator ID="PasswordCompare" runat="server" ControlToCompare="Password" ControlToValidate="ConfirmPassword" Display="Dynamic" ErrorMessage="The Password and Confirmation Password must match." ForeColor="Red" Font-Bold="True"></asp:CompareValidator>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2" style="color:Red; height: 22px;">
+                    <asp:Literal ID="ErrorMessage" runat="server" EnableViewState="False"></asp:Literal>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 179px">&nbsp;</td>
+                <td>
+                    <p style="text-align: right">
+                        <asp:Button ID="Button1" runat="server" Text="Create" OnClick="AddEmp"/>
+                    </p>
+                </td>
+            </tr>
+        </table>
     </asp:Panel>
 </asp:Content>

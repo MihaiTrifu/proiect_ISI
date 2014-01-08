@@ -15,22 +15,47 @@
     <asp:Panel ID="Panel1" runat="server" Height="398px" Width="559px">
         <table align="left" style="width: 100%; float: left; font-family: Verdana; margin-right: 0px;">
             <tr>
-                <td style="width: 179px; font-size: medium; font-weight: 700;">&nbsp;Division Name:</td>
+                <td align="right" style="width: 179px">
+                    <asp:Label ID="DivisionNameLabel" runat="server" AssociatedControlID="DivisionID">Division Name:</asp:Label>
+                </td>
                 <td>
                     <asp:TextBox ID="DivisionName" runat="server" Height="20px" Width="280px" EnableTheming="False"></asp:TextBox>
-                    *</td>
+                    <asp:RequiredFieldValidator ID="DivisionNameRequired" runat="server" ControlToValidate="DivisionName" CssClass="field-validation-error" ErrorMessage="*" />
+                </td>
             </tr>
             <tr>
-                <td style="width: 179px"><span style="font-size: medium; border-width: 0; padding-right: 2em"><b>Manager Name:&nbsp;</b></span></td>
+                <td align="right" style="width: 179px">
+                    <asp:Label ID="DivisionIDLabel" runat="server" AssociatedControlID="DivisionID">Division ID:</asp:Label>
+                </td>
                 <td>
-                    <asp:TextBox ID="TextBox2" runat="server" Height="20px" Width="280px"></asp:TextBox>
-                    *</td>
+                    <asp:TextBox ID="DivisionID" runat="server" Height="20px" Width="280px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="DivisionIDRequired" runat="server" ControlToValidate="DivisionID" CssClass="field-validation-error" ErrorMessage="*" />
+                </td>
+            </tr>
+            <tr>
+                <td align="right" style="width: 179px">
+                    <asp:Label ID="DivisionManagerLabel" runat="server" Font-Bold="True">Division Manager:</asp:Label>
+                </td>
+                <td style="height: 48px">
+                    <asp:DropDownList ID="EmployeesList" runat="server" Height="19px" style="margin-left: 12px" ViewStateMode="Enabled" Width="283px">
+                    </asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <asp:Label ID="ConfirmMessage" runat="server" ForeColor="Blue" Visible="false" Font-Bold="True">Division successfully added</asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <asp:Label ID="DuplicateError" runat="server" ForeColor="Red" Visible="false" Font-Bold="True">Division Name or ID already exist</asp:Label>
+                </td>
             </tr>
             <tr>
                 <td style="width: 179px">&nbsp;</td>
                 <td>
                     <p style="text-align: right">
-                        <asp:Button ID="Button1" runat="server" Text="Create" />
+                        <asp:Button ID="Button1" runat="server" Text="Create" OnClick="addDivision"/>
                     </p>
                 </td>
             </tr>
