@@ -12,34 +12,34 @@
     <Key>
       <PropertyRef Name="ManagerID" />
     </Key>
-    <Property Name="ManagerID" Type="char" Nullable="false" MaxLength="10" />
-    <Property Name="Name" Type="char" Nullable="false" MaxLength="50" />
-    <Property Name="DeptID" Type="char" MaxLength="10" />
+    <Property Name="ManagerID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="DeptID" Type="varchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Dept">
     <Key>
       <PropertyRef Name="ManagerID" />
     </Key>
-    <Property Name="ManagerID" Type="char" Nullable="false" MaxLength="10" />
-    <Property Name="Name" Type="char" Nullable="false" MaxLength="50" />
-    <Property Name="DeptID" Type="char" Nullable="false" MaxLength="10" />
-    <Property Name="DivisionID" Type="char" Nullable="false" MaxLength="10" />
+    <Property Name="ManagerID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="DeptID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="DivisionID" Type="varchar" Nullable="false" MaxLength="50" />
   </EntityType>
   <EntityType Name="Divisions">
     <Key>
       <PropertyRef Name="ManagerID" />
     </Key>
-    <Property Name="ManagerID" Type="char" Nullable="false" MaxLength="10" />
-    <Property Name="Name" Type="char" Nullable="false" MaxLength="50" />
-    <Property Name="DivisionID" Type="char" Nullable="false" MaxLength="10" />
+    <Property Name="ManagerID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="DivisionID" Type="varchar" Nullable="false" MaxLength="50" />
   </EntityType>
   <EntityType Name="Projects">
     <Key>
       <PropertyRef Name="ManagerID" />
     </Key>
-    <Property Name="ManagerID" Type="char" Nullable="false" MaxLength="10" />
-    <Property Name="Client_name" Type="char" MaxLength="50" />
-    <Property Name="Proj_name" Type="char" MaxLength="50" />
+    <Property Name="ManagerID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Client_name" Type="varchar" MaxLength="50" />
+    <Property Name="Proj_name" Type="varchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Timesheets">
     <Key>
@@ -49,20 +49,20 @@
     <Property Name="Date" Type="time" Nullable="false" />
     <Property Name="Start_time" Type="int" Nullable="false" />
     <Property Name="Finish_time" Type="int" Nullable="false" />
-    <Property Name="Activity" Type="char" Nullable="false" MaxLength="50" />
-    <Property Name="Status" Type="char" Nullable="false" MaxLength="20" />
+    <Property Name="Activity" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Status" Type="varchar" Nullable="false" MaxLength="50" />
   </EntityType>
   <EntityType Name="Users">
     <Key>
       <PropertyRef Name="ID" />
     </Key>
-    <Property Name="ID" Type="char" Nullable="false" MaxLength="10" />
-    <Property Name="First_name" Type="char" Nullable="false" MaxLength="20" />
-    <Property Name="Last_name" Type="char" Nullable="false" MaxLength="20" />
-    <Property Name="Password" Type="char" Nullable="false" MaxLength="20" />
-    <Property Name="Job" Type="char" Nullable="false" MaxLength="20" />
-    <Property Name="Mail" Type="char" Nullable="false" MaxLength="30" />
-    <Property Name="DeptID" Type="char" MaxLength="10" />
-    <Property Name="Proj_name" Type="char" MaxLength="30" />
+    <Property Name="ID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="First_name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Last_name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Job" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Mail" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="DeptID" Type="varchar" MaxLength="50" />
+    <Property Name="Proj_name" Type="varchar" MaxLength="50" />
   </EntityType>
 </Schema>

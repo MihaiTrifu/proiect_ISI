@@ -43,11 +43,12 @@
             </tr>
             <tr>
                 <td align="right" style="width: 179px">
-                    <asp:Label ID="DivisionListLabel" runat="server">Division ID:</asp:Label>
+                    <asp:Label ID="DivisionListLabel" runat="server" AssociatedControlID="DivisionsList">Division ID:</asp:Label>
                 </td>
                 <td style="height: 48px">
                     <asp:DropDownList ID="DivisionsList" runat="server" Height="19px" style="margin-left: 12px" ViewStateMode="Enabled" Width="283px">
                     </asp:DropDownList>
+                    <asp:RequiredFieldValidator ID="DivisionListRequired" runat="server" ControlToValidate="DivisionsList" CssClass="field-validation-error" ErrorMessage="*" />
                 </td>
             </tr>
             <tr>

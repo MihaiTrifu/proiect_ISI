@@ -12,34 +12,34 @@
     <Key>
       <PropertyRef Name="ManagerID" />
     </Key>
-    <Property Name="ManagerID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="true" />
-    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="true" />
-    <Property Name="DeptID" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="ManagerID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="DeptID" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
   </EntityType>
   <EntityType Name="Dept">
     <Key>
       <PropertyRef Name="ManagerID" />
     </Key>
-    <Property Name="ManagerID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="true" />
-    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="true" />
-    <Property Name="DeptID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="true" />
-    <Property Name="DivisionID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="ManagerID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="DeptID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="DivisionID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
   </EntityType>
   <EntityType Name="Divisions">
     <Key>
       <PropertyRef Name="ManagerID" />
     </Key>
-    <Property Name="ManagerID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="true" />
-    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="true" />
-    <Property Name="DivisionID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="ManagerID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="DivisionID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
   </EntityType>
   <EntityType Name="Projects">
     <Key>
       <PropertyRef Name="ManagerID" />
     </Key>
-    <Property Name="ManagerID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="true" />
-    <Property Name="Client_name" Type="String" MaxLength="50" Unicode="false" FixedLength="true" />
-    <Property Name="Proj_name" Type="String" MaxLength="50" Unicode="false" FixedLength="true" />
+    <Property Name="ManagerID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Client_name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Proj_name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
   </EntityType>
   <EntityType Name="Timesheets">
     <Key>
@@ -49,20 +49,20 @@
     <Property Name="Date" Type="Time" Nullable="false" Precision="7" />
     <Property Name="Start_time" Type="Int32" Nullable="false" />
     <Property Name="Finish_time" Type="Int32" Nullable="false" />
-    <Property Name="Activity" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="true" />
-    <Property Name="Status" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="true" />
+    <Property Name="Activity" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
   </EntityType>
   <EntityType Name="Users">
     <Key>
       <PropertyRef Name="ID" />
     </Key>
-    <Property Name="ID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="true" />
-    <Property Name="First_name" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="true" />
-    <Property Name="Last_name" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="true" />
-    <Property Name="Password" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="true" />
-    <Property Name="Job" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="true" />
-    <Property Name="Mail" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="true" />
-    <Property Name="DeptID" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
-    <Property Name="Proj_name" Type="String" MaxLength="30" Unicode="false" FixedLength="true" />
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="First_name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Last_name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Job" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Mail" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="DeptID" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Proj_name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
   </EntityType>
 </Schema>
