@@ -69,20 +69,6 @@
                 </td>
             </tr>
             <tr>
-                <td align="right" style="width: 179px">
-                    <asp:Label ID="JobLabel" runat="server">Job:</asp:Label>
-                </td>
-                <td style="height: 48px">
-                    <asp:DropDownList ID="JobList" runat="server" Height="19px" style="margin-left: 12px" ViewStateMode="Enabled" Width="283px">
-                        <asp:ListItem Text="Angajat" Value="Angajat"></asp:ListItem>
-                        <asp:ListItem Text="Sef Departament" Value="Sef Departament"></asp:ListItem>
-                        <asp:ListItem Text="Sef Divizie" Value="Sef Divizie"></asp:ListItem>
-                        <asp:ListItem Text="Director" Value="Director"></asp:ListItem>
-                        <asp:ListItem Text="Administrator" Value="Administrator"></asp:ListItem>
-                    </asp:DropDownList>
-                </td>
-            </tr>
-            <tr>
                 <td align="right" style="width: 179px">&nbsp;</td>
                 <td style="width: 308px">&nbsp;</td>
             </tr>

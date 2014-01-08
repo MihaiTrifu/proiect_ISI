@@ -58,22 +58,58 @@ namespace TimeSheet.Admin {
         protected global::System.Web.UI.WebControls.Panel Panel1;
         
         /// <summary>
-        /// dirNameEdit control.
+        /// CurrentDirectorLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox dirNameEdit;
+        protected global::System.Web.UI.WebControls.Label CurrentDirectorLabel;
         
         /// <summary>
-        /// newDirNameEdit control.
+        /// CurrentDirector control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox newDirNameEdit;
+        protected global::System.Web.UI.WebControls.TextBox CurrentDirector;
+        
+        /// <summary>
+        /// NewDirectorLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label NewDirectorLabel;
+        
+        /// <summary>
+        /// EmployeesList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList EmployeesList;
+        
+        /// <summary>
+        /// EmployeesListRequired control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator EmployeesListRequired;
+        
+        /// <summary>
+        /// checkboxlist1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBoxList checkboxlist1;
         
         /// <summary>
         /// EditDir control.

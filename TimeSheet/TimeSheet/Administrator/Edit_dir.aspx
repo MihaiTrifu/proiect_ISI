@@ -17,22 +17,43 @@
      <asp:Panel ID="Panel1" runat="server" Height="400px" Width="546px">
         <table align="left" style="width: 100%; float: left; font-family: Verdana; margin-right: 0px;">
             <tr>
-                <td style="width: 179px; font-size: medium; font-weight: 700;">Curent Director:</td>
-                <td>
-                    <asp:TextBox ID="dirNameEdit" runat="server" Height="19px" Width="271px"></asp:TextBox>
+                <td align="right" style="width: 179px">
+                    <asp:Label ID="CurrentDirectorLabel" runat="server" Font-Bold="True">Current Director:</asp:Label>
+                </td><td>
+                    <asp:TextBox ID="CurrentDirector" ReadOnly="true" runat="server" Height="19px" Width="271px"></asp:TextBox>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right" style="width: 179px">
+                    <asp:Label ID="NewDirectorLabel" runat="server" Font-Bold="True" AssociatedControlID="EmployeesList">New Director:</asp:Label>
+                </td>
+                <td style="height: 48px">
+                    <asp:DropDownList ID="EmployeesList" runat="server" Height="19px" style="margin-left: 12px" ViewStateMode="Enabled" Width="283px">
+                    </asp:DropDownList>
+                    <asp:RequiredFieldValidator ID="EmployeesListRequired" runat="server" ControlToValidate="EmployeesList" CssClass="field-validation-error" ErrorMessage="*" />
                 </td>
             </tr>
             <tr>
-                <td style="width: 179px; font-size: medium; font-weight: 700;">New Director:</td>
-                <td>
-                    <asp:TextBox ID="newDirNameEdit" runat="server" Height="19px" Width="271px"></asp:TextBox>
+                <td align="right" style="width: 179px">
+                <asp:CheckBoxList id="checkboxlist1" 
+                   OnSelectedIndexChanged="Check_Clicked"
+                   runat="server">
+
+                     <asp:ListItem>Item 1</asp:ListItem>
+                     <asp:ListItem>Item 2</asp:ListItem>
+                     <asp:ListItem>Item 3</asp:ListItem>
+                     <asp:ListItem>Item 4</asp:ListItem>
+                     <asp:ListItem>Item 5</asp:ListItem>
+                     <asp:ListItem>Item 6</asp:ListItem>
+                 </asp:CheckBoxList>
                     </td>
             </tr>
             <tr>
                 <td style="width: 179px">&nbsp;</td>
                 <td>
                     <p style="text-align: right">
-                        <asp:Button ID="EditDir" runat="server" Text="Save" />
+                        <asp:Button ID="EditDir" runat="server" Text="Save" OnClick="SaveNewDir"/>
                     </p>
                 </td>
             </tr>

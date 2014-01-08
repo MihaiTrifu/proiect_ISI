@@ -30,7 +30,7 @@ namespace TimeSheet.Admin
                 newEmp.ID = UserID.Text;
                 newEmp.Password = Password.Text;
                 newEmp.Mail = Email.Text;
-                newEmp.Job = JobList.SelectedItem.Value;
+                newEmp.Job = "Angajat";
 
                 bd.Users.Add(newEmp);
 
@@ -42,7 +42,6 @@ namespace TimeSheet.Admin
                 DuplicateError.Visible = true;
                 ConfirmMessage.Visible = false;
             }
-
         }
     }
 

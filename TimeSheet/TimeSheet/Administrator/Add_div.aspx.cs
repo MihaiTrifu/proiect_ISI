@@ -14,7 +14,8 @@ namespace TimeSheet.Admin
             if (!IsPostBack)
             {
                 Database1Entities bd = new Database1Entities();
-                var employeeList = from c in bd.Users select new { c.ID };
+                var employeeList = from c in bd.Users where c.Job == "Angajat" select new { c.ID };
+                
                 EmployeesList.DataValueField = "ID";
                 EmployeesList.DataSource = employeeList.ToArray();
                 DataBind();
