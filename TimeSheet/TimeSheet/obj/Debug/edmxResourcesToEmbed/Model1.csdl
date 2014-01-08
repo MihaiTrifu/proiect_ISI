@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Database1Model" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Database1Entities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Activities" EntityType="Database1Model.Activities" />
+    <EntitySet Name="Dept" EntityType="Database1Model.Dept" />
+    <EntitySet Name="Divisions" EntityType="Database1Model.Divisions" />
+    <EntitySet Name="Projects" EntityType="Database1Model.Projects" />
+    <EntitySet Name="Timesheets" EntityType="Database1Model.Timesheets" />
+    <EntitySet Name="Users" EntityType="Database1Model.Users" />
+  </EntityContainer>
+  <EntityType Name="Activities">
+    <Key>
+      <PropertyRef Name="ManagerID" />
+    </Key>
+    <Property Name="ManagerID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="true" />
+    <Property Name="DeptID" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+  </EntityType>
+  <EntityType Name="Dept">
+    <Key>
+      <PropertyRef Name="ManagerID" />
+    </Key>
+    <Property Name="ManagerID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="true" />
+    <Property Name="DeptID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="DivisionID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="true" />
+  </EntityType>
+  <EntityType Name="Divisions">
+    <Key>
+      <PropertyRef Name="ManagerID" />
+    </Key>
+    <Property Name="ManagerID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="true" />
+    <Property Name="DivisionID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="true" />
+  </EntityType>
+  <EntityType Name="Projects">
+    <Key>
+      <PropertyRef Name="ManagerID" />
+    </Key>
+    <Property Name="ManagerID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="Client_name" Type="String" MaxLength="50" Unicode="false" FixedLength="true" />
+    <Property Name="Proj_name" Type="String" MaxLength="50" Unicode="false" FixedLength="true" />
+  </EntityType>
+  <EntityType Name="Timesheets">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Date" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="Start_time" Type="Int32" Nullable="false" />
+    <Property Name="Finish_time" Type="Int32" Nullable="false" />
+    <Property Name="Activity" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="true" />
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="true" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="First_name" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="true" />
+    <Property Name="Last_name" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="true" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="true" />
+    <Property Name="Job" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="true" />
+    <Property Name="Mail" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="true" />
+    <Property Name="DeptID" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+    <Property Name="Proj_name" Type="String" MaxLength="30" Unicode="false" FixedLength="true" />
+  </EntityType>
+</Schema>
