@@ -35,21 +35,6 @@
                 </td>
             </tr>
             <tr>
-                <td align="right" style="width: 179px">
-                <asp:CheckBoxList id="checkboxlist1" 
-                   OnSelectedIndexChanged="Check_Clicked"
-                   runat="server">
-
-                     <asp:ListItem>Item 1</asp:ListItem>
-                     <asp:ListItem>Item 2</asp:ListItem>
-                     <asp:ListItem>Item 3</asp:ListItem>
-                     <asp:ListItem>Item 4</asp:ListItem>
-                     <asp:ListItem>Item 5</asp:ListItem>
-                     <asp:ListItem>Item 6</asp:ListItem>
-                 </asp:CheckBoxList>
-                    </td>
-            </tr>
-            <tr>
                 <td style="width: 179px">&nbsp;</td>
                 <td>
                     <p style="text-align: right">

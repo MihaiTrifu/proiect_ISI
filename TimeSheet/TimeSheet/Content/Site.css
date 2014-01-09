@@ -392,7 +392,6 @@ fieldset {
         }
 
     label {
-        display: block;
         font-size: 1.2em;
         font-weight: 600;
     }
@@ -436,10 +435,10 @@ fieldset {
         padding: 7px;
         margin-right: 8px;
     position: relative;
-    top: -90px;
-    left: 43px;
-    height: 40px;
-    width: 89px;
+    top: -40px;
+    left: -594px;
+    height: 46px;
+    width: 97px;
 }
 
     td input[type="submit"],
