@@ -13,84 +13,57 @@ namespace TimeSheet.Director {
     public partial class DIr_empRead {
         
         /// <summary>
-        /// Panel1 control.
+        /// Panel4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel1;
+        protected global::System.Web.UI.WebControls.Panel Panel4;
         
         /// <summary>
-        /// empReadDir control.
+        /// empNameReadDir control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList empReadDir;
+        protected global::System.Web.UI.WebControls.DropDownList empNameReadDir;
         
         /// <summary>
-        /// yearReadDir control.
+        /// yearSelectReadDir control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList yearReadDir;
+        protected global::System.Web.UI.WebControls.DropDownList yearSelectReadDir;
         
         /// <summary>
-        /// monthReadDir control.
+        /// monthSelectReadDir control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList monthReadDir;
+        protected global::System.Web.UI.WebControls.DropDownList monthSelectReadDir;
         
         /// <summary>
-        /// dayReadDir control.
+        /// daySelectReadDir control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dayReadDir;
+        protected global::System.Web.UI.WebControls.DropDownList daySelectReadDir;
         
         /// <summary>
-        /// Panel3 control.
+        /// openReadDir control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel3;
-        
-        /// <summary>
-        /// Label2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
-        
-        /// <summary>
-        /// Panel2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel2;
-        
-        /// <summary>
-        /// readEmpDir control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button readEmpDir;
+        protected global::System.Web.UI.WebControls.Button openReadDir;
     }
 }

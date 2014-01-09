@@ -13,84 +13,66 @@ namespace TimeSheet.Director {
     public partial class Dir_reportTip2 {
         
         /// <summary>
-        /// Panel1 control.
+        /// A801 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel1;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A801;
         
         /// <summary>
-        /// Label1 control.
+        /// A802 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A802;
         
         /// <summary>
-        /// A1701 control.
+        /// A803 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A1701;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A803;
         
         /// <summary>
-        /// A1702 control.
+        /// Panel3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A1702;
+        protected global::System.Web.UI.WebControls.Panel Panel3;
         
         /// <summary>
-        /// A1703 control.
+        /// departmentTip2Div control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A1703;
+        protected global::System.Web.UI.WebControls.DropDownList departmentTip2Div;
         
         /// <summary>
-        /// Panel2 control.
+        /// okReportTip2Div control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel2;
+        protected global::System.Web.UI.WebControls.Button okReportTip2Div;
         
         /// <summary>
-        /// departmentDirTip2 control.
+        /// resetReportTip2Div control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList departmentDirTip2;
-        
-        /// <summary>
-        /// okReportDirTip2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button okReportDirTip2;
-        
-        /// <summary>
-        /// resetReportDirTip2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button resetReportDirTip2;
+        protected global::System.Web.UI.WebControls.Button resetReportTip2Div;
     }
 }

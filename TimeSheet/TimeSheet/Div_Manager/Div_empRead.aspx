@@ -1,42 +1,65 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Div_Manager/DivisionManager_main.master" AutoEventWireup="true" CodeBehind="Div_empRead.aspx.cs" Inherits="TimeSheet.Div_Manager.Div_empRead" %>
 
 <asp:Content runat="server" ID="Content3" ContentPlaceHolderID="MainContent" >
-    <asp:Panel ID="Panel1" runat="server" Height="294px" Width="1066px" style="margin-top: 0px">
-        <table style="width: 26%; height: 120px; position: absolute; top: 244px; left: 93px; z-index: 2; right: 855px;">
+        <hgroup class="title">
+        <h1>
+            <br />
+            <span style="font-family: Andalus; color: #3E5667; display: inline">~ Read employee timesheet</span></h1>
+    </hgroup>
+
+    <aside height: 48px; right: 4px;  0px; position: relative; top: -60px;">
+        <ul style="text-align: right">
+            <span style="font-family: 'Segoe UI'; font-size: large"><b>
+
+        </ul>
+    </aside>
+       <asp:Panel ID="Panel4" runat="server" Height="398px" Width="559px">
+        <table align="left" style="width: 99%; float: left; font-family: Verdana; margin-right: 0px; height: 230px;">
             <tr>
-                <td style="text-align: right; width: 186px">Employee ID</td>
+                <td style="width: 130px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667;"><b>Select Employee:</b></td>
                 <td>
-                    <asp:DropDownList ID="empReadDiv" runat="server" Height="23px" Width="183px">
+                    <span style="font-family: 'Segoe UI'; font-size: large"><b>
+                    <asp:DropDownList ID="empNameReadDiv" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="287px">
                     </asp:DropDownList>
-                </td>
+                    </b></span></td>
             </tr>
             <tr>
-                <td style="text-align: right; width: 186px; height: 30px;">Year</td>
-                <td style="height: 30px">
-                    <asp:DropDownList ID="yearReadDiv" runat="server" Height="23px" Width="183px">
+                <td style="width: 130px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667; height: 40px;">Year<b>:</b></td>
+                <td style="height: 40px">
+                    </span><span style="font-family: 'Segoe UI'; font-size: large">
+                    <asp:DropDownList ID="yearSelectReadDiv" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="287px">
                     </asp:DropDownList>
-                </td>
+                    </span></td>
+            </tr>
+            </span><span style="font-family: 'Segoe UI'; font-size: large">
+            <tr>
+                <td style="width: 130px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667; height: 40px;">Month:</td>
+                <td style="height: 40px"><span style="font-family: 'Segoe UI'; font-size: large">
+                    <asp:DropDownList ID="monthSelectReadDiv" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="287px">
+                    </asp:DropDownList>
+                    </span></td>
             </tr>
             <tr>
-                <td style="text-align: right; width: 186px">Month</td>
+                <td style="width: 130px; font-family: 'Book Antiqua'; color: #3E5667; font-weight: bold; font-size: small;">Day<span style="border-width: 0; padding-right: 2em">:&nbsp;</span></td>
                 <td>
-                    <asp:DropDownList ID="monthReadDiv" runat="server" Height="23px" Width="181px">
+                    <asp:DropDownList ID="daySelectReadDiv" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="287px">
                     </asp:DropDownList>
                 </td>
             </tr>
             <tr>
-                <td style="text-align: right; width: 186px">Day</td>
+                <td style="width: 130px">&nbsp;</td>
                 <td>
-                    <asp:DropDownList ID="dayReadDiv" runat="server" Height="23px" Width="181px">
-                    </asp:DropDownList>
+                    <p style="text-align: right">
+                        <asp:Button ID="openReadDiv" runat="server" Font-Size="XX-Small" Text="Open" />
+                    </p>
                 </td>
             </tr>
+            </span>
         </table>
-        <asp:Panel ID="Panel3" runat="server" style="position: relative; top: 21px; left: 18px">
-            <asp:Label ID="Label2" runat="server" Font-Bold="False" Font-Size="Larger" style="position: relative" Text="~ Read Employee Timesheet ~"></asp:Label>
-        </asp:Panel>
-        <asp:Panel ID="Panel2" runat="server" style="position: relative; top: 198px; left: 322px; width: 107px; height: 27px">
-            <asp:Button ID="readEmpDiv" runat="server" Text="Select" Font-Size="XX-Small" Width="77px" />
-        </asp:Panel>
     </asp:Panel>
+
+        </b>
+
+        </span>
+
 </asp:Content>

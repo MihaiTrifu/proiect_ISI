@@ -13,13 +13,22 @@ namespace TimeSheet.Div_Manager {
     public partial class Div_modifyTimesheet {
         
         /// <summary>
-        /// Panel1 control.
+        /// A2009 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel1;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A2009;
+        
+        /// <summary>
+        /// A2010 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A2010;
         
         /// <summary>
         /// Panel4 control.
@@ -31,84 +40,39 @@ namespace TimeSheet.Div_Manager {
         protected global::System.Web.UI.WebControls.Panel Panel4;
         
         /// <summary>
-        /// Label1 control.
+        /// yearModifyDiv control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.DropDownList yearModifyDiv;
         
         /// <summary>
-        /// A2511 control.
+        /// monthModifyDiv control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A2511;
+        protected global::System.Web.UI.WebControls.DropDownList monthModifyDiv;
         
         /// <summary>
-        /// A2512 control.
+        /// dayModifyDiv control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A2512;
+        protected global::System.Web.UI.WebControls.DropDownList dayModifyDiv;
         
         /// <summary>
-        /// Panel2 control.
+        /// modifyTsDiv control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel2;
-        
-        /// <summary>
-        /// selectYearMdfDiv control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList selectYearMdfDiv;
-        
-        /// <summary>
-        /// selectMonthMdfDiv control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList selectMonthMdfDiv;
-        
-        /// <summary>
-        /// selectDayMdfDiv control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList selectDayMdfDiv;
-        
-        /// <summary>
-        /// Panel3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel3;
-        
-        /// <summary>
-        /// modifyTimesheetDiv control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button modifyTimesheetDiv;
+        protected global::System.Web.UI.WebControls.Button modifyTsDiv;
     }
 }

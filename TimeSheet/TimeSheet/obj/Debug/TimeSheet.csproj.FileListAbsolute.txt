@@ -58,3 +58,63 @@ C:\Users\Mihai17\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\bin\DotNetOpen
 C:\Users\Mihai17\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\obj\Debug\TimeSheet.csprojResolveAssemblyReference.cache
 C:\Users\Mihai17\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\obj\Debug\TimeSheet.dll
 C:\Users\Mihai17\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\obj\Debug\TimeSheet.pdb
+C:\Users\Mihai17\Desktop\bakup de pe git\TimeSheet\TimeSheet\bin\TimeSheet.dll
+C:\Users\Mihai17\Desktop\bakup de pe git\TimeSheet\TimeSheet\bin\TimeSheet.pdb
+C:\Users\Mihai17\Desktop\bakup de pe git\TimeSheet\TimeSheet\bin\Antlr3.Runtime.dll
+C:\Users\Mihai17\Desktop\bakup de pe git\TimeSheet\TimeSheet\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Mihai17\Desktop\bakup de pe git\TimeSheet\TimeSheet\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\Mihai17\Desktop\bakup de pe git\TimeSheet\TimeSheet\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Mihai17\Desktop\bakup de pe git\TimeSheet\TimeSheet\bin\DotNetOpenAuth.Core.dll
+C:\Users\Mihai17\Desktop\bakup de pe git\TimeSheet\TimeSheet\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Mihai17\Desktop\bakup de pe git\TimeSheet\TimeSheet\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Mihai17\Desktop\bakup de pe git\TimeSheet\TimeSheet\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Mihai17\Desktop\bakup de pe git\TimeSheet\TimeSheet\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Mihai17\Desktop\bakup de pe git\TimeSheet\TimeSheet\bin\EntityFramework.dll
+C:\Users\Mihai17\Desktop\bakup de pe git\TimeSheet\TimeSheet\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\Mihai17\Desktop\bakup de pe git\TimeSheet\TimeSheet\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Mihai17\Desktop\bakup de pe git\TimeSheet\TimeSheet\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Mihai17\Desktop\bakup de pe git\TimeSheet\TimeSheet\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Mihai17\Desktop\bakup de pe git\TimeSheet\TimeSheet\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mihai17\Desktop\bakup de pe git\TimeSheet\TimeSheet\bin\System.Web.Optimization.dll
+C:\Users\Mihai17\Desktop\bakup de pe git\TimeSheet\TimeSheet\bin\System.Web.Providers.dll
+C:\Users\Mihai17\Desktop\bakup de pe git\TimeSheet\TimeSheet\bin\WebGrease.dll
+C:\Users\Mihai17\Desktop\bakup de pe git\TimeSheet\TimeSheet\bin\EntityFramework.xml
+C:\Users\Mihai17\Desktop\bakup de pe git\TimeSheet\TimeSheet\bin\DotNetOpenAuth.Core.xml
+C:\Users\Mihai17\Desktop\bakup de pe git\TimeSheet\TimeSheet\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Mihai17\Desktop\bakup de pe git\TimeSheet\TimeSheet\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Mihai17\Desktop\bakup de pe git\TimeSheet\TimeSheet\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Mihai17\Desktop\bakup de pe git\TimeSheet\TimeSheet\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Mihai17\Desktop\bakup de pe git\TimeSheet\TimeSheet\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Mihai17\Desktop\bakup de pe git\TimeSheet\TimeSheet\obj\Debug\TimeSheet.csprojResolveAssemblyReference.cache
+C:\Users\Mihai17\Desktop\bakup de pe git\TimeSheet\TimeSheet\obj\Debug\TimeSheet.dll
+C:\Users\Mihai17\Desktop\bakup de pe git\TimeSheet\TimeSheet\obj\Debug\TimeSheet.pdb
+E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\bin\TimeSheet.dll
+E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\bin\TimeSheet.pdb
+E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\bin\Antlr3.Runtime.dll
+E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\bin\AspNet.ScriptManager.jQuery.dll
+E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\bin\DotNetOpenAuth.AspNet.dll
+E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\bin\DotNetOpenAuth.Core.dll
+E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\bin\DotNetOpenAuth.OAuth.Consumer.dll
+E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\bin\DotNetOpenAuth.OAuth.dll
+E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\bin\DotNetOpenAuth.OpenId.dll
+E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\bin\EntityFramework.dll
+E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\bin\Microsoft.ScriptManager.MSAjax.dll
+E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\bin\Microsoft.ScriptManager.WebForms.dll
+E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\bin\Microsoft.Web.Infrastructure.dll
+E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\bin\System.Web.Optimization.dll
+E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\bin\System.Web.Providers.dll
+E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\bin\WebGrease.dll
+E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\bin\EntityFramework.xml
+E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\bin\DotNetOpenAuth.Core.xml
+E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\bin\DotNetOpenAuth.OAuth.xml
+E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\bin\DotNetOpenAuth.OAuth.Consumer.xml
+E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\bin\DotNetOpenAuth.OpenId.xml
+E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\bin\DotNetOpenAuth.AspNet.xml
+E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\obj\Debug\TimeSheet.csprojResolveAssemblyReference.cache
+E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\obj\Debug\TimeSheet.dll
+E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\obj\Debug\TimeSheet.pdb

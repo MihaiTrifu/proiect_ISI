@@ -13,24 +13,6 @@ namespace TimeSheet.Dept_Manager {
     public partial class Dept_raport {
         
         /// <summary>
-        /// Panel1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel1;
-        
-        /// <summary>
-        /// Label1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
-        
-        /// <summary>
         /// A701 control.
         /// </summary>
         /// <remarks>
@@ -58,12 +40,12 @@ namespace TimeSheet.Dept_Manager {
         protected global::System.Web.UI.HtmlControls.HtmlAnchor A703;
         
         /// <summary>
-        /// Panel2 control.
+        /// Panel3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel2;
+        protected global::System.Web.UI.WebControls.Panel Panel3;
     }
 }

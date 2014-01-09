@@ -1,19 +1,29 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Director/Director_main.master" AutoEventWireup="true" CodeBehind="Dir_Report.aspx.cs" Inherits="TimeSheet.Div_Manager.Dir_Report" %>
 
-<asp:Content runat="server" ID="Content3" ContentPlaceHolderID="MainContent" >
-    <asp:Panel ID="Panel1" runat="server" Height="188px">
-       <asp:Label ID="Label1" runat="server" Font-Bold="False" Font-Size="Larger" Text="~ Reports ~"></asp:Label>
-        <aside style="z-index: 1; height: 140px; right: 37px; margin-right: 0px">
-            <ul>
-                <li><a id="A1701" runat="server" href="../Div_Manager/Dir_reportTip1.aspx">Report Tip1</a></li>
-                <li><a id="A1702" runat="server" href="../Div_Manager/Dir_reportTip2.aspx">Report Tip2</a></li>
-                <li><a id="A1703" runat="server" href="../Div_Manager/Dir_reportTip3.aspx">Report Tip3</a></li>
-            </ul>
-        </aside>
-    </asp:Panel>
-    <asp:Panel ID="Panel2" runat="server" style="position: relative; top: -143px; left: 11px; width: 586px; height: 59px">
-        <span style="font-size: small"><b>Report Tip1:&nbsp;&nbsp;&nbsp; </b>For each department - in progress projects and number of worked hours/project <b>
+<asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
+    <hgroup class="title">
+        <h1>
+            <br />
+            <span style="font-family: Andalus; color: #3E5667; display: inline">~ Reports</span></h1>
+    </hgroup>
+
+    <aside height: 48px; right: 4px;  0px; position: relative; top: -60px;">
+        <ul style="text-align: right">
+            <span style="font-family: 'Segoe UI'; font-size: large"><b>
+            <li1><a id="A801" runat="server" href="Dir_reportTip1.aspx" style="color: #7AC0DA">Tip1</a></li1></b> <b>
+            <li2><a id="A802" runat="server" href="Dir_reportTip2.aspx" style="color: #7AC0DA">Tip2</a></li2></b> <b>
+            <li2><a id="A803" runat="server" href="Dir_reportTip3.aspx" style="color: #7AC0DA">Tip3</a></li2></b> <b>
+        </ul>
+    </aside>
+    <asp:Panel ID="Panel3" runat="server" Height="400px" Width="825px" style="color: #3E5667; font-size: medium; font-family: boo">
+        <span style="font-size: small"><b>Report Tip1:&nbsp;&nbsp;&nbsp; </b> 
+            For each department - in progress projects and number of worked hours/project<b><br /> 
+                Report Tip2:&nbsp;&nbsp;&nbsp; </b>For each department - all the employees
         <br />
-        Report Tip2:&nbsp;&nbsp;&nbsp; </b>For each department - all the employees<br />
-        <b>Report Tip3:&nbsp;&nbsp;&nbsp; </b>Display all the clients and for each of them - the projects, number of worked hours</span></asp:Panel>
+        <b>Report Tip3:&nbsp;&nbsp;&nbsp; </b>
+            Display all the clients and for each of them - the projects, number of worked hours</span>
+    </b></span> <b>
+        </b>
+    </asp:Panel>
+    </b></span>
 </asp:Content>

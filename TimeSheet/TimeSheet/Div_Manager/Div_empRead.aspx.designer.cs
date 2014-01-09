@@ -13,84 +13,57 @@ namespace TimeSheet.Div_Manager {
     public partial class Div_empRead {
         
         /// <summary>
-        /// Panel1 control.
+        /// Panel4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel1;
+        protected global::System.Web.UI.WebControls.Panel Panel4;
         
         /// <summary>
-        /// empReadDiv control.
+        /// empNameReadDiv control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList empReadDiv;
+        protected global::System.Web.UI.WebControls.DropDownList empNameReadDiv;
         
         /// <summary>
-        /// yearReadDiv control.
+        /// yearSelectReadDiv control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList yearReadDiv;
+        protected global::System.Web.UI.WebControls.DropDownList yearSelectReadDiv;
         
         /// <summary>
-        /// monthReadDiv control.
+        /// monthSelectReadDiv control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList monthReadDiv;
+        protected global::System.Web.UI.WebControls.DropDownList monthSelectReadDiv;
         
         /// <summary>
-        /// dayReadDiv control.
+        /// daySelectReadDiv control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dayReadDiv;
+        protected global::System.Web.UI.WebControls.DropDownList daySelectReadDiv;
         
         /// <summary>
-        /// Panel3 control.
+        /// openReadDiv control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel3;
-        
-        /// <summary>
-        /// Label2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
-        
-        /// <summary>
-        /// Panel2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel2;
-        
-        /// <summary>
-        /// readEmpDiv control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button readEmpDiv;
+        protected global::System.Web.UI.WebControls.Button openReadDiv;
     }
 }

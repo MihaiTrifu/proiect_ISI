@@ -22,15 +22,6 @@ namespace TimeSheet.Admin {
         protected global::System.Web.UI.HtmlControls.HtmlAnchor A5;
         
         /// <summary>
-        /// A6 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A6;
-        
-        /// <summary>
         /// A7 control.
         /// </summary>
         /// <remarks>
@@ -38,6 +29,15 @@ namespace TimeSheet.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor A7;
+        
+        /// <summary>
+        /// A6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A6;
         
         /// <summary>
         /// Panel1 control.

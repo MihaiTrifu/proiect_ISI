@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace TimeSheet.Dept_Manager
 {
-    public partial class Dept_reportTip2 : System.Web.UI.Page
+    public partial class Dept_reportTip21 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

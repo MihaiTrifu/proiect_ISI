@@ -212,14 +212,11 @@ ul#menu {
 
     .featured .content-wrapper {
         background-color: #7ac0da;
-        background-image: -ms-linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
-        background-image: -o-linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
-        background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #7ac0da), color-stop(1, #a4d4e6));
-        background-image: -webkit-linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
         background-image: linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
         color: #3e5667;
         padding: 20px 40px 30px 40px;
-    }
+    height: 38px;
+}
 
         .featured hgroup.title h1, .featured hgroup.title h2 {
             color: #fff;
@@ -232,7 +229,8 @@ ul#menu {
 /* page titles */
 hgroup.title {
     margin-bottom: 10px;
-    height: 59px;
+    height: 29px;
+    width: 396px;
 }
 
 hgroup.title h1, hgroup.title h2 {
@@ -310,7 +308,11 @@ article {
 
 aside {
     float: right;
-    width: 28%;
+    width: 101%;
+    position: relative;
+    top: -68px;
+    left: -16px;
+    height: 36px;
 }
 
     aside ul {
@@ -321,7 +323,8 @@ aside {
         aside ul li {
             background: url("../Images/bullet.png") no-repeat 0 50%;
             padding: 2px 0 2px 20px;
-        }
+    width: 211px;
+}
 
 .label {
     font-weight: 700;
@@ -392,9 +395,11 @@ fieldset {
         }
 
     label {
-        font-size: 1.2em;
+        display: block;
+        font-size: small;
         font-weight: 600;
-    }
+    font-family: "Book Antiqua";
+}
 
     label.checkbox {
         display: inline;
@@ -405,7 +410,7 @@ fieldset {
         background: #fff;
         color: #333;
         font-size: 1.2em;
-        margin: 5px 0 6px 0px;
+        margin: 5px 0 6px 5px;
         padding: 5px;
         }
 
@@ -435,10 +440,10 @@ fieldset {
         padding: 7px;
         margin-right: 8px;
     position: relative;
-    top: -40px;
-    left: -594px;
-    height: 46px;
-    width: 97px;
+    top: 59px;
+    left: 16px;
+    height: 40px;
+    width: 89px;
 }
 
     td input[type="submit"],
@@ -448,10 +453,10 @@ fieldset {
         padding: 4px;
         margin-right: 4px;
     position: relative;
-    top: 2px;
-    left: 3px;
-    height: 36px;
-    width: 52px;
+    top: 43px;
+    left: -2px;
+    height: 35px;
+    width: 60px;
 }
 
 /* info and errors */
@@ -514,7 +519,9 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
     margin-top: 0.75em;
-    }
+    height: 362px;
+    width: 514px;
+}
 
 th {
 	font-size: 1.2em;

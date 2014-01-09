@@ -13,102 +13,75 @@ namespace TimeSheet.Dept_Manager {
     public partial class Dept_ReadEmp {
         
         /// <summary>
-        /// Panel1 control.
+        /// A501 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel1;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A501;
         
         /// <summary>
-        /// A511 control.
+        /// A502 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A511;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A502;
         
         /// <summary>
-        /// A611 control.
+        /// Panel4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A611;
+        protected global::System.Web.UI.WebControls.Panel Panel4;
         
         /// <summary>
-        /// empReadDept control.
+        /// empNameRead control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList empReadDept;
+        protected global::System.Web.UI.WebControls.DropDownList empNameRead;
         
         /// <summary>
-        /// yearReadDept control.
+        /// yearSelectRead control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList yearReadDept;
+        protected global::System.Web.UI.WebControls.DropDownList yearSelectRead;
         
         /// <summary>
-        /// monthReadDept control.
+        /// monthSelectRead control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList monthReadDept;
+        protected global::System.Web.UI.WebControls.DropDownList monthSelectRead;
         
         /// <summary>
-        /// dayReadDept control.
+        /// daySelectRead control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dayReadDept;
+        protected global::System.Web.UI.WebControls.DropDownList daySelectRead;
         
         /// <summary>
-        /// Panel3 control.
+        /// openRead control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel3;
-        
-        /// <summary>
-        /// Label2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
-        
-        /// <summary>
-        /// Panel2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel2;
-        
-        /// <summary>
-        /// readEmpDept control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button readEmpDept;
+        protected global::System.Web.UI.WebControls.Button openRead;
     }
 }

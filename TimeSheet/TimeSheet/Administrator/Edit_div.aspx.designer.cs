@@ -13,40 +13,40 @@ namespace TimeSheet.Admin {
     public partial class Edit_div {
         
         /// <summary>
-        /// Div1 control.
+        /// A51 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor Div1;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A51;
         
         /// <summary>
-        /// Div2 control.
+        /// A71 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor Div2;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A71;
         
         /// <summary>
-        /// Div3 control.
+        /// A61 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor Div3;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A61;
         
         /// <summary>
-        /// Div4 control.
+        /// A81 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor Div4;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A81;
         
         /// <summary>
         /// Panel1 control.

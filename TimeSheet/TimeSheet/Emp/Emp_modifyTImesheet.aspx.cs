@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace TimeSheet.Dept_Manager
+namespace TimeSheet.Emp
 {
-    public partial class Dept_reportTip1 : System.Web.UI.Page
+    public partial class Emp_modifyTImesheet : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

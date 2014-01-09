@@ -13,8 +13,8 @@
     <section class="featured">
         <div class="content-wrapper">
             <ul id="menu" class="auto-style1">
-                <li><a id="A100" runat="server" href="~/Timesheet/Add_timesheet.aspx">Add </a></li>
-                <li><a id="A101" runat="server" href="~/Timesheet/Modify_timesheet.aspx">Modify/Read</a></li>
+                <li><a id="A100" runat="server" href="Emp_addTimesheet.aspx">Add </a></li>
+                <li><a id="A101" runat="server" href="Emp_modifyTImesheet.aspx">Modify/Read</a></li>
             </ul>
         </div>
     </section>

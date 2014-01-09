@@ -7,54 +7,54 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TimeSheet.Admin {
+namespace TimeSheet.Emp {
     
     
-    public partial class Edit {
+    public partial class Emp_modifyTImesheet {
         
         /// <summary>
-        /// A51 control.
+        /// Panel4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A51;
+        protected global::System.Web.UI.WebControls.Panel Panel4;
         
         /// <summary>
-        /// A71 control.
+        /// yearModifyEmp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A71;
+        protected global::System.Web.UI.WebControls.DropDownList yearModifyEmp;
         
         /// <summary>
-        /// A61 control.
+        /// monthModifyEmp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A61;
+        protected global::System.Web.UI.WebControls.DropDownList monthModifyEmp;
         
         /// <summary>
-        /// A81 control.
+        /// dayModifyEmp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A81;
+        protected global::System.Web.UI.WebControls.DropDownList dayModifyEmp;
         
         /// <summary>
-        /// Panel1 control.
+        /// modifyTsEmp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel1;
+        protected global::System.Web.UI.WebControls.Button modifyTsEmp;
     }
 }

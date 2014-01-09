@@ -13,58 +13,31 @@ namespace TimeSheet.Director {
     public partial class Dir_reportTip3 {
         
         /// <summary>
-        /// Panel1 control.
+        /// A801 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel1;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A801;
         
         /// <summary>
-        /// Label1 control.
+        /// A802 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A802;
         
         /// <summary>
-        /// A1701 control.
+        /// A803 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A1701;
-        
-        /// <summary>
-        /// A1702 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A1702;
-        
-        /// <summary>
-        /// A1703 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A1703;
-        
-        /// <summary>
-        /// Panel2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel2;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A803;
         
         /// <summary>
         /// Panel3 control.
@@ -76,84 +49,93 @@ namespace TimeSheet.Director {
         protected global::System.Web.UI.WebControls.Panel Panel3;
         
         /// <summary>
-        /// yearBeginDirTip3 control.
+        /// Panel1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList yearBeginDirTip3;
+        protected global::System.Web.UI.WebControls.Panel Panel1;
         
         /// <summary>
-        /// monthBeginDirTip3 control.
+        /// yearBeginTip3Dir control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList monthBeginDirTip3;
+        protected global::System.Web.UI.WebControls.DropDownList yearBeginTip3Dir;
         
         /// <summary>
-        /// dayBeginDirTip3 control.
+        /// monthBeginTip3Dir control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dayBeginDirTip3;
+        protected global::System.Web.UI.WebControls.DropDownList monthBeginTip3Dir;
         
         /// <summary>
-        /// Panel6 control.
+        /// dayBeginTip3Dir control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel6;
+        protected global::System.Web.UI.WebControls.DropDownList dayBeginTip3Dir;
         
         /// <summary>
-        /// yearEndDirTip3 control.
+        /// Panel2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList yearEndDirTip3;
+        protected global::System.Web.UI.WebControls.Panel Panel2;
         
         /// <summary>
-        /// monthEndDirTip3 control.
+        /// yearEndTip3Dept control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList monthEndDirTip3;
+        protected global::System.Web.UI.WebControls.DropDownList yearEndTip3Dept;
         
         /// <summary>
-        /// dayEndDirTip3 control.
+        /// monthEndTip3Dir control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dayEndDirTip3;
+        protected global::System.Web.UI.WebControls.DropDownList monthEndTip3Dir;
         
         /// <summary>
-        /// okReportDirTip3 control.
+        /// dayEndTip3Dir control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button okReportDirTip3;
+        protected global::System.Web.UI.WebControls.DropDownList dayEndTip3Dir;
         
         /// <summary>
-        /// resetReportDirTip3 control.
+        /// okReportTip3Dir control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button resetReportDirTip3;
+        protected global::System.Web.UI.WebControls.Button okReportTip3Dir;
+        
+        /// <summary>
+        /// resetReportTip3Dir control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button resetReportTip3Dir;
     }
 }

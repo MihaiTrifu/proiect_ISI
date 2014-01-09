@@ -2,74 +2,78 @@
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <hgroup class="title">
-        <h1>~ Add Employee</h1>
+        <h1>
+            <br />
+            <span style="font-family: Andalus; color: #3E5667; display: inline">~ Add Employee<br />
+            <br />
+            </span></h1>
     </hgroup>
-
-    <aside style="z-index: 1; height: 127px; right: 10px; margin-right: 0px; margin-top: 0px;">
-        <ul>
-            <li><a id="A5" runat="server" href="Add_emp.aspx">Add Employee</a></li>
-            <li><a id="A6" runat="server" href="Add_div.aspx">Add Division</a></li>
-            <li><a id="A7" runat="server" href="Add_dept.aspx">Add Department</a></li>
+    <aside height: 48px; right: 4px;  0px; position: relative; top: -60px;">
+        <ul style="text-align: right">
+            <span style="font-family: 'Segoe UI'; font-size: large"><b>
+            <li1><a id="A5" runat="server" href="Add_emp.aspx" style="color: #7AC0DA">Add Employee</a></li1></b> <b>
+            <li2><a id="A7" runat="server" href="Add_dept.aspx" style="color: #7AC0DA">Add Department</a></li2></b> <b>
+            <li3><a id="A6" runat="server" href="Add_div.aspx" style="color: #7AC0DA">Add Division</a></li3></b></span>
         </ul>
     </aside>
-    <asp:Panel ID="Panel1" runat="server" Height="400px" Width="546px">
+    <asp:Panel ID="Panel1" runat="server" Height="475px" Width="546px">
         <table>
             <tr>
-                <td align="right" style="width: 179px">
-                    <asp:Label ID="FirstNameLabel" runat="server" AssociatedControlID="FirstName" Height="20px">First Name:</asp:Label>
+                <td align="right" style="width: 159px">
+                    <asp:Label ID="FirstNameLabel" runat="server" AssociatedControlID="FirstName" Height="20px" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: small; color: #3E5667">First Name:</asp:Label>
                 </td>
                 <td style="width: 308px">
-                    <asp:TextBox ID="FirstName" runat="server" Width="281px"></asp:TextBox>
+                    <asp:TextBox ID="FirstName" runat="server" Width="281px" Height="16px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="FirstNameRequired" runat="server" ControlToValidate="FirstName" CssClass="field-validation-error" ErrorMessage="*" />
                 </td>
             </tr>
             <tr>
-                <td align="right" style="width: 179px">
-                    <asp:Label ID="LastNameLabel" runat="server" AssociatedControlID="LastName" Height="20px">Last Name:</asp:Label>
+                <td align="right" style="width: 159px">
+                    <asp:Label ID="LastNameLabel" runat="server" AssociatedControlID="LastName" Height="20px" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: small; color: #3E5667">Last Name:</asp:Label>
                 </td>
                 <td style="width: 308px">
-                    <asp:TextBox ID="LastName" runat="server" Width="281px"></asp:TextBox>
+                    <asp:TextBox ID="LastName" runat="server" Width="281px" Height="16px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="LastNameRequired" runat="server" ControlToValidate="LastName" CssClass="field-validation-error" ErrorMessage="*" />
                 </td>
             </tr>
             <tr>
-                <td align="right" style="width: 179px">
-                    <asp:Label ID="UserIDLabel" runat="server" AssociatedControlID="UserID" Height="20px">User ID:</asp:Label>
+                <td align="right" style="width: 159px">
+                    <asp:Label ID="UserIDLabel" runat="server" AssociatedControlID="UserID" Height="20px" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: small; color: #3E5667">User ID:</asp:Label>
                 </td>
                 <td style="width: 308px">
-                    <asp:TextBox ID="UserID" runat="server" Width="281px"></asp:TextBox>
+                    <asp:TextBox ID="UserID" runat="server" Width="281px" Height="16px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="UserIDRequired" runat="server" ControlToValidate="UserID" CssClass="field-validation-error" ErrorMessage="*" />
                 </td>
             </tr>
             <tr>
-                <td align="right" style="width: 179px">
-                    <asp:Label ID="PasswordLabel" runat="server" AssociatedControlID="Password">Password:</asp:Label>
+                <td align="right" style="width: 159px">
+                    <asp:Label ID="PasswordLabel" runat="server" AssociatedControlID="Password" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: small; color: #3E5667">Password:</asp:Label>
                 </td>
                 <td style="width: 308px">
-                    <asp:TextBox ID="Password" runat="server" TextMode="Password" Width="280px"></asp:TextBox>
+                    <asp:TextBox ID="Password" runat="server" TextMode="Password" Width="280px" Height="16px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="PasswordRequired" runat="server" ControlToValidate="Password" CssClass="field-validation-error" ErrorMessage="*" />
                 </td>
             </tr>
             <tr>
-                <td align="right" style="width: 179px">
-                    <asp:Label ID="ConfirmPasswordLabel" runat="server" AssociatedControlID="ConfirmPassword">Confirm Password:</asp:Label>
+                <td align="right" style="width: 159px">
+                    <asp:Label ID="ConfirmPasswordLabel" runat="server" AssociatedControlID="ConfirmPassword" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: small; color: #3E5667">Confirm Password:</asp:Label>
                 </td>
                 <td style="width: 308px">
-                    <asp:TextBox ID="ConfirmPassword" runat="server" TextMode="Password" Width="280px"></asp:TextBox>
+                    <asp:TextBox ID="ConfirmPassword" runat="server" TextMode="Password" Width="280px" Height="16px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="ConfirmPasswordRequired" runat="server" ControlToValidate="ConfirmPassword" CssClass="field-validation-error" ErrorMessage="*" />
                 </td>
             </tr>
             <tr>
-                <td align="right" style="width: 179px">
-                    <asp:Label ID="EmailLabel" runat="server" AssociatedControlID="Email">E-mail:</asp:Label>
+                <td align="right" style="width: 159px">
+                    <asp:Label ID="EmailLabel" runat="server" AssociatedControlID="Email" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: small; color: #3E5667">E-mail:</asp:Label>
                 </td>
                 <td style="width: 308px">
-                    <asp:TextBox ID="Email" runat="server" Width="280px"></asp:TextBox>
+                    <asp:TextBox ID="Email" runat="server" Width="280px" Height="16px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="EmailRequired" runat="server" ControlToValidate="Email" CssClass="field-validation-error" ErrorMessage="*" />
                 </td>
             </tr>
             <tr>
-                <td align="right" style="width: 179px">&nbsp;</td>
+                <td align="right" style="width: 159px">&nbsp;</td>
                 <td style="width: 308px">&nbsp;</td>
             </tr>
             <tr>
@@ -93,10 +97,10 @@
                 </td>
             </tr>
             <tr>
-                <td style="width: 179px">&nbsp;</td>
+                <td style="width: 159px">&nbsp;</td>
                 <td>
                     <p style="text-align: right">
-                        <asp:Button ID="Button1" runat="server" Text="Create" OnClick="AddEmp"/>
+                        <asp:Button ID="Button1" runat="server" Text="Create" OnClick="AddEmp" Font-Size="XX-Small"/>
                     </p>
                 </td>
             </tr>

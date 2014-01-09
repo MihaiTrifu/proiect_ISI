@@ -13,102 +13,75 @@ namespace TimeSheet.Dept_Manager {
     public partial class Dept_AproveEmp {
         
         /// <summary>
-        /// Panel1 control.
+        /// A501 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel1;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A501;
         
         /// <summary>
-        /// A531 control.
+        /// A502 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A531;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A502;
         
         /// <summary>
-        /// A631 control.
+        /// Panel4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A631;
+        protected global::System.Web.UI.WebControls.Panel Panel4;
         
         /// <summary>
-        /// empAproveDept control.
+        /// selectDeptNameEdit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList empAproveDept;
+        protected global::System.Web.UI.WebControls.DropDownList selectDeptNameEdit;
         
         /// <summary>
-        /// yearAproveDept control.
+        /// yearSelectAprove control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList yearAproveDept;
+        protected global::System.Web.UI.WebControls.DropDownList yearSelectAprove;
         
         /// <summary>
-        /// monthAproveDept control.
+        /// monthSelectAprove control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList monthAproveDept;
+        protected global::System.Web.UI.WebControls.DropDownList monthSelectAprove;
         
         /// <summary>
-        /// DropDownList4 control.
+        /// daySelectAprove control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList4;
+        protected global::System.Web.UI.WebControls.DropDownList daySelectAprove;
         
         /// <summary>
-        /// Panel3 control.
+        /// open control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel3;
-        
-        /// <summary>
-        /// Label2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
-        
-        /// <summary>
-        /// Panel2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel2;
-        
-        /// <summary>
-        /// aproveEmpDept control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button aproveEmpDept;
+        protected global::System.Web.UI.WebControls.Button open;
     }
 }

@@ -13,48 +13,48 @@ namespace TimeSheet.Dept_Manager {
     public partial class Dept_management {
         
         /// <summary>
-        /// Panel1 control.
+        /// A2004 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel1;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A2004;
         
         /// <summary>
-        /// Label1 control.
+        /// A2001 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A2001;
         
         /// <summary>
-        /// A501 control.
+        /// A2002 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A501;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A2002;
         
         /// <summary>
-        /// A502 control.
+        /// A2003 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A502;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A2003;
         
         /// <summary>
-        /// A503 control.
+        /// Panel2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A503;
+        protected global::System.Web.UI.WebControls.Panel Panel2;
     }
 }

@@ -22,15 +22,6 @@ namespace TimeSheet.Admin {
         protected global::System.Web.UI.HtmlControls.HtmlAnchor A51;
         
         /// <summary>
-        /// A61 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A61;
-        
-        /// <summary>
         /// A71 control.
         /// </summary>
         /// <remarks>
@@ -38,6 +29,15 @@ namespace TimeSheet.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor A71;
+        
+        /// <summary>
+        /// A61 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A61;
         
         /// <summary>
         /// A81 control.
@@ -58,48 +58,93 @@ namespace TimeSheet.Admin {
         protected global::System.Web.UI.WebControls.Panel Panel1;
         
         /// <summary>
-        /// deptListEditStr control.
+        /// SelectDepartmentLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList deptListEditStr;
+        protected global::System.Web.UI.WebControls.Label SelectDepartmentLabel;
         
         /// <summary>
-        /// ChangeDeptName control.
+        /// selectDeptNameEdit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ChangeDeptName;
+        protected global::System.Web.UI.WebControls.DropDownList selectDeptNameEdit;
         
         /// <summary>
-        /// ChangeDeptId control.
+        /// DepartmentNameLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ChangeDeptId;
+        protected global::System.Web.UI.WebControls.Label DepartmentNameLabel;
         
         /// <summary>
-        /// deptManagerNameEdit control.
+        /// deptNameEdit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox deptManagerNameEdit;
+        protected global::System.Web.UI.WebControls.TextBox deptNameEdit;
         
         /// <summary>
-        /// editDeptStr control.
+        /// DepartmentIDLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button editDeptStr;
+        protected global::System.Web.UI.WebControls.Label DepartmentIDLabel;
+        
+        /// <summary>
+        /// deptIdEdit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox deptIdEdit;
+        
+        /// <summary>
+        /// ManagerNameLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ManagerNameLabel;
+        
+        /// <summary>
+        /// EmployeesList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList EmployeesList;
+        
+        /// <summary>
+        /// EmployeesListRequired control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator EmployeesListRequired;
+        
+        /// <summary>
+        /// editDept control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button editDept;
     }
 }
