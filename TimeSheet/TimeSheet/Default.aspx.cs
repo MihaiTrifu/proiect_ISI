@@ -24,6 +24,8 @@ namespace TimeSheet
             {
                 if (user.Password == Login1.Password)
                 {
+                    SiteMaster.currentUser = user;
+
                     switch (user.Job)
                     {
                         case "Angajat":

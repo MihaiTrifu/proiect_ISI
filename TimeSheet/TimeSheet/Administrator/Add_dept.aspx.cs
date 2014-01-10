@@ -13,17 +13,22 @@ namespace TimeSheet.Admin
         {
             if (!IsPostBack)
             {
-                Database1Entities bd = new Database1Entities();
-                var employeeList = from c in bd.Users where c.Job == "Angajat" select new { c.ID };
-                var divisionList = from c in bd.Divisions select new { c.DivisionID };
-
-                DivisionsList.DataValueField = "DivisionID";
-                DivisionsList.DataSource = divisionList.ToArray();
-
-                EmployeesList.DataValueField = "ID";
-                EmployeesList.DataSource = employeeList.ToArray();
-                DataBind();
+                loadData();
             }
+        }
+
+        protected void loadData()
+        {
+            Database1Entities bd = new Database1Entities();
+            var employeeList = from c in bd.Users where c.Job == "Angajat" select new { c.ID };
+            var divisionList = from c in bd.Divisions select new { c.DivisionID };
+
+            DivisionsList.DataValueField = "DivisionID";
+            DivisionsList.DataSource = divisionList.ToArray();
+
+            EmployeesList.DataValueField = "ID";
+            EmployeesList.DataSource = employeeList.ToArray();
+            DataBind();
         }
 
         protected void addDepartment(object sender, EventArgs e)
@@ -61,7 +66,10 @@ namespace TimeSheet.Admin
                 user.Job = "Sef Departament";
 
                 if (Page.IsValid)
+                {
                     bd.SaveChanges();
+                    loadData();
+                }
             }
             else
             {

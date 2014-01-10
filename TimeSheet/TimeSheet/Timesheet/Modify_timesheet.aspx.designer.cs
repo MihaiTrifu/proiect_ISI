@@ -19,7 +19,7 @@ namespace TimeSheet.Timesheet {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel11;
+        protected global::System.Web.UI.WebControls.Panel Panel1;
         
         /// <summary>
         /// Panel4 control.
@@ -28,7 +28,7 @@ namespace TimeSheet.Timesheet {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel7;
+        protected global::System.Web.UI.WebControls.Panel Panel4;
         
         /// <summary>
         /// Label1 control.
@@ -37,7 +37,7 @@ namespace TimeSheet.Timesheet {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label6;
+        protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
         /// Panel2 control.
@@ -46,7 +46,7 @@ namespace TimeSheet.Timesheet {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel12;
+        protected global::System.Web.UI.WebControls.Panel Panel2;
         
         /// <summary>
         /// selectYearAdd control.
@@ -55,7 +55,7 @@ namespace TimeSheet.Timesheet {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList selectYearAddTs;
+        protected global::System.Web.UI.WebControls.DropDownList selectYearAdd;
         
         /// <summary>
         /// selectMonthAdd control.
@@ -64,7 +64,7 @@ namespace TimeSheet.Timesheet {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList selectMonthAddTs;
+        protected global::System.Web.UI.WebControls.DropDownList selectMonthAdd;
         
         /// <summary>
         /// selectDayAdd control.
@@ -73,7 +73,7 @@ namespace TimeSheet.Timesheet {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList selectDayAddTs;
+        protected global::System.Web.UI.WebControls.DropDownList selectDayAdd;
         
         /// <summary>
         /// Panel3 control.
@@ -82,7 +82,7 @@ namespace TimeSheet.Timesheet {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel13;
+        protected global::System.Web.UI.WebControls.Panel Panel3;
         
         /// <summary>
         /// modifyTimesheet control.
@@ -91,6 +91,6 @@ namespace TimeSheet.Timesheet {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button modifyTimesheetTs;
+        protected global::System.Web.UI.WebControls.Button modifyTimesheet;
     }
 }

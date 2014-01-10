@@ -13,20 +13,25 @@ namespace TimeSheet.Admin
         {
             if (!IsPostBack)
             {
-                Database1Entities bd = new Database1Entities();
-                var employeeList = from c in bd.Users where c.Job == "Angajat" select new { c.ID };
-
-                EmployeesList.DataValueField = "ID";
-                EmployeesList.DataSource = employeeList.ToArray();
-                DataBind();
-
-                Users director = bd.Users.Where(t => t.Job == "Director").FirstOrDefault();
-
-                if (director != null)
-                    CurrentDirector.Text = director.ID;
-                else
-                    CurrentDirector.Text = "No director set";
+                loadData();
             }
+        }
+
+        protected void loadData()
+        {
+            Database1Entities bd = new Database1Entities();
+            var employeeList = from c in bd.Users where c.Job == "Angajat" select new { c.ID };
+
+            EmployeesList.DataValueField = "ID";
+            EmployeesList.DataSource = employeeList.ToArray();
+            DataBind();
+
+            Users director = bd.Users.Where(t => t.Job == "Director").FirstOrDefault();
+
+            if (director != null)
+                CurrentDirector.Text = director.ID;
+            else
+                CurrentDirector.Text = "No director set";
         }
 
         protected void SaveNewDir(object sender, EventArgs e)
@@ -41,9 +46,10 @@ namespace TimeSheet.Admin
             newDir.Job = "Director";
 
             if (Page.IsValid)
+            {
                 bd.SaveChanges();
-
-            Response.Redirect("~/Administrator/Edit_dir.aspx");
+                loadData();
+            }
         }
 
     }
