@@ -14,9 +14,16 @@ namespace TimeSheet
     
     public partial class Dept
     {
+        public Dept()
+        {
+            this.Activities = new HashSet<Activities>();
+        }
+    
         public string ManagerID { get; set; }
         public string Name { get; set; }
         public string DeptID { get; set; }
         public string DivisionID { get; set; }
+    
+        public virtual ICollection<Activities> Activities { get; set; }
     }
 }

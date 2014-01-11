@@ -7,6 +7,10 @@
     <EntitySet Name="Projects" EntityType="Database1Model.Store.Projects" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="Timesheets" EntityType="Database1Model.Store.Timesheets" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="Users" EntityType="Database1Model.Store.Users" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK__Activitie__DeptI__4D5F7D71" Association="Database1Model.Store.FK__Activitie__DeptI__4D5F7D71">
+      <End Role="Dept" EntitySet="Dept" />
+      <End Role="Activities" EntitySet="Activities" />
+    </AssociationSet>
   </EntityContainer>
   <EntityType Name="Activities">
     <Key>
@@ -18,7 +22,7 @@
   </EntityType>
   <EntityType Name="Dept">
     <Key>
-      <PropertyRef Name="ManagerID" />
+      <PropertyRef Name="DeptID" />
     </Key>
     <Property Name="ManagerID" Type="varchar" Nullable="false" MaxLength="50" />
     <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
@@ -27,7 +31,7 @@
   </EntityType>
   <EntityType Name="Divisions">
     <Key>
-      <PropertyRef Name="ManagerID" />
+      <PropertyRef Name="DivisionID" />
     </Key>
     <Property Name="ManagerID" Type="varchar" Nullable="false" MaxLength="50" />
     <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
@@ -65,4 +69,18 @@
     <Property Name="DeptID" Type="varchar" MaxLength="50" />
     <Property Name="Proj_name" Type="varchar" MaxLength="50" />
   </EntityType>
+  <Association Name="FK__Activitie__DeptI__4D5F7D71">
+    <End Role="Dept" Type="Database1Model.Store.Dept" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Activities" Type="Database1Model.Store.Activities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dept">
+        <PropertyRef Name="DeptID" />
+      </Principal>
+      <Dependent Role="Activities">
+        <PropertyRef Name="DeptID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

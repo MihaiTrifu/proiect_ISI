@@ -19,19 +19,14 @@
      <asp:Panel ID="Panel1" runat="server" Height="400px" Width="546px">
         <table align="left" style="width: 100%; float: left; font-family: Verdana; margin-right: 0px;">
             <tr>
-                <td align="right" style="width: 179px; height: 79px;">
-                    <asp:Label ID="CurrentDirectorLabel" runat="server" Font-Bold="True" style="font-family: 'Book Antiqua'; color: #3E5667; font-size: small">Current Director:</asp:Label>
-                </td></span><span style="font-family: 'Segoe UI'; font-size: large">
+                <td style="width: 101px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667; height: 47px;"><b>Current Director:</b></td>
                 <td style="height: 79px">
                     <asp:TextBox ID="CurrentDirector" runat="server" Height="16px" ReadOnly="true" Width="271px"></asp:TextBox>
                 </td>
-                </span>
             </tr>
 
             <tr>
-                <td align="right" style="width: 179px; height: 58px;">
-                    <asp:Label ID="NewDirectorLabel" runat="server" Font-Bold="True" AssociatedControlID="EmployeesList">New Director:</asp:Label>
-                </td>
+                <td style="width: 101px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667; height: 47px;"><b>New Director:</b>
                 <td style="height: 58px">
                     <asp:DropDownList ID="EmployeesList" runat="server" Height="21px" style="margin-left: 12px" ViewStateMode="Enabled" Width="283px">
                     </asp:DropDownList>
@@ -50,6 +45,6 @@
          </span>
     </asp:Panel>
     </b>
-    </span>
+</span>
 </asp:Content>
     

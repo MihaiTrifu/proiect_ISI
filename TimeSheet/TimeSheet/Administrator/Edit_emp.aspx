@@ -20,35 +20,46 @@
      <asp:Panel ID="Panel1" runat="server" Height="400px" Width="546px">
         <table align="left" style="width: 100%; float: left; font-family: Verdana; margin-right: 0px;">
             <tr>
-                <td style="width: 179px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667;">&nbsp;Select User:</td>
+                <td style="width: 101px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667; height: 47px;"><b>Select User:</b></td>
                 <td>
-                    <asp:DropDownList ID="userListEdit" runat="server" Height="20px" style="margin-left: 8px" Width="282px">
+                    <asp:DropDownList ID="EmployeesList" runat="server" Height="20px" style="margin-left: 8px" Width="282px">
                     </asp:DropDownList>
                 </td>
             </tr>
             <tr>
-                <td style="width: 179px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667; height: 50px;">Change Name:</td>
-                <td style="height: 50px">
-                    <asp:TextBox ID="ChangeName" runat="server" Height="16px" Width="271px"></asp:TextBox>
-                    *</td>
+                <td style="width: 101px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667; height: 47px;"><b>Password:</b></td>
+                <td style="width: 308px">
+                    <asp:TextBox ID="Password" runat="server" TextMode="Password" Width="280px" Height="16px"></asp:TextBox>
+                </td>
             </tr>
             <tr>
-                <td style="width: 179px; font-family: 'Book Antiqua'; font-weight: bold; font-size: small; color: #3E5667; height: 46px;"><span style="font-size: small; border-width: 0; padding-right: 2em"><b>New Password:&nbsp;</b></span></td>
-                <td style="height: 46px">
-                    <asp:TextBox ID="NewPassord" runat="server" Height="16px" Width="273px"></asp:TextBox>
-                    *</td>
+                <td style="width: 101px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667; height: 47px;"><b>Confirm Password:</b></td>
+                <td style="width: 308px">
+                    <asp:TextBox ID="ConfirmPassword" runat="server" TextMode="Password" Width="280px" Height="16px"></asp:TextBox>
+                </td>
             </tr>
             <tr>
-                <td style="width: 179px; font-family: 'Book Antiqua'; font-weight: bold; font-size: small; color: #3E5667; height: 66px;"><span style="font-size: small; border-width: 0; padding-right: 2em"><b>New Email:</b></span></td>
+                <td style="width: 101px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667; height: 47px;"><b>New EMail:</b></td>
                 <td style="height: 66px">
-                    <asp:TextBox ID="NewEmail" runat="server" Height="16px" Width="274px"></asp:TextBox>
-                    *</td>
+                    <asp:TextBox ID="NewEmail" runat="server" Height="16px" Width="280px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <asp:CompareValidator ID="PasswordCompare" runat="server" ControlToCompare="Password" ControlToValidate="ConfirmPassword" Display="Dynamic" ErrorMessage="The Password and Confirmation Password must match." ForeColor="Red" Font-Bold="True"></asp:CompareValidator>
+                </td>
             </tr>
             <tr>
                 <td style="width: 179px">&nbsp;</td>
                 <td>
                     <p style="text-align: right">
-                        <asp:Button ID="EditEmp" runat="server" Text="Save" Font-Size="XX-Small" />
+                        <asp:Button ID="EditEmp" runat="server" Text="Save" Font-Size="XX-Small" OnClick="SaveChanges"/>
+                    </p>
+                </td>
+                <td style="width: 179px">&nbsp;</td>
+                <td>
+                    <p style="text-align: right">
+                        <asp:Button ID="DelUser" runat="server" Text="Delete User" Font-Size="XX-Small" OnClick="DeleteUser"/>
                     </p>
                 </td>
             </tr>

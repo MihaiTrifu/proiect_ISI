@@ -11,7 +11,79 @@ namespace TimeSheet.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                loadData();
+            }
         }
+
+        protected void loadData()
+        {
+            Database1Entities bd = new Database1Entities();
+            var employeeList = from c in bd.Users where c.Job == "Angajat" select new { c.ID };
+            var divisionList = from c in bd.Divisions select new { c.DivisionID };
+
+            EmployeesList.DataValueField = "ID";
+            EmployeesList.DataSource = employeeList.ToArray();
+
+            DivisionsList.DataValueField = "DivisionID";
+            DivisionsList.DataSource = divisionList.ToArray();
+
+            DataBind();
+        }
+
+        protected void DivisionList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Database1Entities bd = new Database1Entities();
+            var departmentList = from c in bd.Dept where c.DivisionID == DivisionsList.SelectedItem.Value select new { c.DeptID };
+
+            DeptList.DataValueField = "DeptID";
+            DeptList.DataSource = departmentList.ToArray();
+
+            DataBind();
+        }
+
+        protected void SaveChanges(object sender, EventArgs e)
+        {
+            Database1Entities bd = new Database1Entities();
+  
+            Users oldManager = bd.Users.Where(t => t.DeptID == DeptList.SelectedItem.Value && t.Job == "Sef Departament").FirstOrDefault();
+            if (oldManager != null)
+                oldManager.Job = "Angajat";
+
+            Users newManager = bd.Users.Where(t => t.ID == EmployeesList.SelectedItem.Value).FirstOrDefault();
+            newManager.Job = "Sef Departament";
+
+            Dept editDept = bd.Dept.Where(t => t.DeptID == DeptList.SelectedItem.Value).FirstOrDefault();
+            editDept.ManagerID = EmployeesList.SelectedItem.Value;
+
+            if (Page.IsValid)
+            {
+                bd.SaveChanges();
+                loadData();
+            }
+        }
+
+        protected void DeleteDepart(object sender, EventArgs e)
+        {
+            Database1Entities bd = new Database1Entities();
+
+            Dept editDept = bd.Dept.Where(t => t.DeptID == DeptList.SelectedItem.Value).FirstOrDefault();
+
+            bd.Dept.Remove(editDept);
+
+            List<Users> editUsersList = bd.Users.Where(t => t.DeptID == DeptList.SelectedItem.Value).ToList();
+            Users editUsers = new Users();
+
+            for (int i = 0; i < editUsersList.Count(); i++)
+            {
+                editUsers = (Users)editUsersList.ElementAt(i);
+                editUsers.DeptID = null;
+                editUsers.Job = "Angajat";
+
+                if (Page.IsValid)
+                    bd.SaveChanges();
+            }
+        }        
     }
 }

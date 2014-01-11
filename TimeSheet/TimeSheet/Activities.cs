@@ -17,5 +17,7 @@ namespace TimeSheet
         public string ManagerID { get; set; }
         public string Name { get; set; }
         public string DeptID { get; set; }
+    
+        public virtual Dept Dept { get; set; }
     }
 }

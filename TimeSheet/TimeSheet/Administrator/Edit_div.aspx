@@ -16,61 +16,37 @@
             <li4><a id="A81" runat="server" href="Edit_dir.aspx" style="color: #7AC0DA; font-size: large;">Director</a></li4></b></span>
         </ul>
     </aside>
-     <asp:Panel ID="Panel1" runat="server" Height="400px" Width="576px">
-        <table align="left" style="width: 100%; float: left; font-family: Verdana; margin-right: 0px;">
+     <asp:Panel ID="Panel1" runat="server" Height="398px" Width="559px">
+        <table align="left" style="width: 99%; float: left; font-family: Verdana; margin-right: 0px; height: 230px;">
             <tr>
-                <td style="width: 162px; font-size: small; font-weight: 700; font-family: 'Book Antiqua'; color: #3E5667;">&nbsp;Select Division:</td>
-                <td style="width: 312px">
-                    <asp:DropDownList ID="divListEdit" runat="server" Height="27px" style="margin-left: 8px" Width="282px">
+                <td style="width: 101px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667; height: 47px;"><b>Select Division:</b></td> 
+                <td>
+                    <span style="font-family: 'Segoe UI'; font-size: large">
+                        <b>
+                            <asp:DropDownList ID="DivisionsList" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="291px"/>
+                        </b>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 101px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667; height: 47px;"><b>New Manager:</b></td>
+                <td>
+                    <asp:DropDownList ID="EmployeesList" runat="server" Height="18px" style="margin-left: 3px" ViewStateMode="Enabled" Width="291px"> 
                     </asp:DropDownList>
                 </td>
-                <td>&nbsp;</td>
             </tr>
             <tr>
-                <td style="width: 162px; font-size: small; font-weight: 700; font-family: 'Book Antiqua'; color: #3E5667;">Change Name:</td>
-                <td style="width: 312px">
-                    <asp:TextBox ID="ChangeDivName" runat="server" Height="19px" Width="271px"></asp:TextBox>
-                    *</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td style="width: 162px; font-size: small; font-weight: 700; font-family: 'Book Antiqua'; color: #3E5667;">Change ID:</td>
-                <td style="width: 312px">
-                    <asp:TextBox ID="ChangeDivId" runat="server" Height="19px" Width="271px"></asp:TextBox>
-                    *</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td style="width: 162px; font-size: small; font-weight: 700; font-family: 'Book Antiqua'; color: #3E5667;"> <span style="font-size: small; ">Remove Depratment: </span><span style="font-size: small; border-width: 0; padding-right: 2em"><b>&nbsp;</b></span></td>
-                <td style="width: 312px">
-                    <asp:ListBox ID="deptListEdit" runat="server" Height="27px" style="margin-left: 7px" Width="211px"></asp:ListBox>
-                    <asp:Button ID="delteDeptEdit" runat="server" Text="Delete" Font-Size="XX-Small" />
-                </td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td style="width: 162px; font-size: small; font-weight: 700; font-family: 'Book Antiqua'; color: #3E5667;">Add Department: </td>
-                <td style="width: 312px">
-                    <asp:ListBox ID="deptBigListEdit" runat="server" Height="27px" style="margin-left: 7px" Width="211px"></asp:ListBox>
-                    <asp:Button ID="addDeptEdit" runat="server" Text="Add" Font-Size="XX-Small" />
-                </td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td style="width: 162px; font-size: small; font-weight: 700; font-family: 'Book Antiqua'; color: #3E5667;">Manager:</td>
-                <td style="width: 312px">
-                    <asp:TextBox ID="divManagerNameEdit" runat="server" Height="18px" Width="274px"></asp:TextBox>
-               </td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td style="width: 162px">&nbsp;</td>
-                <td style="width: 312px">
+                <td style="width: 130px">&nbsp;</td>
+                <td>
                     <p style="text-align: right">
-                        <asp:Button ID="editDivStr" runat="server" Text="Save" Width="63px" Font-Size="XX-Small" />
+                        <asp:Button ID="editDept" runat="server" Font-Size="XX-Small" Text="Save Changes" OnClick="SaveChanges"/>
                     </p>
                 </td>
-                <td>&nbsp;</td>
+                <td>
+                    <p style="text-align: right">
+                        <asp:Button ID="DeleteDivision" runat="server" Font-Size="XX-Small" Text="Delete Division" OnClick="DeleteDiv"/>
+                    </p>
+                </td>
             </tr>
         </table>
     </asp:Panel>

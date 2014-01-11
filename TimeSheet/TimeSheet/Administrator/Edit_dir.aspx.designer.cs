@@ -58,15 +58,6 @@ namespace TimeSheet.Admin {
         protected global::System.Web.UI.WebControls.Panel Panel1;
         
         /// <summary>
-        /// CurrentDirectorLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label CurrentDirectorLabel;
-        
-        /// <summary>
         /// CurrentDirector control.
         /// </summary>
         /// <remarks>
@@ -74,15 +65,6 @@ namespace TimeSheet.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox CurrentDirector;
-        
-        /// <summary>
-        /// NewDirectorLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label NewDirectorLabel;
         
         /// <summary>
         /// EmployeesList control.

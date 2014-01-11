@@ -58,67 +58,31 @@ namespace TimeSheet.Admin {
         protected global::System.Web.UI.WebControls.Panel Panel1;
         
         /// <summary>
-        /// SelectDepartmentLabel control.
+        /// DivisionsList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label SelectDepartmentLabel;
+        protected global::System.Web.UI.WebControls.DropDownList DivisionsList;
         
         /// <summary>
-        /// selectDeptNameEdit control.
+        /// DeptList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList selectDeptNameEdit;
+        protected global::System.Web.UI.WebControls.DropDownList DeptList;
         
         /// <summary>
-        /// DepartmentNameLabel control.
+        /// DeptListRequired control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label DepartmentNameLabel;
-        
-        /// <summary>
-        /// deptNameEdit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox deptNameEdit;
-        
-        /// <summary>
-        /// DepartmentIDLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label DepartmentIDLabel;
-        
-        /// <summary>
-        /// deptIdEdit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox deptIdEdit;
-        
-        /// <summary>
-        /// ManagerNameLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ManagerNameLabel;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator DeptListRequired;
         
         /// <summary>
         /// EmployeesList control.
@@ -130,15 +94,6 @@ namespace TimeSheet.Admin {
         protected global::System.Web.UI.WebControls.DropDownList EmployeesList;
         
         /// <summary>
-        /// EmployeesListRequired control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator EmployeesListRequired;
-        
-        /// <summary>
         /// editDept control.
         /// </summary>
         /// <remarks>
@@ -146,5 +101,14 @@ namespace TimeSheet.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button editDept;
+        
+        /// <summary>
+        /// DeleteDept control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button DeleteDept;
     }
 }

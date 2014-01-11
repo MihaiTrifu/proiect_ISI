@@ -58,84 +58,39 @@ namespace TimeSheet.Admin {
         protected global::System.Web.UI.WebControls.Panel Panel1;
         
         /// <summary>
-        /// divListEdit control.
+        /// DivisionsList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList divListEdit;
+        protected global::System.Web.UI.WebControls.DropDownList DivisionsList;
         
         /// <summary>
-        /// ChangeDivName control.
+        /// EmployeesList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ChangeDivName;
+        protected global::System.Web.UI.WebControls.DropDownList EmployeesList;
         
         /// <summary>
-        /// ChangeDivId control.
+        /// editDept control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ChangeDivId;
+        protected global::System.Web.UI.WebControls.Button editDept;
         
         /// <summary>
-        /// deptListEdit control.
+        /// DeleteDivision control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox deptListEdit;
-        
-        /// <summary>
-        /// delteDeptEdit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button delteDeptEdit;
-        
-        /// <summary>
-        /// deptBigListEdit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox deptBigListEdit;
-        
-        /// <summary>
-        /// addDeptEdit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button addDeptEdit;
-        
-        /// <summary>
-        /// divManagerNameEdit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox divManagerNameEdit;
-        
-        /// <summary>
-        /// editDivStr control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button editDivStr;
+        protected global::System.Web.UI.WebControls.Button DeleteDivision;
     }
 }

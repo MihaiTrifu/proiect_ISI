@@ -39,18 +39,7 @@ namespace TimeSheet.Admin
             Dept isUniqueName = bd.Dept.Where(t => t.Name == DepartmentName.Text).FirstOrDefault();
             Dept isUniqueID = bd.Dept.Where(t => t.DeptID == DepartmentID.Text).FirstOrDefault();
 
-            bool isUniqueNameInDivision = true;
-            bool isUniqueIDInDivision = true;
-
-            if (isUniqueID != null)
-                if (isUniqueID.DivisionID == DivisionsList.SelectedItem.Value)
-                    isUniqueIDInDivision = false;
-
-            if (isUniqueName != null)
-                if (isUniqueName.DivisionID == DivisionsList.SelectedItem.Value)
-                    isUniqueNameInDivision = false;
-
-            if (isUniqueNameInDivision && isUniqueIDInDivision)
+            if (isUniqueName == null && isUniqueID == null)
             {
                 DuplicateError.Visible = false;
                 ConfirmMessage.Visible = true;
@@ -67,6 +56,15 @@ namespace TimeSheet.Admin
 
                 if (Page.IsValid)
                 {
+                    using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\LogFile.txt", true))
+                    {
+
+                        string text = "";
+                        //text += SiteMaster.currentUser.Job.ToString();
+                        text = text + "admin \t added " + DepartmentName.Text.ToString() + "\n";
+                        file.WriteLine(text);
+                    }
+
                     bd.SaveChanges();
                     loadData();
                 }

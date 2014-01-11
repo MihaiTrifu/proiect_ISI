@@ -49,15 +49,6 @@ namespace TimeSheet.Admin {
         protected global::System.Web.UI.WebControls.Panel Panel1;
         
         /// <summary>
-        /// FirstNameLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label FirstNameLabel;
-        
-        /// <summary>
         /// FirstName control.
         /// </summary>
         /// <remarks>
@@ -74,15 +65,6 @@ namespace TimeSheet.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator FirstNameRequired;
-        
-        /// <summary>
-        /// LastNameLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LastNameLabel;
         
         /// <summary>
         /// LastName control.
@@ -103,15 +85,6 @@ namespace TimeSheet.Admin {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator LastNameRequired;
         
         /// <summary>
-        /// UserIDLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label UserIDLabel;
-        
-        /// <summary>
         /// UserID control.
         /// </summary>
         /// <remarks>
@@ -128,15 +101,6 @@ namespace TimeSheet.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator UserIDRequired;
-        
-        /// <summary>
-        /// PasswordLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label PasswordLabel;
         
         /// <summary>
         /// Password control.
@@ -157,15 +121,6 @@ namespace TimeSheet.Admin {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator PasswordRequired;
         
         /// <summary>
-        /// ConfirmPasswordLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ConfirmPasswordLabel;
-        
-        /// <summary>
         /// ConfirmPassword control.
         /// </summary>
         /// <remarks>
@@ -182,15 +137,6 @@ namespace TimeSheet.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator ConfirmPasswordRequired;
-        
-        /// <summary>
-        /// EmailLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label EmailLabel;
         
         /// <summary>
         /// Email control.

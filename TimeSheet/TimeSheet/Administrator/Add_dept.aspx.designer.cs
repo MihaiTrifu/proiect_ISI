@@ -49,15 +49,6 @@ namespace TimeSheet.Admin {
         protected global::System.Web.UI.WebControls.Panel Panel1;
         
         /// <summary>
-        /// DepartmentNameLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label DepartmentNameLabel;
-        
-        /// <summary>
         /// DepartmentName control.
         /// </summary>
         /// <remarks>
@@ -74,15 +65,6 @@ namespace TimeSheet.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator DepartmentNameRequired;
-        
-        /// <summary>
-        /// DepartmentIDLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label DepartmentIDLabel;
         
         /// <summary>
         /// DepartmentID control.
@@ -103,15 +85,6 @@ namespace TimeSheet.Admin {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator DepartmentIDRequired;
         
         /// <summary>
-        /// ManagerIDLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ManagerIDLabel;
-        
-        /// <summary>
         /// EmployeesList control.
         /// </summary>
         /// <remarks>
@@ -128,15 +101,6 @@ namespace TimeSheet.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator EmployeesListRequired;
-        
-        /// <summary>
-        /// DivisionListLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label DivisionListLabel;
         
         /// <summary>
         /// DivisionsList control.

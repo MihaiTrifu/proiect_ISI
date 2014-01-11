@@ -11,7 +11,7 @@
         </ul>
     </aside>
     <asp:Panel ID="Panel3" runat="server" Height="400px" Width="545px">
-                <asp:CheckBox ID="CheckBox6" runat="server" Text="Log employees activities" TextAlign="Left" />
+        <asp:CheckBox ID="CheckBox6" runat="server" Text="Log employees activities" TextAlign="Left" />
         <asp:CheckBox ID="CheckBox7" runat="server" Text="Log dept managers activities" TextAlign="Left" />
         <asp:CheckBox ID="CheckBox8" runat="server" Text="Log div managers activities" TextAlign="Left" />
         <asp:CheckBox ID="CheckBox9" runat="server" Text="Log director activities" TextAlign="Left" />

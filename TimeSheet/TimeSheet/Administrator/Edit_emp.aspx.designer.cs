@@ -58,31 +58,31 @@ namespace TimeSheet.Admin {
         protected global::System.Web.UI.WebControls.Panel Panel1;
         
         /// <summary>
-        /// userListEdit control.
+        /// EmployeesList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList userListEdit;
+        protected global::System.Web.UI.WebControls.DropDownList EmployeesList;
         
         /// <summary>
-        /// ChangeName control.
+        /// Password control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ChangeName;
+        protected global::System.Web.UI.WebControls.TextBox Password;
         
         /// <summary>
-        /// NewPassord control.
+        /// ConfirmPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox NewPassord;
+        protected global::System.Web.UI.WebControls.TextBox ConfirmPassword;
         
         /// <summary>
         /// NewEmail control.
@@ -94,6 +94,15 @@ namespace TimeSheet.Admin {
         protected global::System.Web.UI.WebControls.TextBox NewEmail;
         
         /// <summary>
+        /// PasswordCompare control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator PasswordCompare;
+        
+        /// <summary>
         /// EditEmp control.
         /// </summary>
         /// <remarks>
@@ -101,5 +110,14 @@ namespace TimeSheet.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button EditEmp;
+        
+        /// <summary>
+        /// DelUser control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button DelUser;
     }
 }

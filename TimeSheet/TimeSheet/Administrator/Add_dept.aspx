@@ -17,27 +17,21 @@
     <asp:Panel ID="Panel1" runat="server" Height="398px" Width="559px">
         <table align="left" style="width: 99%; float: left; font-family: Verdana; margin-right: 0px; height: 230px;">
             <tr>
-                <td style="width: 130px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667;">
-                    <asp:Label ID="DepartmentNameLabel" runat="server" AssociatedControlID="DepartmentName">Department Name:</asp:Label>
-                </td>
+                <td style="width: 101px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667; height: 47px;"><b>Department Name:</b></td>
                 <td>
                     <asp:TextBox ID="DepartmentName" runat="server" Height="16px" Width="280px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="DepartmentNameRequired" runat="server" ControlToValidate="DepartmentName" CssClass="field-validation-error" ErrorMessage="*" />
                 </td>
             </tr>
             <tr>
-                <td style="width: 130px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667;">
-                    <asp:Label ID="DepartmentIDLabel" runat="server" AssociatedControlID="DepartmentID">Department ID:</asp:Label>
-                </td>
+                <td style="width: 101px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667; height: 47px;"><b>Department ID:</b></td>
                 <td>
                     <asp:TextBox ID="DepartmentID" runat="server" Height="16px" Width="280px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="DepartmentIDRequired" runat="server" ControlToValidate="DepartmentID" CssClass="field-validation-error" ErrorMessage="*" />
                 </td>
             </tr>
             <tr>
-                <td style="width: 130px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667;">
-                    <asp:Label ID="ManagerIDLabel" runat="server" AssociatedControlID="EmployeesList" Width="140px">Manager ID:</asp:Label>
-                </td>
+                <td style="width: 101px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667; height: 47px;"><b>Manager ID:</b></td>
                 <td style="height: 48px">
                     <asp:DropDownList ID="EmployeesList" runat="server" Height="20px" style="margin-left: 12px" ViewStateMode="Enabled" Width="289px">
                     </asp:DropDownList>
@@ -45,9 +39,7 @@
                 </td>
             </tr>
             <tr>
-                <td style="width: 130px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667;">
-                    <asp:Label ID="DivisionListLabel" runat="server" AssociatedControlID="DivisionsList">Division ID:</asp:Label>
-                </td>
+               `<td style="width: 101px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667; height: 47px;"><b>Division ID:</b></td>
                 <td style="height: 48px">
                     <asp:DropDownList ID="DivisionsList" runat="server" Height="20px" style="margin-left: 12px" ViewStateMode="Enabled" Width="288px">
                     </asp:DropDownList>

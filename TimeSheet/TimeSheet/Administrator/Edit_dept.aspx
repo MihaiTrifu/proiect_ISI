@@ -17,53 +17,53 @@
             <li4><a id="A81" runat="server" href="Edit_dir.aspx" style="color: #7AC0DA; font-size: large;">Director</a></li4></b></span>
         </ul>
     </aside>
-   <asp:Panel ID="Panel1" runat="server" Height="398px" Width="559px">
+    <asp:Panel ID="Panel1" runat="server" Height="398px" Width="559px">
         <table align="left" style="width: 99%; float: left; font-family: Verdana; margin-right: 0px; height: 230px;">
             <tr>
-                <td style="width: 130px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667;">
-                 <asp:Label ID="SelectDepartmentLabel" runat="server" Font-Bold="True">Select Department:</td> </asp:Label>
+                <td style="width: 101px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667; height: 47px;"><b>Select Division:</b></td>
                 <td>
-                    <span style="font-family: 'Segoe UI'; font-size: large"><b>
-                    <asp:DropDownList ID="selectDeptNameEdit" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="291px">
-                    </asp:DropDownList>
-
-                    </b></span></td>
+                    <span style="font-family: 'Segoe UI'; font-size: large">
+                        <b>
+                            <asp:DropDownList ID="DivisionsList" AppendDataBoundItems="true" OnSelectedIndexChanged="DivisionList_SelectedIndexChanged" AutoPostBack="true" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="291px">
+                                <asp:ListItem Text="Select Division.." Selected="True" />
+                            </asp:DropDownList>
+                        </b>
+                    </span>
+                </td>
             </tr>
             <tr>
-                <td style="width: 130px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667; height: 40px;">
-                <asp:Label ID="DepartmentNameLabel" runat="server" Font-Bold="True">Department Name:</td></asp:Label>
-                <td style="height: 40px">
-                    <asp:TextBox ID="deptNameEdit" runat="server" Height="16px" Width="280px"></asp:TextBox>
-                    </span><span style="font-family: 'Segoe UI'; "><span style="font-family: boo; font-size: small; color: #3E5667">*</span></span></td>
-            </tr>
-            </span><span style="font-family: 'Segoe UI'; font-size: large">
-            <tr>
-                <td style="width: 130px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667; height: 40px;">
-                    <asp:Label ID="DepartmentIDLabel" runat="server" Font-Bold="True">Department ID:</td></asp:Label>
-                <td style="height: 40px"><b><span style="font-family: 'Segoe UI'; font-size: large">
-                    <asp:TextBox ID="deptIdEdit" runat="server" Height="16px" Width="280px"></asp:TextBox>
-                    </span><span style="font-family: 'Book Antiqua'; font-size: small">*</span></b></td>
-            </tr>
-            <tr>
-                <td style="width: 130px; font-family: 'Book Antiqua'; color: #3E5667; font-weight: bold; font-size: small;"><span style="border-width: 0; padding-right: 2em">
-                   <asp:Label ID="ManagerNameLabel" runat="server" Font-Bold="True"> Manager Name:&nbsp;</span></td></asp:Label>
+                <td style="width: 101px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667; height: 47px;"><b>Select Department:</b></td> 
                 <td>
-                    <asp:DropDownList ID="EmployeesList" runat="server" Height="18px" style="margin-left: 3px" ViewStateMode="Enabled" Width="295px">
+                    <span style="font-family: 'Segoe UI'; font-size: large">
+                        <b>
+                            <asp:DropDownList ID="DeptList" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="291px"/>
+                            <asp:RequiredFieldValidator ID="DeptListRequired" runat="server" ControlToValidate="DeptList" CssClass="field-validation-error" ErrorMessage="*" />
+                        </b>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 101px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667; height: 47px;"><b>New Manager:</b></td>
+                <td>
+                    <asp:DropDownList ID="EmployeesList" runat="server" Height="18px" style="margin-left: 3px" ViewStateMode="Enabled" Width="291px"> 
                     </asp:DropDownList>
-                    <asp:RequiredFieldValidator ID="EmployeesListRequired" runat="server" ControlToValidate="EmployeesList" CssClass="field-validation-error" ErrorMessage="*" /> 
                 </td>
             </tr>
             <tr>
                 <td style="width: 130px">&nbsp;</td>
                 <td>
                     <p style="text-align: right">
-                        <asp:Button ID="editDept" runat="server" Font-Size="XX-Small" Text="Edit" />
+                        <asp:Button ID="editDept" runat="server" Font-Size="XX-Small" Text="Save Changes" OnClick="SaveChanges"/>
+                    </p>
+                </td>
+                <td style="width: 130px">&nbsp;</td>
+                <td>
+                    <p style="text-align: right">
+                        <asp:Button ID="DeleteDept" runat="server" Font-Size="XX-Small" Text="Delete Dept" OnClick="DeleteDepart"/>
                     </p>
                 </td>
             </tr>
-            </span>
         </table>
     </asp:Panel>
-    </b></span>
 </asp:Content>
     
