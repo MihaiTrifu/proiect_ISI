@@ -93,6 +93,12 @@ namespace TimeSheet.Dept_Manager
                 noWorkedHours = 8;
             }
 
+            if (noExtraHours != 0)
+            {
+                timeSlotBegin[noRows - 1].BorderColor = Color.Red;
+                timeSlotEnd[noRows - 1].BorderColor = Color.Red;
+            }
+
             hoursLabel.Text = noWorkedHours.ToString();
             extraHoursLabel.Text = noExtraHours.ToString();
         }
@@ -109,27 +115,27 @@ namespace TimeSheet.Dept_Manager
             timeSlotBegin[myRows - 1].SelectedIndex = timeSlotEnd[myRows - 2].SelectedIndex;
         }
 
-        protected int WorkedHours()
+        public int WorkedHours()
         {
             int number = 0;
             for (int i = 0; i < 12; i++)
             {
                 if (timeSlotBegin[i].Enabled == true && number < 8)
                 {
-                    number += Math.Abs(timeSlotBegin[i].SelectedIndex - timeSlotBegin[i].SelectedIndex);
+                    number += Int32.Parse(timeSlotEnd[i].SelectedValue) - Int32.Parse(timeSlotBegin[i].SelectedValue);
                 }
             }
             return number;
         }
 
-        protected int ExtraHours()
+        public int ExtraHours()
         {
             int number = 0;
             for (int i = 0; i < 12; i++)
             {
                 if (timeSlotBegin[i].Enabled == true && number >= 8)
                 {
-                    number += Math.Abs(timeSlotEnd[i].SelectedIndex - timeSlotBegin[i].SelectedIndex);
+                    number += Int32.Parse(timeSlotEnd[i].SelectedValue) - Int32.Parse(timeSlotBegin[i].SelectedValue);
                 }
             }
             return number;

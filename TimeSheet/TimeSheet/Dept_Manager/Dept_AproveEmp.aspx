@@ -44,7 +44,7 @@
                 <td style="width: 130px">&nbsp;</td>
                 <td>
                     <p style="text-align: right">
-                        <asp:Button ID="open" runat="server" Font-Size="XX-Small" Text="Open" />
+                        <asp:Button ID="open" runat="server" Font-Size="XX-Small" Text="Open" OnClick="open_Click" />
                     </p>
                 </td>
             </tr>

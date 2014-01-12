@@ -15,7 +15,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <asp:Button ID="addRowsButton0" runat="server" Font-Bold="True" Font-Size="XX-Small" Text="Add Rows" />
+                        <asp:Button ID="addRowsButton0" runat="server" Font-Bold="True" Font-Size="XX-Small" Text="Add Rows" OnClick="addRowsButton0_Click" />
                     </td>
                 </tr>
                 <tr>
@@ -38,7 +38,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <asp:Button ID="ExitButton" runat="server" BackColor="#999966" Font-Bold="True" Font-Size="XX-Small" ForeColor="Red" Text="Exit" />
+                        <asp:Button ID="ExitButton" runat="server" BackColor="#999966" Font-Bold="True" Font-Size="XX-Small" ForeColor="Red" Text="Exit" OnClick="ExitButton_Click" />
                     </td>
                 </tr>
             </table>
@@ -76,7 +76,6 @@
                 <tr>
                     <td style="text-align: center; width: 159px; height: 25px">
                         <asp:DropDownList ID="timeBegin1" runat="server" Height="16px" Width="61px">
-                             <asp:ListItem>-</asp:ListItem>
                              <asp:ListItem>6</asp:ListItem>
                             <asp:ListItem>7</asp:ListItem>
                             <asp:ListItem>8</asp:ListItem>
@@ -96,7 +95,6 @@
                             <asp:ListItem>22</asp:ListItem>
                         </asp:DropDownList>
                         <asp:DropDownList ID="timeEnd1" runat="server" style="margin-top: 3px" Height="16px" Width="61px">
-                            <asp:ListItem>-</asp:ListItem>
                             <asp:ListItem>6</asp:ListItem>
                             <asp:ListItem>7</asp:ListItem>
                             <asp:ListItem>8</asp:ListItem>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -9,21 +10,21 @@ namespace TimeSheet.Dept_Manager
 {
     public partial class Dept_modifyDaily : System.Web.UI.Page
     {
-        int noWorkedHours = 0;
-        int noExtraHours = 0;
+        private int noWorkedHours = 0;
+        private int noExtraHours = 0;
         private static int noRows = 1;
         private int myRows;
 
 
-        public string status = "Open";
-        public string year = "1900";
-        public string month = "August";
-        public string day = "1";
+        private string status = "Open";
+        private string year = "1900";
+        private string month = "August";
+        private string day = "1";
 
-        public DropDownList[] activity = new DropDownList[12];
-        public DropDownList[] timeSlotBegin = new DropDownList[12];
-        public DropDownList[] timeSlotEnd = new DropDownList[12];
-        public CheckBox[] delete = new CheckBox[12];
+        private DropDownList[] activity = new DropDownList[12];
+        private DropDownList[] timeSlotBegin = new DropDownList[12];
+        private DropDownList[] timeSlotEnd = new DropDownList[12];
+        private CheckBox[] delete = new CheckBox[12];
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -93,43 +94,38 @@ namespace TimeSheet.Dept_Manager
                 noWorkedHours = 8;
             }
 
+            if (noExtraHours != 0)
+            { 
+                timeSlotBegin[noRows-1].BorderColor =  Color.Red;
+                timeSlotEnd[noRows - 1].BorderColor = Color.Red;
+            }
+
             hoursLabel.Text = noWorkedHours.ToString();
             extraHoursLabel.Text = noExtraHours.ToString();
+
         }
 
-        protected void addRowsButton_Click(object sender, EventArgs e)
-        {
-            myRows = ++noRows;
-
-            activity[myRows - 1].Enabled = true;
-            timeSlotEnd[myRows - 1].Enabled = true;
-            timeSlotBegin[myRows - 1].Enabled = true;
-            delete[myRows - 1].Enabled = true;
-
-            timeSlotBegin[myRows - 1].SelectedIndex = timeSlotEnd[myRows - 2].SelectedIndex;
-        }
-
-        protected int WorkedHours()
-        {
+        public int WorkedHours()
+        { 
             int number = 0;
             for (int i = 0; i < 12; i++)
             {
                 if (timeSlotBegin[i].Enabled == true && number < 8)
                 {
-                    number += Math.Abs(timeSlotBegin[i].SelectedIndex - timeSlotBegin[i].SelectedIndex);
+                    number += Int32.Parse(timeSlotEnd[i].SelectedValue) - Int32.Parse(timeSlotBegin[i].SelectedValue);
                 }
             }
             return number;
         }
 
-        protected int ExtraHours()
+        public int ExtraHours()
         {
             int number = 0;
             for (int i = 0; i < 12; i++)
             {
                 if (timeSlotBegin[i].Enabled == true && number >= 8)
                 {
-                    number += Math.Abs(timeSlotEnd[i].SelectedIndex - timeSlotBegin[i].SelectedIndex);
+                    number += Int32.Parse(timeSlotEnd[i].SelectedValue) - Int32.Parse(timeSlotBegin[i].SelectedValue);
                 }
             }
             return number;
@@ -170,6 +166,18 @@ namespace TimeSheet.Dept_Manager
         protected void monthlyViewButton_Click(object sender, EventArgs e)
         {
             Response.Redirect("Dept_modifyMonthlyView.aspx");
+        }
+
+        protected void addRowsButton0_Click(object sender, EventArgs e)
+        {
+            myRows = ++noRows;
+
+            activity[myRows - 1].Enabled = true;
+            timeSlotEnd[myRows - 1].Enabled = true;
+            timeSlotBegin[myRows - 1].Enabled = true;
+            delete[myRows - 1].Enabled = true;
+
+            timeSlotBegin[myRows - 1].SelectedValue = timeSlotEnd[myRows - 2].SelectedValue;
         }
     }
 }
