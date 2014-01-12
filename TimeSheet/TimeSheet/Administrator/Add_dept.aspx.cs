@@ -53,16 +53,24 @@ namespace TimeSheet.Admin
 
                 Users user = bd.Users.Where(t => t.ID == newDept.ManagerID).FirstOrDefault();
                 user.Job = "Sef Departament";
+                user.DeptID = DepartmentID.Text;
 
                 if (Page.IsValid)
                 {
-                    using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\LogFile.txt", true))
+                    if (SiteMaster.logAdmin)
                     {
-
-                        string text = "";
-                        //text += SiteMaster.currentUser.Job.ToString();
-                        text = text + "admin \t added " + DepartmentName.Text.ToString() + "\n";
-                        file.WriteLine(text);
+                        using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\LogFile.txt", true))
+                        {
+                            string text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss -> ");
+                            //text += SiteMaster.currentUser.Job.ToString();
+                            text = text
+                                + " added "
+                                + DepartmentName.Text.ToString()
+                                + " department in "
+                                + DivisionsList.SelectedItem.Value
+                                + " division";
+                            file.WriteLine(text);
+                        }
                     }
 
                     bd.SaveChanges();

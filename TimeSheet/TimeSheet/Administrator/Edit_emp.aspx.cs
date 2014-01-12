@@ -34,17 +34,50 @@ namespace TimeSheet.Admin
 
             Users editUser = bd.Users.Where(t => t.ID == EmployeesList.SelectedItem.Value).FirstOrDefault();
 
+            bool passwordChanged = false;
+            bool mailChanged = false;
+
             if (Password.Text.Trim() != "" && PasswordCompare.Text.Trim() != "")
+            {
                 editUser.Password = Password.Text;
+                passwordChanged = true;
+            }
             else
             {
                 //afiseaza pass not changed
             }
+
             if (NewEmail.Text.Trim() != "")
+            {
                 editUser.Mail = NewEmail.Text;
+                mailChanged = true;
+            }
 
             if (Page.IsValid)
+            {
+                if (SiteMaster.logAdmin)
+                {
+                    using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\LogFile.txt", true))
+                    {
+                        string text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss -> ");
+                        //text += SiteMaster.currentUser.Job.ToString();
+                        text += " changed";
+                        
+                        if (passwordChanged && mailChanged)
+                            text += " password and mail for employee ";
+                        else if (passwordChanged)
+                            text += " password for employee ";
+                        else if (mailChanged)
+                            text += " mail for employee ";
+
+                        text += EmployeesList.SelectedItem.Value;
+                            
+                        file.WriteLine(text);
+                    }
+                }
                 bd.SaveChanges();
+                loadData();
+            }
         }
 
         protected void DeleteUser(object sender, EventArgs e)
@@ -56,7 +89,22 @@ namespace TimeSheet.Admin
             bd.Users.Remove(editUser);
 
             if (Page.IsValid)
+            {
+                if (SiteMaster.logAdmin)
+                {
+                    using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\LogFile.txt", true))
+                    {
+                        string text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss -> ");
+                        //text += SiteMaster.currentUser.Job.ToString();
+                        text = text
+                            + " deleted employee "
+                            + EmployeesList.SelectedItem.Value;
+                        file.WriteLine(text);
+                    }
+                }
                 bd.SaveChanges();
+                loadData();
+            }
         }
 
 

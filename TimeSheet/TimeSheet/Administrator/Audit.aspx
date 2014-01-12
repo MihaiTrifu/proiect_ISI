@@ -11,10 +11,10 @@
         </ul>
     </aside>
     <asp:Panel ID="Panel3" runat="server" Height="400px" Width="545px">
-        <asp:CheckBox ID="CheckBox6" runat="server" Text="Log employees activities" TextAlign="Left" />
-        <asp:CheckBox ID="CheckBox7" runat="server" Text="Log dept managers activities" TextAlign="Left" />
-        <asp:CheckBox ID="CheckBox8" runat="server" Text="Log div managers activities" TextAlign="Left" />
-        <asp:CheckBox ID="CheckBox9" runat="server" Text="Log director activities" TextAlign="Left" />
-        <asp:CheckBox ID="CheckBox10" runat="server" Text="Activate/Desactivate Audit" TextAlign="Left" />
+        <asp:CheckBox ID="LogEmp" runat="server" Text="Log employees activities" TextAlign="Left" OnCheckedChanged="LogEmp_CheckedChanged" AutoPostBack="true"/>
+        <asp:CheckBox ID="LogDeptMan" runat="server" Text="Log dept managers activities" TextAlign="Left" OnCheckedChanged="LogDeptMan_CheckedChanged" AutoPostBack="true"/>
+        <asp:CheckBox ID="LogDivMan" runat="server" Text="Log div managers activities" TextAlign="Left" OnCheckedChanged="LogDivMan_CheckedChanged" AutoPostBack="true"/>
+        <asp:CheckBox ID="LogDir" runat="server" Text="Log director activities" TextAlign="Left" OnCheckedChanged="LogDir_CheckedChanged" AutoPostBack="true"/>
+        <asp:CheckBox ID="LogAdmin" runat="server" Text="Log admin activities" TextAlign="Left" OnCheckedChanged="LogAdmin_CheckedChanged" AutoPostBack="true"/>
     </asp:Panel>
 </asp:Content>

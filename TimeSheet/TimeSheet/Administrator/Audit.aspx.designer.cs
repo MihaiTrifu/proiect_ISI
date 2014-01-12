@@ -22,48 +22,48 @@ namespace TimeSheet.Admin {
         protected global::System.Web.UI.WebControls.Panel Panel3;
         
         /// <summary>
-        /// CheckBox6 control.
+        /// LogEmp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox6;
+        protected global::System.Web.UI.WebControls.CheckBox LogEmp;
         
         /// <summary>
-        /// CheckBox7 control.
+        /// LogDeptMan control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox7;
+        protected global::System.Web.UI.WebControls.CheckBox LogDeptMan;
         
         /// <summary>
-        /// CheckBox8 control.
+        /// LogDivMan control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox8;
+        protected global::System.Web.UI.WebControls.CheckBox LogDivMan;
         
         /// <summary>
-        /// CheckBox9 control.
+        /// LogDir control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox9;
+        protected global::System.Web.UI.WebControls.CheckBox LogDir;
         
         /// <summary>
-        /// CheckBox10 control.
+        /// LogAdmin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox10;
+        protected global::System.Web.UI.WebControls.CheckBox LogAdmin;
     }
 }

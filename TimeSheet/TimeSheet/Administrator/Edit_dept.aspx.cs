@@ -13,21 +13,29 @@ namespace TimeSheet.Admin
         {
             if (!IsPostBack)
             {
-                loadData();
+                loadDivisionsData();
+                loadEmpData();
             }
         }
 
-        protected void loadData()
+        protected void loadDivisionsData()
         {
             Database1Entities bd = new Database1Entities();
-            var employeeList = from c in bd.Users where c.Job == "Angajat" select new { c.ID };
             var divisionList = from c in bd.Divisions select new { c.DivisionID };
-
-            EmployeesList.DataValueField = "ID";
-            EmployeesList.DataSource = employeeList.ToArray();
 
             DivisionsList.DataValueField = "DivisionID";
             DivisionsList.DataSource = divisionList.ToArray();
+
+            DataBind();
+        }
+
+        protected void loadEmpData()
+        {
+            Database1Entities bd = new Database1Entities();
+            var employeeList = from c in bd.Users where c.Job == "Angajat" select new { c.ID };
+
+            EmployeesList.DataValueField = "ID";
+            EmployeesList.DataSource = employeeList.ToArray();
 
             DataBind();
         }
@@ -53,14 +61,30 @@ namespace TimeSheet.Admin
 
             Users newManager = bd.Users.Where(t => t.ID == EmployeesList.SelectedItem.Value).FirstOrDefault();
             newManager.Job = "Sef Departament";
+            newManager.DeptID = DeptList.SelectedItem.Value;
 
             Dept editDept = bd.Dept.Where(t => t.DeptID == DeptList.SelectedItem.Value).FirstOrDefault();
             editDept.ManagerID = EmployeesList.SelectedItem.Value;
 
             if (Page.IsValid)
             {
+                if (SiteMaster.logAdmin)
+                {
+                    using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\LogFile.txt", true))
+                    {
+                        string text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss -> ");
+                        //text += SiteMaster.currentUser.Job.ToString();
+                        text = text
+                            + " promoted employee "
+                            + EmployeesList.SelectedItem.Value
+                            + " as manager for "
+                            + DeptList.SelectedItem.Value
+                            + " department";
+                        file.WriteLine(text);
+                    }
+                }
                 bd.SaveChanges();
-                loadData();
+                loadEmpData();
             }
         }
 
@@ -71,6 +95,23 @@ namespace TimeSheet.Admin
             Dept editDept = bd.Dept.Where(t => t.DeptID == DeptList.SelectedItem.Value).FirstOrDefault();
 
             bd.Dept.Remove(editDept);
+            if (Page.IsValid)
+            {
+                if (SiteMaster.logAdmin)
+                {
+                    using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\LogFile.txt", true))
+                    {
+                        string text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss -> ");
+                        //text += SiteMaster.currentUser.Job.ToString();
+                        text = text
+                            + " deleted "
+                            + DeptList.SelectedItem.Value
+                            + " department";
+                        file.WriteLine(text);
+                    }
+                }
+                bd.SaveChanges();
+            }
 
             List<Users> editUsersList = bd.Users.Where(t => t.DeptID == DeptList.SelectedItem.Value).ToList();
             Users editUsers = new Users();
@@ -82,8 +123,11 @@ namespace TimeSheet.Admin
                 editUsers.Job = "Angajat";
 
                 if (Page.IsValid)
+                {
                     bd.SaveChanges();
+                }
             }
+            DivisionList_SelectedIndexChanged(sender, e);
         }        
     }
 }

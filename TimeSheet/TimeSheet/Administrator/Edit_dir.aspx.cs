@@ -47,6 +47,19 @@ namespace TimeSheet.Admin
 
             if (Page.IsValid)
             {
+                if (SiteMaster.logAdmin)
+                {
+                    using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\LogFile.txt", true))
+                    {
+                        string text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss -> ");
+                        //text += SiteMaster.currentUser.Job.ToString();
+                        text = text
+                            + " promoted employee "
+                            + EmployeesList.SelectedItem.Value
+                            + " as Director";
+                        file.WriteLine(text);
+                    }
+                }
                 bd.SaveChanges();
                 loadData();
             }

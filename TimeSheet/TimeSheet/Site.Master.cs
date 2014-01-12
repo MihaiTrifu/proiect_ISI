@@ -15,6 +15,11 @@ namespace TimeSheet
         private string _antiXsrfTokenValue;
 
         public static Users currentUser { get; set; }
+        public static bool logEmp = false;
+        public static bool logDeptMan = false;
+        public static bool logDivMan = false;
+        public static bool logDir = false;
+        public static bool logAdmin = false;
 
         protected void Page_Init(object sender, EventArgs e)
         {

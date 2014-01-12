@@ -49,6 +49,21 @@ namespace TimeSheet.Admin
 
             if (Page.IsValid)
             {
+                if (SiteMaster.logAdmin)
+                {
+                    using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\LogFile.txt", true))
+                    {
+                        string text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss -> ");
+                        //text += SiteMaster.currentUser.Job.ToString();
+                        text = text
+                            + " promoted employee "
+                            + EmployeesList.SelectedItem.Value
+                            + " as manager for "
+                            + DivisionsList.SelectedItem.Value
+                            + " division";
+                        file.WriteLine(text);
+                    }
+                }
                 bd.SaveChanges();
                 loadData();
             }
@@ -68,7 +83,23 @@ namespace TimeSheet.Admin
             editManager.Job = "Angajat";
 
             if (Page.IsValid)
+            {
+                if (SiteMaster.logAdmin)
+                {
+                    using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\LogFile.txt", true))
+                    {
+                        string text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss -> ");
+                        //text += SiteMaster.currentUser.Job.ToString();
+                        text = text
+                            + " deleted "
+                            + DivisionsList.SelectedItem.Value
+                            + " division";
+                        file.WriteLine(text);
+                    }
+                }
                 bd.SaveChanges();
+                loadData();
+            }
         }     
     }
 }
