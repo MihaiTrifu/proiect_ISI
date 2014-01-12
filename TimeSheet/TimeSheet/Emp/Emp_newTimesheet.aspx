@@ -25,7 +25,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <asp:Button ID="saveButton" runat="server" Font-Bold="True" Font-Size="XX-Small" Text="Save" OnClick="saveButton_Click" />
+                        <asp:Button ID="saveButton" runat="server" Font-Bold="True" Font-Size="XX-Small" Text="Save" />
                     </td>
                 </tr>
                 <tr>

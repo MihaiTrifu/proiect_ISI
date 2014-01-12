@@ -18,8 +18,9 @@
                 <td style="width: 130px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667; height: 40px;">Year<b>:</b></td>
                 <td style="height: 40px">
                     </span><span style="font-family: 'Segoe UI'; font-size: large">
-                    <asp:DropDownList ID="yearAddEmp" AppendDataBoundItems="true" AutoPostBack="true" OnSelectedIndexChanged="yearAddEmp_SelectedIndexChanged" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="287px" CausesValidation="True">
-                        <asp:ListItem Text="Select Year.." Selected="True" />
+                    <asp:DropDownList ID="yearAddEmp" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="287px" CausesValidation="True">
+                        <asp:ListItem>2000</asp:ListItem>
+                        <asp:ListItem>2001</asp:ListItem>
                     </asp:DropDownList>
                     </span></td>
             </tr>
@@ -27,8 +28,10 @@
             <tr>
                 <td style="width: 130px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667; height: 40px;">Month:</td>
                 <td style="height: 40px"><span style="font-family: 'Segoe UI'; font-size: large">
-                    <asp:DropDownList ID="monthAddEmp" AppendDataBoundItems="true" AutoPostBack="true" OnSelectedIndexChanged="monthAddEmp_SelectedIndexChanged" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="287px" CausesValidation="True">
-                        <asp:ListItem Text="Select Month.." Selected="True" />
+                    <asp:DropDownList ID="monthAddEmp" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="287px" CausesValidation="True">
+                        <asp:ListItem>June</asp:ListItem>
+                        <asp:ListItem>July</asp:ListItem>
+                        <asp:ListItem>August</asp:ListItem>
                     </asp:DropDownList>
                     </span></td>
             </tr>
@@ -36,6 +39,8 @@
                 <td style="width: 130px; font-family: 'Book Antiqua'; color: #3E5667; font-weight: bold; font-size: small;">Day<span style="border-width: 0; padding-right: 2em">:&nbsp;</span></td>
                 <td>
                     <asp:DropDownList ID="dayAddEmp" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="287px" CausesValidation="True">
+                        <asp:ListItem>1</asp:ListItem>
+                        <asp:ListItem>2</asp:ListItem>
                     </asp:DropDownList>
                 </td>
             </tr>

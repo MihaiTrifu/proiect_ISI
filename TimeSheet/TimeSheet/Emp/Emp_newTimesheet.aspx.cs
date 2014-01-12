@@ -16,9 +16,9 @@ namespace TimeSheet.Emp
 
 
         public string status = "Open";
-        public string year = Emp_addTimesheet.YearDropDownEmp;
-        public string month = Emp_addTimesheet.MonthDropDownEmp;
-        public string day = Emp_addTimesheet.DayDropDownEmp;
+        public string year = "1900";
+        public string month = "August";
+        public string day = "1";
 
         public DropDownList[] activity = new DropDownList[12];
         public DropDownList[] timeSlotBegin = new DropDownList[12];
@@ -170,11 +170,6 @@ namespace TimeSheet.Emp
         protected void monthlyViewButton_Click(object sender, EventArgs e)
         {
             Response.Redirect("Emp_monthlyView.aspx");
-        }
-
-        protected void saveButton_Click(object sender, EventArgs e)
-        {
-
         }
 
     }
