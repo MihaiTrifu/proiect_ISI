@@ -76,7 +76,6 @@
                 <tr>
                     <td style="text-align: center; width: 159px; height: 25px">
                         <asp:DropDownList ID="timeBegin1" runat="server" Height="16px" Width="61px">
-                             <asp:ListItem>-</asp:ListItem>
                              <asp:ListItem>6</asp:ListItem>
                             <asp:ListItem>7</asp:ListItem>
                             <asp:ListItem>8</asp:ListItem>
@@ -96,7 +95,6 @@
                             <asp:ListItem>22</asp:ListItem>
                         </asp:DropDownList>
                         <asp:DropDownList ID="timeEnd1" runat="server" style="margin-top: 3px" Height="16px" Width="61px">
-                            <asp:ListItem>-</asp:ListItem>
                             <asp:ListItem>6</asp:ListItem>
                             <asp:ListItem>7</asp:ListItem>
                             <asp:ListItem>8</asp:ListItem>
