@@ -7,7 +7,7 @@
             <span style="font-family: Andalus; color: #3E5667; display: inline">~ Assign Project</span></h1>
     </hgroup>
     <aside height: 48px; right: 4px;  0px; position: relative; top: -60px;">
-        <ul style="text-align: right">
+        <ul style="text-align: right; height: 36px;">
             <span style="font-family: 'Segoe UI'; font-size: large"><b>
             <li3><a id="A2004" runat="server" href="Dept_managementAddEmp.aspx" style="color: #7AC0DA">Add Emp</a></li3></b> <b>
             <li1><a id="A2001" runat="server" href="Dept_managementAddClient.aspx" style="color: #7AC0DA">Add client</a></li1></b> <b>

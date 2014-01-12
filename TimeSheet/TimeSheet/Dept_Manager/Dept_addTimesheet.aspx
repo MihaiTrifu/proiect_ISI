@@ -9,9 +9,10 @@
 
     <aside height: 48px; right: 4px;  0px; position: relative; top: -60px;">
         <ul style="text-align: right">
-            <span style="font-family: 'Segoe UI'; font-size: large"><b>
-           <li1><a id="A5" runat="server" href="Dept_addTimesheet.aspx" style="color: #7AC0DA">Add</a></li1></b> <b>
-            <li2><a id="A7" runat="server" href="Dept_modifyTimesheet.aspx" style="color: #7AC0DA">Modify/Read</a></li2></b> <b>
+            <span style="font-family: 'Segoe UI'; font-size: large">
+           <li1><a id="A5" runat="server" href="Dept_addTimesheet.aspx" style="color: #3E5667">Add</a></li1><span style="color: #3E5667"></b></span> <b>
+            <li2><a id="A7" runat="server" href="Dept_modifyTimesheet.aspx" style="color: #3E5667">Modify/ Read</a></li2></b> <b>
+            <li3><a id="A6" runat="server" href="Dept_copyTimesheet.aspx" style="color: #3E5667">Copy</a></li3></b></span> <b>
         </ul>
     </aside>
        <asp:Panel ID="Panel4" runat="server" Height="398px" Width="559px">

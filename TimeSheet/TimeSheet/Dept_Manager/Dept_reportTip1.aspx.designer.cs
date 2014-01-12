@@ -49,13 +49,13 @@ namespace TimeSheet.Dept_Manager {
         protected global::System.Web.UI.WebControls.Panel Panel3;
         
         /// <summary>
-        /// DropDownList1 control.
+        /// idListTip1Dept control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList idListTip1Dept;
         
         /// <summary>
         /// okReportTip1Dept control.

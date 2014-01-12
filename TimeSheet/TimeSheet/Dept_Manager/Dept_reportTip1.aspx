@@ -17,23 +17,23 @@
     </aside>
     <b>
     <asp:Panel ID="Panel3" runat="server" Height="263px" Width="839px" style="color: #3E5667; font-size: medium; font-family: boo">
-<table style="width: 760px; height: 165px; margin-right: 19px; position: relative; top: 51px; left: 52px; color: #3E5667; font-size: small; font-family: 'Book Antiqua';">
+<table style="width: 760px; height: 165px; margin-right: 19px; position: relative; top: 32px; left: 55px; color: #3E5667; font-size: small; font-family: 'Book Antiqua';">
             <tr>
                 <td style="border-color: #7AC0DA; width: 186px; text-align: right; font-family: 'Segoe UI'; font-size: medium; font-weight: bold; height: 77px;"><b style="font-size: small; font-family: 'Book Antiqua'">Insert ID:</b></td>
                 <td colspan="2" style="height: 77px; ">
-                    <asp:DropDownList ID="DropDownList1" runat="server" Height="25px" Width="169px">
+                    <asp:DropDownList ID="idListTip1Dept" runat="server" Height="25px" Width="169px">
                     </asp:DropDownList>
                 </td>
                 <td rowspan="2" style="width: 175px">
                     <asp:Button ID="okReportTip1Dept" runat="server" Font-Size="XX-Small" Text="OK" />
-                    <asp:Button ID="resetReportTip1Dept" runat="server" Font-Size="XX-Small" Text="Reset" />
+                    <asp:Button ID="resetReportTip1Dept" runat="server" Font-Size="XX-Small" Text="Reset" OnClick="resetReportTip1Dept_Click" />
                 </td>
             </tr>
             <tr>
                 <td style="border-color: #7AC0DA; width: 186px; text-align: right; font-family: 'Segoe UI'; font-size: medium; font-weight: bold; height: 20px;"></td>
                 <td style="border-color: #7AC0DA; width: 301px; height: 20px">
                     <asp:Panel ID="Panel1" runat="server" style="position: absolute; top: 68px; left: 128px; height: 88px; width: 163px; z-index: 1;">
-                        <table style="width: 123%; background-color: #C0C0C0;" id="tablereport1dept">
+                        <table style="width: 121%; background-color: #C0C0C0;" id="tablereport1dept">
                             <tr>
                                 <td colspan="2" style="text-align: center">Start time:</td>
                             </tr>

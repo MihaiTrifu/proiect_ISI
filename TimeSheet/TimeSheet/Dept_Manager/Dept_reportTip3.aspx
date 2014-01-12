@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Dept_Manager/DepatmentManager_main.master" AutoEventWireup="true" CodeBehind="Dept_reportTip3.aspx.cs" Inherits="TimeSheet.Dept_Manager.Dept_reportTip3" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-   <hgroup class="title">
+    <hgroup class="title">
         <h1>
             <br />
             <span style="font-family: Andalus; color: #3E5667; display: inline">~ Report Tip3</span></h1>
@@ -17,7 +17,7 @@
     </aside>
     <b>
     <asp:Panel ID="Panel3" runat="server" Height="400px" Width="839px" style="color: #3E5667; font-size: medium; font-family: boo">
-<table style="width: 760px; height: 165px; margin-right: 19px; position: relative; top: 72px; left: 16px; color: #3E5667; font-size: small; font-family: 'Book Antiqua';">
+<table style="width: 760px; height: 165px; margin-right: 19px; position: relative; top: 30px; left: 30px; color: #3E5667; font-size: small; font-family: 'Book Antiqua';">
             <tr>
                 <td style="border-color: #7AC0DA; width: 186px; text-align: right; font-family: 'Segoe UI'; font-size: medium; font-weight: bold; height: 20px;"></td>
                 <td style="border-color: #7AC0DA; height: 20px; width: 301px;">

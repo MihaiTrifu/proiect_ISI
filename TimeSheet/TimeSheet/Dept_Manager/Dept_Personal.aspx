@@ -12,6 +12,7 @@
             <span style="font-family: 'Segoe UI'; font-size: large"><b>
             <li1><a id="A5" runat="server" href="Dept_addTimesheet.aspx" style="color: #7AC0DA">Add</a></li1></b> <b>
             <li2><a id="A7" runat="server" href="Dept_modifyTimesheet.aspx" style="color: #7AC0DA">Modify/ Read</a></li2></b> <b>
+            <li3><a id="A6" runat="server" href="Dept_copyTimesheet.aspx" style="color: #7AC0DA">Copy</a></li3></b> <b>
         </ul>
     </aside>
     <asp:Panel ID="Panel2" runat="server" Height="400px" Width="545px">

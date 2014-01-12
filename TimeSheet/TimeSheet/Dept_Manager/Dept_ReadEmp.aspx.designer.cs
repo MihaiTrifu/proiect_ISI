@@ -13,22 +13,31 @@ namespace TimeSheet.Dept_Manager {
     public partial class Dept_ReadEmp {
         
         /// <summary>
-        /// A501 control.
+        /// A5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A501;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A5;
         
         /// <summary>
-        /// A502 control.
+        /// A7 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A502;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A7;
+        
+        /// <summary>
+        /// A6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A6;
         
         /// <summary>
         /// Panel4 control.
@@ -40,13 +49,13 @@ namespace TimeSheet.Dept_Manager {
         protected global::System.Web.UI.WebControls.Panel Panel4;
         
         /// <summary>
-        /// empNameRead control.
+        /// selectDeptNameRead control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList empNameRead;
+        protected global::System.Web.UI.WebControls.DropDownList selectDeptNameRead;
         
         /// <summary>
         /// yearSelectRead control.

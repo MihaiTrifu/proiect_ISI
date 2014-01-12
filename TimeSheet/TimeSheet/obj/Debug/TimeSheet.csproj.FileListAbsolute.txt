@@ -118,3 +118,63 @@ E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\bin\DotNetOpenAuth.AspNet.
 E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\obj\Debug\TimeSheet.csprojResolveAssemblyReference.cache
 E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\obj\Debug\TimeSheet.dll
 E:\isi\New folder\bakup de pe git\TimeSheet\TimeSheet\obj\Debug\TimeSheet.pdb
+C:\Users\oanab_000\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\bin\TimeSheet.dll
+C:\Users\oanab_000\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\bin\TimeSheet.pdb
+C:\Users\oanab_000\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\bin\Antlr3.Runtime.dll
+C:\Users\oanab_000\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\oanab_000\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\oanab_000\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\oanab_000\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\bin\DotNetOpenAuth.Core.dll
+C:\Users\oanab_000\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\oanab_000\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\oanab_000\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\oanab_000\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\oanab_000\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\bin\EntityFramework.dll
+C:\Users\oanab_000\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\oanab_000\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\oanab_000\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\oanab_000\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\oanab_000\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\oanab_000\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\bin\System.Web.Optimization.dll
+C:\Users\oanab_000\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\bin\System.Web.Providers.dll
+C:\Users\oanab_000\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\bin\WebGrease.dll
+C:\Users\oanab_000\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\bin\EntityFramework.xml
+C:\Users\oanab_000\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\bin\DotNetOpenAuth.Core.xml
+C:\Users\oanab_000\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\oanab_000\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\oanab_000\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\oanab_000\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\oanab_000\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\oanab_000\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\obj\Debug\TimeSheet.csprojResolveAssemblyReference.cache
+C:\Users\oanab_000\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\obj\Debug\TimeSheet.dll
+C:\Users\oanab_000\Documents\GitHub\proiect_ISI\TimeSheet\TimeSheet\obj\Debug\TimeSheet.pdb
+C:\Users\Mihai17\Desktop\TimeSheet 12,01,14 15.53\TimeSheet Oana\TimeSheet\obj\Debug\TimeSheet.csprojResolveAssemblyReference.cache
+C:\Users\Mihai17\Desktop\TimeSheet 12,01,14 15.53\TimeSheet Oana\TimeSheet\obj\Debug\TimeSheet.dll
+C:\Users\Mihai17\Desktop\TimeSheet 12,01,14 15.53\TimeSheet Oana\TimeSheet\obj\Debug\TimeSheet.pdb
+C:\Users\Mihai17\Desktop\TimeSheet 12,01,14 15.53\TimeSheet Oana\TimeSheet\bin\TimeSheet.dll
+C:\Users\Mihai17\Desktop\TimeSheet 12,01,14 15.53\TimeSheet Oana\TimeSheet\bin\TimeSheet.pdb
+C:\Users\Mihai17\Desktop\TimeSheet 12,01,14 15.53\TimeSheet Oana\TimeSheet\bin\Antlr3.Runtime.dll
+C:\Users\Mihai17\Desktop\TimeSheet 12,01,14 15.53\TimeSheet Oana\TimeSheet\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Mihai17\Desktop\TimeSheet 12,01,14 15.53\TimeSheet Oana\TimeSheet\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\Mihai17\Desktop\TimeSheet 12,01,14 15.53\TimeSheet Oana\TimeSheet\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Mihai17\Desktop\TimeSheet 12,01,14 15.53\TimeSheet Oana\TimeSheet\bin\DotNetOpenAuth.Core.dll
+C:\Users\Mihai17\Desktop\TimeSheet 12,01,14 15.53\TimeSheet Oana\TimeSheet\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Mihai17\Desktop\TimeSheet 12,01,14 15.53\TimeSheet Oana\TimeSheet\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Mihai17\Desktop\TimeSheet 12,01,14 15.53\TimeSheet Oana\TimeSheet\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Mihai17\Desktop\TimeSheet 12,01,14 15.53\TimeSheet Oana\TimeSheet\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Mihai17\Desktop\TimeSheet 12,01,14 15.53\TimeSheet Oana\TimeSheet\bin\EntityFramework.dll
+C:\Users\Mihai17\Desktop\TimeSheet 12,01,14 15.53\TimeSheet Oana\TimeSheet\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\Mihai17\Desktop\TimeSheet 12,01,14 15.53\TimeSheet Oana\TimeSheet\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Mihai17\Desktop\TimeSheet 12,01,14 15.53\TimeSheet Oana\TimeSheet\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Mihai17\Desktop\TimeSheet 12,01,14 15.53\TimeSheet Oana\TimeSheet\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Mihai17\Desktop\TimeSheet 12,01,14 15.53\TimeSheet Oana\TimeSheet\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mihai17\Desktop\TimeSheet 12,01,14 15.53\TimeSheet Oana\TimeSheet\bin\System.Web.Optimization.dll
+C:\Users\Mihai17\Desktop\TimeSheet 12,01,14 15.53\TimeSheet Oana\TimeSheet\bin\System.Web.Providers.dll
+C:\Users\Mihai17\Desktop\TimeSheet 12,01,14 15.53\TimeSheet Oana\TimeSheet\bin\WebGrease.dll
+C:\Users\Mihai17\Desktop\TimeSheet 12,01,14 15.53\TimeSheet Oana\TimeSheet\bin\EntityFramework.xml
+C:\Users\Mihai17\Desktop\TimeSheet 12,01,14 15.53\TimeSheet Oana\TimeSheet\bin\DotNetOpenAuth.Core.xml
+C:\Users\Mihai17\Desktop\TimeSheet 12,01,14 15.53\TimeSheet Oana\TimeSheet\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Mihai17\Desktop\TimeSheet 12,01,14 15.53\TimeSheet Oana\TimeSheet\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Mihai17\Desktop\TimeSheet 12,01,14 15.53\TimeSheet Oana\TimeSheet\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Mihai17\Desktop\TimeSheet 12,01,14 15.53\TimeSheet Oana\TimeSheet\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Mihai17\Desktop\TimeSheet 12,01,14 15.53\TimeSheet Oana\TimeSheet\bin\DotNetOpenAuth.AspNet.xml

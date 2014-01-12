@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Emp/Employee_main.master" AutoEventWireup="true" CodeBehind="Emp_modifyTImesheet.aspx.cs" Inherits="TimeSheet.Emp.Emp_modifyTImesheet" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Emp/Employee_main.master" AutoEventWireup="true" CodeBehind="Emp_modifyTimesheet.aspx.cs" Inherits="TimeSheet.Emp.Emp_modifyTimesheet" %>
 
 <asp:Content runat="server" ID="Content3" ContentPlaceHolderID="MainContent" >
         <hgroup class="title">
@@ -26,14 +26,14 @@
             <tr>
                 <td style="width: 130px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667; height: 40px;">Month:</td>
                 <td style="height: 40px"><span style="font-family: 'Segoe UI'; font-size: large">
-                    <asp:DropDownList ID="monthModifyEmp" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="287px">
+                    <asp:DropDownList ID="monthAddEmp" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="287px">
                     </asp:DropDownList>
                     </span></td>
             </tr>
             <tr>
                 <td style="width: 130px; font-family: 'Book Antiqua'; color: #3E5667; font-weight: bold; font-size: small;">Day<span style="border-width: 0; padding-right: 2em">:&nbsp;</span></td>
                 <td>
-                    <asp:DropDownList ID="dayModifyEmp" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="287px">
+                    <asp:DropDownList ID="dayAddEmp" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="287px">
                     </asp:DropDownList>
                 </td>
             </tr>
@@ -41,7 +41,7 @@
                 <td style="width: 130px">&nbsp;</td>
                 <td>
                     <p style="text-align: right">
-                        <asp:Button ID="modifyTsEmp" runat="server" Font-Size="XX-Small" Text="Open" />
+                        <asp:Button ID="addTsEmp" runat="server" Font-Size="XX-Small" Text="Add" />
                     </p>
                 </td>
             </tr>

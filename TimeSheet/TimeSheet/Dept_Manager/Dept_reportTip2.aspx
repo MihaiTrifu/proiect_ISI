@@ -16,8 +16,8 @@
         </ul>
     </aside>
     <b>
-    <asp:Panel ID="Panel3" runat="server" Height="400px" Width="839px" style="color: #3E5667; font-size: medium; font-family: boo">
-<table style="width: 760px; height: 165px; margin-right: 19px; position: relative; top: 72px; left: 16px; color: #3E5667; font-size: small; font-family: 'Book Antiqua';">
+    <asp:Panel ID="Panel3" runat="server" Height="317px" Width="839px" style="color: #3E5667; font-size: medium; font-family: boo">
+<table style="width: 760px; height: 165px; margin-right: 19px; position: absolute; top: 298px; left: 53px; color: #3E5667; font-size: small; font-family: 'Book Antiqua'; z-index: 1;">
             <tr>
                 <td style="border-color: #7AC0DA; width: 186px; text-align: right; font-family: 'Segoe UI'; font-size: medium; font-weight: bold; height: 77px;"><b style="font-size: small; font-family: 'Book Antiqua'">Insert Project:</b></td>
                 <td colspan="2" style="height: 77px; ">

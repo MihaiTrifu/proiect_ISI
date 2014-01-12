@@ -15,6 +15,7 @@
             <ul id="menu" class="auto-style1">
                 <li><a id="A100" runat="server" href="Emp_addTimesheet.aspx">Add </a></li>
                 <li><a id="A101" runat="server" href="Emp_modifyTImesheet.aspx">Modify/Read</a></li>
+                <li><a id="A102" runat="server" href="Emp_copyTImesheet.aspx">Copy</a></li>
             </ul>
         </div>
     </section>

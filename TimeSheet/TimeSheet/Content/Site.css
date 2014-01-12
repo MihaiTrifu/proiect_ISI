@@ -229,8 +229,8 @@ ul#menu {
 /* page titles */
 hgroup.title {
     margin-bottom: 10px;
-    height: 29px;
-    width: 396px;
+    height: 12px;
+    width: 431px;
 }
 
 hgroup.title h1, hgroup.title h2 {
@@ -308,11 +308,12 @@ article {
 
 aside {
     float: right;
-    width: 101%;
+    width: 100%;
     position: relative;
-    top: -68px;
-    left: -16px;
-    height: 36px;
+    top: -51px;
+    left: -12px;
+    height: 29px;
+    z-index: 1;
 }
 
     aside ul {
@@ -440,10 +441,11 @@ fieldset {
         padding: 7px;
         margin-right: 8px;
     position: relative;
-    top: 59px;
-    left: 16px;
-    height: 40px;
-    width: 89px;
+    top: -22px;
+    left: 77px;
+    height: 33px;
+    width: 77px;
+    z-index: 1;
 }
 
     td input[type="submit"],
@@ -453,10 +455,10 @@ fieldset {
         padding: 4px;
         margin-right: 4px;
     position: relative;
-    top: 79px;
-    left: -2px;
-    height: 35px;
-    width: 113px;
+    top: 7px;
+    left: 26px;
+    width: 100px;
+    z-index: 1;
 }
 
 /* info and errors */
@@ -482,7 +484,7 @@ fieldset {
 }
 
 .error {
-    color: #e80c4d;
+    color: #CC3399;
 }
 
 /* styles for validation helpers */
@@ -519,8 +521,8 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
     margin-top: 0.75em;
-    height: 362px;
-    width: 514px;
+    text-align: center;
+    width: 476px;
 }
 
 th {

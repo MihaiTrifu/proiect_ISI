@@ -31,6 +31,15 @@ namespace TimeSheet.Dept_Manager {
         protected global::System.Web.UI.HtmlControls.HtmlAnchor A101;
         
         /// <summary>
+        /// A102 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A102;
+        
+        /// <summary>
         /// MainContent control.
         /// </summary>
         /// <remarks>

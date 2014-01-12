@@ -13,5 +13,20 @@ namespace TimeSheet.Dept_Manager
         {
 
         }
+
+        protected void resetReportTip1Dept_Click(object sender, EventArgs e)
+        {
+            yearBeginTip1Dept.SelectedIndex = 0;
+            yearEndTip1Dept.SelectedIndex = 0;
+
+            monthBeginTip1Dept.SelectedIndex = 0;
+            monthEndTip1Dept.SelectedIndex = 0;
+            
+            dayBeginTip1Dept.SelectedIndex = 0;
+            dayEndTip1Dept.SelectedIndex = 0;
+
+            idListTip1Dept.SelectedIndex = 0;
+        }
+
     }
 }

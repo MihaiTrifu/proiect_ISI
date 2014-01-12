@@ -203,6 +203,7 @@
     <Content Include="Dept_Manager\Dept_addTimesheet.aspx" />
     <Content Include="Dept_Manager\Dept_AproveEmp.aspx" />
     <Content Include="Dept_Manager\Dept_aproveTimesheet.aspx" />
+    <Content Include="Dept_Manager\Dept_copyTimesheet.aspx" />
     <Content Include="Dept_Manager\Dept_deleteEmp.aspx" />
     <Content Include="Dept_Manager\Dept_EmpTimesheet.aspx" />
     <Content Include="Dept_Manager\Dept_management.aspx" />
@@ -232,6 +233,11 @@
     <Content Include="Div_Manager\Div_Report.aspx" />
     <Content Include="Div_Manager\Div_reportTip1.aspx" />
     <Content Include="Div_Manager\Div_reportTip2.aspx" />
+    <Content Include="Emp\Emp_addTimesheet.aspx" />
+    <Content Include="Emp\Emp_copyTimesheet.aspx" />
+    <Content Include="Emp\Emp_modifyTimesheet.aspx" />
+    <Content Include="Emp\Emp_monthlyView.aspx" />
+    <Content Include="Emp\Emp_newTimesheet.aspx" />
     <Content Include="Images\accent.png" />
     <Content Include="Images\bullet.png" />
     <Content Include="Images\heroAccent.png" />
@@ -249,13 +255,9 @@
     <Content Include="Administrator\Administrator.master" />
     <Content Include="Dept_Manager\DepatmentManager_main.master" />
     <Content Include="Emp\Employee_main.master" />
-    <Content Include="ClassDiagram1.cd" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Timesheet\Add_timesheet.aspx" />
-    <Content Include="Timesheet\Modify_timesheet.aspx" />
-    <Content Include="Timesheet\NewTimesheet.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
   </ItemGroup>
@@ -298,8 +300,8 @@
     <Compile Include="Administrator\Administrator.master.designer.cs">
       <DependentUpon>Administrator.master</DependentUpon>
     </Compile>
-    <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="App_Start\AuthConfig.cs" />
+    <Compile Include="App_Data\App_Start\BundleConfig.cs" />
+    <Compile Include="App_Data\App_Start\AuthConfig.cs" />
     <Compile Include="Account\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -422,6 +424,13 @@
     </Compile>
     <Compile Include="Dept_Manager\Dept_aproveTimesheet.aspx.designer.cs">
       <DependentUpon>Dept_aproveTimesheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dept_Manager\Dept_copyTimesheet.aspx.cs">
+      <DependentUpon>Dept_copyTimesheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dept_Manager\Dept_copyTimesheet.aspx.designer.cs">
+      <DependentUpon>Dept_copyTimesheet.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dept_Manager\Dept_deleteEmp.aspx.cs">
       <DependentUpon>Dept_deleteEmp.aspx</DependentUpon>
@@ -650,6 +659,41 @@
     <Compile Include="Emp\Employee_main.master.designer.cs">
       <DependentUpon>Employee_main.master</DependentUpon>
     </Compile>
+    <Compile Include="Emp\Emp_addTimesheet.aspx.cs">
+      <DependentUpon>Emp_addTimesheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Emp\Emp_addTimesheet.aspx.designer.cs">
+      <DependentUpon>Emp_addTimesheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Emp\Emp_copyTimesheet.aspx.cs">
+      <DependentUpon>Emp_copyTimesheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Emp\Emp_copyTimesheet.aspx.designer.cs">
+      <DependentUpon>Emp_copyTimesheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Emp\Emp_modifyTimesheet.aspx.cs">
+      <DependentUpon>Emp_modifyTimesheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Emp\Emp_modifyTimesheet.aspx.designer.cs">
+      <DependentUpon>Emp_modifyTimesheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Emp\Emp_monthlyView.aspx.cs">
+      <DependentUpon>Emp_monthlyView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Emp\Emp_monthlyView.aspx.designer.cs">
+      <DependentUpon>Emp_monthlyView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Emp\Emp_newTimesheet.aspx.cs">
+      <DependentUpon>Emp_newTimesheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Emp\Emp_newTimesheet.aspx.designer.cs">
+      <DependentUpon>Emp_newTimesheet.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -682,27 +726,6 @@
     </Compile>
     <Compile Include="Timesheets.cs">
       <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Timesheet\Add_timesheet.aspx.cs">
-      <DependentUpon>Add_timesheet.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Timesheet\Add_timesheet.aspx.designer.cs">
-      <DependentUpon>Add_timesheet.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Timesheet\Modify_timesheet.aspx.cs">
-      <DependentUpon>Modify_timesheet.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Timesheet\Modify_timesheet.aspx.designer.cs">
-      <DependentUpon>Modify_timesheet.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Timesheet\NewTimesheet.aspx.cs">
-      <DependentUpon>NewTimesheet.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Timesheet\NewTimesheet.aspx.designer.cs">
-      <DependentUpon>NewTimesheet.aspx</DependentUpon>
     </Compile>
     <Compile Include="Users.cs">
       <DependentUpon>Model1.tt</DependentUpon>

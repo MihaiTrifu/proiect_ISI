@@ -10,7 +10,7 @@
 namespace TimeSheet.Emp {
     
     
-    public partial class Emp_modifyTImesheet {
+    public partial class Emp_modifyTimesheet {
         
         /// <summary>
         /// Panel4 control.
@@ -31,30 +31,30 @@ namespace TimeSheet.Emp {
         protected global::System.Web.UI.WebControls.DropDownList yearModifyEmp;
         
         /// <summary>
-        /// monthModifyEmp control.
+        /// monthAddEmp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList monthModifyEmp;
+        protected global::System.Web.UI.WebControls.DropDownList monthAddEmp;
         
         /// <summary>
-        /// dayModifyEmp control.
+        /// dayAddEmp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dayModifyEmp;
+        protected global::System.Web.UI.WebControls.DropDownList dayAddEmp;
         
         /// <summary>
-        /// modifyTsEmp control.
+        /// addTsEmp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button modifyTsEmp;
+        protected global::System.Web.UI.WebControls.Button addTsEmp;
     }
 }

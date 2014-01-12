@@ -9,18 +9,19 @@
 
     <aside height: 48px; right: 4px;  0px; position: relative; top: -60px;">
         <ul style="text-align: right">
-            <span style="font-family: 'Segoe UI'; font-size: large"><b>
-            <li1><a id="A501" runat="server" href="Dept_AproveEmp.aspx" style="color: #7AC0DA">Aprove</a></li1></b> <b>
-            <li2><a id="A502" runat="server" href="Dept_ReadEmp.aspx" style="color: #7AC0DA">Read</a></li2></b> <b>
+            <span style="font-family: 'Segoe UI'; font-size: large">
+           <li1><a id="A5" runat="server" href="Dept_addTimesheet.aspx" style="color: #3E5667">Add</a></li1><span style="color: #3E5667"></b></span> <b>
+            <li2><a id="A7" runat="server" href="Dept_modifyTimesheet.aspx" style="color: #3E5667">Modify/ Read</a></li2></b> <b>
+            <li2><a id="A6" runat="server" href="Dept_copyTimesheet.aspx" style="color: #3E5667">Copy</a></li2></b></span> <b>
         </ul>
     </aside>
-       <asp:Panel ID="Panel4" runat="server" Height="398px" Width="559px">
+       <asp:Panel ID="Panel4" runat="server" Height="283px" Width="559px">
         <table align="left" style="width: 99%; float: left; font-family: Verdana; margin-right: 0px; height: 230px;">
             <tr>
                 <td style="width: 130px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667;"><b>Select Employee:</b></td>
                 <td>
                     <span style="font-family: 'Segoe UI'; font-size: large"><b>
-                    <asp:DropDownList ID="empNameRead" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="287px">
+                    <asp:DropDownList ID="selectDeptNameRead" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="287px">
                     </asp:DropDownList>
                     </b></span></td>
             </tr>
