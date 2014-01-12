@@ -13,5 +13,10 @@ namespace TimeSheet.Dept_Manager
         {
 
         }
+
+        protected void addTsDept_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Dept_addNewTimesheet.aspx");
+        }
     }
 }

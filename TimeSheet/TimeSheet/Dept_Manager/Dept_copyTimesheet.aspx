@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Emp/Employee_main.master" AutoEventWireup="true" CodeBehind="Dept_copyTimesheet.aspx.cs" Inherits="TimeSheet.Dept_Manager.Dept_copyTimesheet" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Dept_Manager/DepatmentManager_main.master" AutoEventWireup="true" CodeBehind="Dept_copyTimesheet.aspx.cs" Inherits="TimeSheet.Dept_Manager.Dept_copyTimesheet" %>
 
 <asp:Content runat="server" ID="Content3" ContentPlaceHolderID="MainContent" >
         <hgroup class="title">
@@ -13,10 +13,11 @@
 
     <aside height: 48px; right: 4px;  0px; position: relative; top: -60px;">
         <ul style="text-align: right">
-            <span style="font-family: 'Segoe UI'; font-size: large">
-           <li1><a id="A5" runat="server" href="Dept_addTimesheet.aspx" style="color: #3E5667">Add</a></li1><span style="color: #3E5667"></b></span> <b>
-            <li2><a id="A7" runat="server" href="Dept_modifyTimesheet.aspx" style="color: #3E5667">Modify/ Read</a></li2></b> <b>
-            <li3><a id="A6" runat="server" href="Dept_copyTimesheet.aspx" style="color: #3E5667">Copy</a></li3></b></span> <b>
+            <span style="font-family: 'Segoe UI'; font-size: large"><b>
+            <li1><a id="A5" runat="server" href="Dept_addTimesheet.aspx" style="color: #7AC0DA">Add</a></li1></b> <b>
+            <li2><a id="A7" runat="server" href="Dept_modifyTimesheet.aspx" style="color: #7AC0DA">Modify</a></li2></b> <b>
+           <li4><a id="A1" runat="server" href="Dept_readTimesheet.aspx" style="color: #7AC0DA">Read</a></li4></b> <b>
+            <li3><a id="A6" runat="server" href="Dept_copyTimesheet.aspx" style="color: #7AC0DA">Copy</a></li3></b> <b>
         </ul>
     </aside>
        <asp:Panel ID="Panel4" runat="server" Height="398px" Width="559px">
@@ -29,7 +30,7 @@
             <tr>
                 <td style="width: 92px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667; height: 40px; text-align: left;">Year<b>:</b></td>
                 <td style="height: 40px"><span style="font-family: 'Segoe UI'; font-size: large">
-                    <asp:DropDownList ID="yearCopyEmp" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="287px">
+                    <asp:DropDownList ID="yearCopyDept" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="287px">
                     </asp:DropDownList>
                     </span></td>
             </tr>
@@ -44,7 +45,7 @@
             <tr>
                 <td style="width: 92px; font-family: 'Book Antiqua'; color: #3E5667; font-weight: bold; font-size: small; text-align: left;">&nbsp;&nbsp; Day<span style="border-width: 0; padding-right: 2em">:</span></td>
                 <td>
-                    <asp:DropDownList ID="dayCopyEmp" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="287px">
+                    <asp:DropDownList ID="dayCopyDept" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="287px">
                     </asp:DropDownList>
                 </td>
             </tr>
@@ -55,21 +56,21 @@
             <tr>
                 <td style="width: 92px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667; height: 40px; text-align: left;">Year<b>:</b>
                 <td style="height: 40px">
-            <asp:DropDownList ID="yearPasteEmp" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="287px">
+            <asp:DropDownList ID="yearPasteDept" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="287px">
             </asp:DropDownList>
             </span></td>
             </tr>
             <tr>
                 <td style="width: 92px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667; height: 40px; text-align: left;">Month:</td>
                 <td style="height: 40px"><span style="font-family: 'Segoe UI'; font-size: large">
-                    <asp:DropDownList ID="monthPasteEmp" runat="server" Height="19px" Style="margin-left: 3px" ViewStateMode="Enabled" Width="287px">
+                    <asp:DropDownList ID="monthPasteDept" runat="server" Height="19px" Style="margin-left: 3px" ViewStateMode="Enabled" Width="287px">
                     </asp:DropDownList>
                     </span></td>
             </tr>
             <tr>
                 <td style="width: 92px; font-family: 'Book Antiqua'; color: #3E5667; font-weight: bold; font-size: small; text-align: left;">Day<span style="border-width: 0; padding-right: 2em">:&nbsp;</span></td>
                 <td>
-                    <asp:DropDownList ID="dayPasteEmp" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="287px">
+                    <asp:DropDownList ID="dayPasteDept" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="287px">
                     </asp:DropDownList>
                 </td>
             </tr>
@@ -77,7 +78,7 @@
                 <td style="width: 92px">&nbsp;</td>
                 <td>
                     <p style="text-align: right">
-                        <asp:Button ID="copyTsEmp" runat="server" Font-Size="XX-Small" Text="Copy" />
+                        <asp:Button ID="copyTsDept" runat="server" Font-Size="XX-Small" Text="Copy" />
                     </p>
                 </td>
             </tr>

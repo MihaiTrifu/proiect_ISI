@@ -7,16 +7,16 @@ using System.Web.UI.WebControls;
 
 namespace TimeSheet.Dept_Manager
 {
-    public partial class Dept_modifyTimesheet : System.Web.UI.Page
+    public partial class Dept_readTimesheet : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void modifyTsDept_Click(object sender, EventArgs e)
+        protected void readTsDept_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Dept_modifyMonthlyView.aspx");
+            Response.Redirect("Dept_readMontlyTimesheet.aspx");
         }
     }
 }

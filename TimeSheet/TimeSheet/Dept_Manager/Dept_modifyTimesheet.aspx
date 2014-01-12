@@ -5,14 +5,15 @@
         <hgroup class="title">
         <h1>
             <br />
-            <span style="font-family: Andalus; color: #3E5667; display: inline">~ Modify/Read timesheet</span></h1>
+            <span style="font-family: Andalus; color: #3E5667; display: inline">~ Modify timesheet</span></h1>
     </hgroup>
-
     <aside height: 48px; right: 4px;  0px; position: relative; top: -60px;">
         <ul style="text-align: right">
             <span style="font-family: 'Segoe UI'; font-size: large"><b>
-           <li1><a id="A5" runat="server" href="Dept_addTimesheet.aspx" style="color: #7AC0DA">Add</a></li1></b> <b>
-            <li2><a id="A7" runat="server" href="Dept_modifyTimesheet.aspx" style="color: #7AC0DA">Modify/Read</a></li2></b> <b>
+            <li1><a id="A5" runat="server" href="Dept_addTimesheet.aspx" style="color: #7AC0DA">Add</a></li1></b> <b>
+            <li2><a id="A7" runat="server" href="Dept_modifyTimesheet.aspx" style="color: #7AC0DA">Modify</a></li2></b> <b>
+           <li4><a id="A1" runat="server" href="Dept_readTimesheet.aspx" style="color: #7AC0DA">Read</a></li4></b> <b>
+            <li3><a id="A6" runat="server" href="Dept_copyTimesheet.aspx" style="color: #7AC0DA">Copy</a></li3></b> <b>
         </ul>
     </aside>
        <asp:Panel ID="Panel4" runat="server" Height="398px" Width="559px">
@@ -34,17 +35,10 @@
                     </span></td>
             </tr>
             <tr>
-                <td style="width: 82px; font-family: 'Book Antiqua'; color: #3E5667; font-weight: bold; font-size: small;">Day<span style="border-width: 0; padding-right: 2em">:&nbsp;</span></td>
-                <td>
-                    <asp:DropDownList ID="dayModifyDept" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="287px">
-                    </asp:DropDownList>
-                </td>
-            </tr>
-            <tr>
                 <td style="width: 82px">&nbsp;</td>
                 <td>
                     <p style="text-align: right">
-                        <asp:Button ID="modifyTsDept" runat="server" Font-Size="XX-Small" Text="Add" />
+                        <asp:Button ID="modifyTsDept" runat="server" Font-Size="XX-Small" Text="Modify" OnClick="modifyTsDept_Click" />
                     </p>
                 </td>
             </tr>

@@ -41,13 +41,6 @@
                     </span></td>
             </tr>
             <tr>
-                <td style="width: 130px; font-family: 'Book Antiqua'; color: #3E5667; font-weight: bold; font-size: small;">Day<span style="border-width: 0; padding-right: 2em">:&nbsp;</span></td>
-                <td>
-                    <asp:DropDownList ID="daySelectAprove" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="287px">
-                    </asp:DropDownList>
-                </td>
-            </tr>
-            <tr>
                 <td style="width: 130px">&nbsp;</td>
                 <td>
                     <p style="text-align: right">

@@ -200,9 +200,10 @@
     <Content Include="Administrator\Edit_dir.aspx" />
     <Content Include="Administrator\Edit_div.aspx" />
     <Content Include="Administrator\Edit_emp.aspx" />
+    <Content Include="Dept_Manager\Dept_addNewTimesheet.aspx" />
     <Content Include="Dept_Manager\Dept_addTimesheet.aspx" />
     <Content Include="Dept_Manager\Dept_AproveEmp.aspx" />
-    <Content Include="Dept_Manager\Dept_aproveTimesheet.aspx" />
+    <Content Include="Dept_Manager\Dept_aproveMonthlyTimesheet.aspx" />
     <Content Include="Dept_Manager\Dept_copyTimesheet.aspx" />
     <Content Include="Dept_Manager\Dept_deleteEmp.aspx" />
     <Content Include="Dept_Manager\Dept_EmpTimesheet.aspx" />
@@ -210,8 +211,15 @@
     <Content Include="Dept_Manager\Dept_managementAddClient.aspx" />
     <Content Include="Dept_Manager\Dept_managementAddProject.aspx" />
     <Content Include="Dept_Manager\Dept_managementAssigning.aspx" />
+    <Content Include="Dept_Manager\Dept_modifyDaily.aspx" />
+    <Content Include="Dept_Manager\Dept_modifyMonthlyView.aspx" />
     <Content Include="Dept_Manager\Dept_modifyTimesheet.aspx" />
+    <Content Include="Dept_Manager\Dept_monthlyView.aspx" />
     <Content Include="Dept_Manager\Dept_Personal.aspx" />
+    <Content Include="Dept_Manager\Dept_readDailyTimesheet.aspx" />
+    <Content Include="Dept_Manager\Dept_readEmpTimesheet.aspx" />
+    <Content Include="Dept_Manager\Dept_readMontlyTimesheet.aspx" />
+    <Content Include="Dept_Manager\Dept_readTimesheet.aspx" />
     <Content Include="Dept_Manager\Dept_report.aspx" />
     <Content Include="Dept_Manager\Dept_reportTip1.aspx" />
     <Content Include="Dept_Manager\Dept_ReadEmp.aspx" />
@@ -404,6 +412,13 @@
     <Compile Include="Dept_Manager\DepatmentManager_main.master.designer.cs">
       <DependentUpon>DepatmentManager_main.master</DependentUpon>
     </Compile>
+    <Compile Include="Dept_Manager\Dept_addNewTimesheet.aspx.cs">
+      <DependentUpon>Dept_addNewTimesheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dept_Manager\Dept_addNewTimesheet.aspx.designer.cs">
+      <DependentUpon>Dept_addNewTimesheet.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Dept_Manager\Dept_addTimesheet.aspx.cs">
       <DependentUpon>Dept_addTimesheet.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -418,12 +433,12 @@
     <Compile Include="Dept_Manager\Dept_AproveEmp.aspx.designer.cs">
       <DependentUpon>Dept_AproveEmp.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Dept_Manager\Dept_aproveTimesheet.aspx.cs">
-      <DependentUpon>Dept_aproveTimesheet.aspx</DependentUpon>
+    <Compile Include="Dept_Manager\Dept_aproveMonthlyTimesheet.aspx.cs">
+      <DependentUpon>Dept_aproveMonthlyTimesheet.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dept_Manager\Dept_aproveTimesheet.aspx.designer.cs">
-      <DependentUpon>Dept_aproveTimesheet.aspx</DependentUpon>
+    <Compile Include="Dept_Manager\Dept_aproveMonthlyTimesheet.aspx.designer.cs">
+      <DependentUpon>Dept_aproveMonthlyTimesheet.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dept_Manager\Dept_copyTimesheet.aspx.cs">
       <DependentUpon>Dept_copyTimesheet.aspx</DependentUpon>
@@ -474,6 +489,20 @@
     <Compile Include="Dept_Manager\Dept_managementAssigning.aspx.designer.cs">
       <DependentUpon>Dept_managementAssigning.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Dept_Manager\Dept_modifyDaily.aspx.cs">
+      <DependentUpon>Dept_modifyDaily.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dept_Manager\Dept_modifyDaily.aspx.designer.cs">
+      <DependentUpon>Dept_modifyDaily.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dept_Manager\Dept_modifyMonthlyView.aspx.cs">
+      <DependentUpon>Dept_modifyMonthlyView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dept_Manager\Dept_modifyMonthlyView.aspx.designer.cs">
+      <DependentUpon>Dept_modifyMonthlyView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Dept_Manager\Dept_modifyTimesheet.aspx.cs">
       <DependentUpon>Dept_modifyTimesheet.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -481,12 +510,47 @@
     <Compile Include="Dept_Manager\Dept_modifyTimesheet.aspx.designer.cs">
       <DependentUpon>Dept_modifyTimesheet.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Dept_Manager\Dept_monthlyView.aspx.cs">
+      <DependentUpon>Dept_monthlyView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dept_Manager\Dept_monthlyView.aspx.designer.cs">
+      <DependentUpon>Dept_monthlyView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Dept_Manager\Dept_Personal.aspx.cs">
       <DependentUpon>Dept_Personal.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Dept_Manager\Dept_Personal.aspx.designer.cs">
       <DependentUpon>Dept_Personal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dept_Manager\Dept_readDailyTimesheet.aspx.cs">
+      <DependentUpon>Dept_readDailyTimesheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dept_Manager\Dept_readDailyTimesheet.aspx.designer.cs">
+      <DependentUpon>Dept_readDailyTimesheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dept_Manager\Dept_readEmpTimesheet.aspx.cs">
+      <DependentUpon>Dept_readEmpTimesheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dept_Manager\Dept_readEmpTimesheet.aspx.designer.cs">
+      <DependentUpon>Dept_readEmpTimesheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dept_Manager\Dept_readMontlyTimesheet.aspx.cs">
+      <DependentUpon>Dept_readMontlyTimesheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dept_Manager\Dept_readMontlyTimesheet.aspx.designer.cs">
+      <DependentUpon>Dept_readMontlyTimesheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dept_Manager\Dept_readTimesheet.aspx.cs">
+      <DependentUpon>Dept_readTimesheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dept_Manager\Dept_readTimesheet.aspx.designer.cs">
+      <DependentUpon>Dept_readTimesheet.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dept_Manager\Dept_report.aspx.cs">
       <DependentUpon>Dept_report.aspx</DependentUpon>

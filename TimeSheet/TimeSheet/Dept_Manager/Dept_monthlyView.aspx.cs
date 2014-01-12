@@ -7,11 +7,16 @@ using System.Web.UI.WebControls;
 
 namespace TimeSheet.Dept_Manager
 {
-    public partial class Dept_aproveTimesheet : System.Web.UI.Page
+    public partial class Dept_monthlyView : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void ExitButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Dept_addTimesheet.aspx");
         }
     }
 }

@@ -10,7 +10,7 @@
 namespace TimeSheet.Dept_Manager {
     
     
-    public partial class Dept_copyTimesheet {
+    public partial class Dept_readTimesheet {
         
         /// <summary>
         /// A5 control.
@@ -58,66 +58,30 @@ namespace TimeSheet.Dept_Manager {
         protected global::System.Web.UI.WebControls.Panel Panel4;
         
         /// <summary>
-        /// yearCopyDept control.
+        /// yearReadDept control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList yearCopyDept;
+        protected global::System.Web.UI.WebControls.DropDownList yearReadDept;
         
         /// <summary>
-        /// monthCopyEmp control.
+        /// monthReadDept control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList monthCopyEmp;
+        protected global::System.Web.UI.WebControls.DropDownList monthReadDept;
         
         /// <summary>
-        /// dayCopyDept control.
+        /// readTsDept control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dayCopyDept;
-        
-        /// <summary>
-        /// yearPasteDept control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList yearPasteDept;
-        
-        /// <summary>
-        /// monthPasteDept control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList monthPasteDept;
-        
-        /// <summary>
-        /// dayPasteDept control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dayPasteDept;
-        
-        /// <summary>
-        /// copyTsDept control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button copyTsDept;
+        protected global::System.Web.UI.WebControls.Button readTsDept;
     }
 }
