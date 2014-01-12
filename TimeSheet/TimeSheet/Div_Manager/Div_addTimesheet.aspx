@@ -11,8 +11,9 @@
         <ul style="text-align: right">
             <span style="font-family: 'Segoe UI'; font-size: large"><b>
             <li1><a id="A2009" runat="server" href="Div_addTimesheet.aspx" style="color: #7AC0DA">Add</a></li1></b> <b>
-            <li2><a id="A2010" runat="server" href="Div_modifyTimesheet.aspx" style="color: #7AC0DA">Modify</a></li2></b>
-
+            <li2><a id="A2010" runat="server" href="Div_modifyTimesheet.aspx" style="color: #7AC0DA">Modify</a></li2></b> <b>
+            <li3><a id="A2011" runat="server" href="Div_Timesheet.aspx" style="color: #7AC0DA">Read</a></li3></b> <b>
+           <li4><a id="A2012" runat="server" href="Div_copyTimesheet.aspx" style="color: #7AC0DA">Copy</a></li4></b> <b>
         </ul>
     </aside>
        <asp:Panel ID="Panel4" runat="server" Height="398px" Width="559px">
@@ -44,7 +45,7 @@
                 <td style="width: 130px">&nbsp;</td>
                 <td>
                     <p style="text-align: right">
-                        <asp:Button ID="addTsDiv" runat="server" Font-Size="XX-Small" Text="Add" />
+                        <asp:Button ID="addTsDiv" runat="server" Font-Size="XX-Small" Text="Add" OnClick="addTsDiv_Click" />
                     </p>
                 </td>
             </tr>

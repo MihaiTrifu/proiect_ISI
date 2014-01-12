@@ -31,6 +31,24 @@ namespace TimeSheet.Div_Manager {
         protected global::System.Web.UI.HtmlControls.HtmlAnchor A2010;
         
         /// <summary>
+        /// A2011 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A2011;
+        
+        /// <summary>
+        /// A2012 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A2012;
+        
+        /// <summary>
         /// Panel4 control.
         /// </summary>
         /// <remarks>
@@ -56,15 +74,6 @@ namespace TimeSheet.Div_Manager {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList monthModifyDiv;
-        
-        /// <summary>
-        /// dayModifyDiv control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dayModifyDiv;
         
         /// <summary>
         /// modifyTsDiv control.

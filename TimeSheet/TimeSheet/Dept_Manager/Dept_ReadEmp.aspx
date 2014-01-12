@@ -8,13 +8,11 @@
     </hgroup>
 
     <aside height: 48px; right: 4px;  0px; position: relative; top: -60px;">
-        <ul style="text-align: right">
-            <span style="font-family: 'Segoe UI'; font-size: large">
-           <li1><a id="A5" runat="server" href="Dept_addTimesheet.aspx" style="color: #3E5667">Add</a></li1><span style="color: #3E5667"></b></span> <b>
-            <li2><a id="A7" runat="server" href="Dept_modifyTimesheet.aspx" style="color: #3E5667">Modify/ Read</a></li2></b> <b>
-            <li2><a id="A6" runat="server" href="Dept_copyTimesheet.aspx" style="color: #3E5667">Copy</a></li2></b></span> <b>
+      <ul style="text-align: right">
+            <span style="font-family: 'Segoe UI'; font-size: large"><b>
+            <li1><a id="A501" runat="server" href="Dept_AproveEmp.aspx" style="color: #7AC0DA">Aprove</a></li1></b> <b>
+            <li2><a id="A502" runat="server" href="Dept_ReadEmp.aspx" style="color: #7AC0DA">Read</a></li2></b> <b>
         </ul>
-    </aside>
        <asp:Panel ID="Panel4" runat="server" Height="283px" Width="559px">
         <table align="left" style="width: 99%; float: left; font-family: Verdana; margin-right: 0px; height: 230px;">
             <tr>
@@ -42,17 +40,10 @@
                     </span></td>
             </tr>
             <tr>
-                <td style="width: 130px; font-family: 'Book Antiqua'; color: #3E5667; font-weight: bold; font-size: small;">Day<span style="border-width: 0; padding-right: 2em">:&nbsp;</span></td>
-                <td>
-                    <asp:DropDownList ID="daySelectRead" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="287px">
-                    </asp:DropDownList>
-                </td>
-            </tr>
-            <tr>
                 <td style="width: 130px">&nbsp;</td>
                 <td>
                     <p style="text-align: right">
-                        <asp:Button ID="openRead" runat="server" Font-Size="XX-Small" Text="Open" />
+                        <asp:Button ID="openRead" runat="server" Font-Size="XX-Small" Text="Open" OnClick="openRead_Click" />
                     </p>
                 </td>
             </tr>

@@ -13,22 +13,40 @@ namespace TimeSheet.Director {
     public partial class Dir_Personal {
         
         /// <summary>
-        /// A209 control.
+        /// A309 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A209;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A309;
         
         /// <summary>
-        /// A210 control.
+        /// A310 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A210;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A310;
+        
+        /// <summary>
+        /// A311 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A311;
+        
+        /// <summary>
+        /// A312 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor A312;
         
         /// <summary>
         /// Panel2 control.

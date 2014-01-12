@@ -49,15 +49,6 @@ namespace TimeSheet.Div_Manager {
         protected global::System.Web.UI.WebControls.DropDownList monthSelectReadDiv;
         
         /// <summary>
-        /// daySelectReadDiv control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList daySelectReadDiv;
-        
-        /// <summary>
         /// openReadDiv control.
         /// </summary>
         /// <remarks>

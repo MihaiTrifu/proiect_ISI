@@ -227,17 +227,33 @@
     <Content Include="Dept_Manager\Dept_reportTip2.aspx" />
     <Content Include="Dept_Manager\Dept_reportTip3.aspx" />
     <Content Include="Director\Dir_addTimesheet.aspx" />
+    <Content Include="Director\Dir_copyTimesheet.aspx" />
     <Content Include="Director\Dir_empRead.aspx" />
+    <Content Include="Director\Dir_empReadMonthly.aspx" />
     <Content Include="Director\Dir_modifyTimesheet.aspx" />
     <Content Include="Director\Dir_Personal.aspx" />
+    <Content Include="Director\Dir_personalAddNewTimesheet.aspx" />
+    <Content Include="Director\Dir_personalModifyDaily.aspx" />
+    <Content Include="Director\Dir_personalModifyMonthly.aspx" />
+    <Content Include="Director\Dir_personalMonthlyView.aspx" />
+    <Content Include="Director\Dir_personalReadMonthly.aspx" />
+    <Content Include="Director\Dir_readTimesheet.aspx" />
     <Content Include="Director\Dir_reportTip1.aspx" />
     <Content Include="Director\Dir_reportTip2.aspx" />
     <Content Include="Director\Dir_reportTip3.aspx" />
     <Content Include="Director\Dir_Report.aspx" />
     <Content Include="Div_Manager\Div_addTimesheet.aspx" />
+    <Content Include="Div_Manager\Div_copyTimesheet.aspx" />
     <Content Include="Div_Manager\Div_empRead.aspx" />
+    <Content Include="Div_Manager\Div_empReadMonthly.aspx" />
     <Content Include="Div_Manager\Div_modifyTimesheet.aspx" />
     <Content Include="Div_Manager\Div_Personal.aspx" />
+    <Content Include="Div_Manager\Div_personalAddNewTimesheet.aspx" />
+    <Content Include="Div_Manager\Div_personalModifyDaily.aspx" />
+    <Content Include="Div_Manager\Div_personalModifyMonthly.aspx" />
+    <Content Include="Div_Manager\Div_personalMonthlyView.aspx" />
+    <Content Include="Div_Manager\Div_personalReadMonthly.aspx" />
+    <Content Include="Div_Manager\Div_readTimesheet.aspx" />
     <Content Include="Div_Manager\Div_Report.aspx" />
     <Content Include="Div_Manager\Div_reportTip1.aspx" />
     <Content Include="Div_Manager\Div_reportTip2.aspx" />
@@ -608,12 +624,26 @@
     <Compile Include="Director\Dir_addTimesheet.aspx.designer.cs">
       <DependentUpon>Dir_addTimesheet.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Director\Dir_copyTimesheet.aspx.cs">
+      <DependentUpon>Dir_copyTimesheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Director\Dir_copyTimesheet.aspx.designer.cs">
+      <DependentUpon>Dir_copyTimesheet.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Director\Dir_empRead.aspx.cs">
       <DependentUpon>Dir_empRead.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Director\Dir_empRead.aspx.designer.cs">
       <DependentUpon>Dir_empRead.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Director\Dir_empReadMonthly.aspx.cs">
+      <DependentUpon>Dir_empReadMonthly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Director\Dir_empReadMonthly.aspx.designer.cs">
+      <DependentUpon>Dir_empReadMonthly.aspx</DependentUpon>
     </Compile>
     <Compile Include="Director\Dir_modifyTimesheet.aspx.cs">
       <DependentUpon>Dir_modifyTimesheet.aspx</DependentUpon>
@@ -628,6 +658,48 @@
     </Compile>
     <Compile Include="Director\Dir_Personal.aspx.designer.cs">
       <DependentUpon>Dir_Personal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Director\Dir_personalAddNewTimesheet.aspx.cs">
+      <DependentUpon>Dir_personalAddNewTimesheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Director\Dir_personalAddNewTimesheet.aspx.designer.cs">
+      <DependentUpon>Dir_personalAddNewTimesheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Director\Dir_personalModifyDaily.aspx.cs">
+      <DependentUpon>Dir_personalModifyDaily.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Director\Dir_personalModifyDaily.aspx.designer.cs">
+      <DependentUpon>Dir_personalModifyDaily.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Director\Dir_personalModifyMonthly.aspx.cs">
+      <DependentUpon>Dir_personalModifyMonthly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Director\Dir_personalModifyMonthly.aspx.designer.cs">
+      <DependentUpon>Dir_personalModifyMonthly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Director\Dir_personalMonthlyView.aspx.cs">
+      <DependentUpon>Dir_personalMonthlyView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Director\Dir_personalMonthlyView.aspx.designer.cs">
+      <DependentUpon>Dir_personalMonthlyView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Director\Dir_personalReadMonthly.aspx.cs">
+      <DependentUpon>Dir_personalReadMonthly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Director\Dir_personalReadMonthly.aspx.designer.cs">
+      <DependentUpon>Dir_personalReadMonthly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Director\Dir_readTimesheet.aspx.cs">
+      <DependentUpon>Dir_readTimesheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Director\Dir_readTimesheet.aspx.designer.cs">
+      <DependentUpon>Dir_readTimesheet.aspx</DependentUpon>
     </Compile>
     <Compile Include="Director\Dir_reportTip1.aspx.cs">
       <DependentUpon>Dir_reportTip1.aspx</DependentUpon>
@@ -674,12 +746,26 @@
     <Compile Include="Div_Manager\Div_addTimesheet.aspx.designer.cs">
       <DependentUpon>Div_addTimesheet.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Div_Manager\Div_copyTimesheet.aspx.cs">
+      <DependentUpon>Div_copyTimesheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Div_Manager\Div_copyTimesheet.aspx.designer.cs">
+      <DependentUpon>Div_copyTimesheet.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Div_Manager\Div_empRead.aspx.cs">
       <DependentUpon>Div_empRead.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Div_Manager\Div_empRead.aspx.designer.cs">
       <DependentUpon>Div_empRead.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Div_Manager\Div_empReadMonthly.aspx.cs">
+      <DependentUpon>Div_empReadMonthly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Div_Manager\Div_empReadMonthly.aspx.designer.cs">
+      <DependentUpon>Div_empReadMonthly.aspx</DependentUpon>
     </Compile>
     <Compile Include="Div_Manager\Div_modifyTimesheet.aspx.cs">
       <DependentUpon>Div_modifyTimesheet.aspx</DependentUpon>
@@ -694,6 +780,48 @@
     </Compile>
     <Compile Include="Div_Manager\Div_Personal.aspx.designer.cs">
       <DependentUpon>Div_Personal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Div_Manager\Div_personalAddNewTimesheet.aspx.cs">
+      <DependentUpon>Div_personalAddNewTimesheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Div_Manager\Div_personalAddNewTimesheet.aspx.designer.cs">
+      <DependentUpon>Div_personalAddNewTimesheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Div_Manager\Div_personalModifyDaily.aspx.cs">
+      <DependentUpon>Div_personalModifyDaily.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Div_Manager\Div_personalModifyDaily.aspx.designer.cs">
+      <DependentUpon>Div_personalModifyDaily.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Div_Manager\Div_personalModifyMonthly.aspx.cs">
+      <DependentUpon>Div_personalModifyMonthly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Div_Manager\Div_personalModifyMonthly.aspx.designer.cs">
+      <DependentUpon>Div_personalModifyMonthly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Div_Manager\Div_personalMonthlyView.aspx.cs">
+      <DependentUpon>Div_personalMonthlyView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Div_Manager\Div_personalMonthlyView.aspx.designer.cs">
+      <DependentUpon>Div_personalMonthlyView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Div_Manager\Div_personalReadMonthly.aspx.cs">
+      <DependentUpon>Div_personalReadMonthly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Div_Manager\Div_personalReadMonthly.aspx.designer.cs">
+      <DependentUpon>Div_personalReadMonthly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Div_Manager\Div_readTimesheet.aspx.cs">
+      <DependentUpon>Div_readTimesheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Div_Manager\Div_readTimesheet.aspx.designer.cs">
+      <DependentUpon>Div_readTimesheet.aspx</DependentUpon>
     </Compile>
     <Compile Include="Div_Manager\Div_Report.aspx.cs">
       <DependentUpon>Div_Report.aspx</DependentUpon>

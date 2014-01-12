@@ -13,5 +13,10 @@ namespace TimeSheet.Div_Manager
         {
 
         }
+
+        protected void openReadDiv_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Div_empReadMonthly.aspx");
+        }
     }
 }

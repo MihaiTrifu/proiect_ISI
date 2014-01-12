@@ -58,31 +58,31 @@ namespace TimeSheet.Dept_Manager {
         protected global::System.Web.UI.WebControls.Panel Panel4;
         
         /// <summary>
-        /// yearAddDept control.
+        /// yearAddEmp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList yearAddDept;
+        protected global::System.Web.UI.WebControls.DropDownList yearAddEmp;
         
         /// <summary>
-        /// monthAddDept control.
+        /// monthAddEmp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList monthAddDept;
+        protected global::System.Web.UI.WebControls.DropDownList monthAddEmp;
         
         /// <summary>
-        /// dayAddDept control.
+        /// dayAddEmp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dayAddDept;
+        protected global::System.Web.UI.WebControls.DropDownList dayAddEmp;
         
         /// <summary>
         /// addTsDept control.

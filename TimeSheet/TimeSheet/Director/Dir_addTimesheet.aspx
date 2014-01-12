@@ -7,12 +7,13 @@
             <span style="font-family: Andalus; color: #3E5667; display: inline">~ Add timesheet</span></h1>
     </hgroup>
 
-    <aside height: 48px; right: 4px;  0px; position: relative; top: -60px;">
+   <aside height: 48px; right: 4px;  0px; position: relative; top: -60px;">
         <ul style="text-align: right">
             <span style="font-family: 'Segoe UI'; font-size: large"><b>
-            <li1><a id="A209" runat="server" href="Dir_addTimesheet.aspx" style="color: #7AC0DA">Add</a></li1></b> <b>
-            <li2><a id="A210" runat="server" href="Dir_modifyTimesheet.aspx" style="color: #7AC0DA">Modify</a></li2></b> <b>
-
+            <li1><a id="A309" runat="server" href="Dir_addTimesheet.aspx" style="color: #7AC0DA">Add</a></li1></b> <b>
+            <li2><a id="A310" runat="server" href="Dir_modifyTimesheet.aspx" style="color: #7AC0DA">Modify</a></li2></b> <b>
+            <li3><a id="A311" runat="server" href="Dir_readTimesheet.aspx" style="color: #7AC0DA">Read</a></li3></b> <b>
+            <li4><a id="A312" runat="server" href="Dir_copyTimesheet.aspx" style="color: #7AC0DA">Copy</a></li4></b> <b>
         </ul>
     </aside>
        <asp:Panel ID="Panel4" runat="server" Height="398px" Width="559px">
@@ -44,16 +45,13 @@
                 <td style="width: 130px">&nbsp;</td>
                 <td>
                     <p style="text-align: right">
-                        <asp:Button ID="addTsDir" runat="server" Font-Size="XX-Small" Text="Add" />
+                        <asp:Button ID="addTsDir" runat="server" Font-Size="XX-Small" Text="Add" OnClick="addTsDir_Click" />
                     </p>
                 </td>
             </tr>
             </span>
         </table>
     </asp:Panel>
-
         </b>
-
         </span>
-
 </asp:Content>

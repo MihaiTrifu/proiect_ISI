@@ -13,5 +13,10 @@ namespace TimeSheet.Dept_Manager
         {
 
         }
+
+        protected void openRead_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Dept_readEmpTimesheet.aspx");
+        }
     }
 }

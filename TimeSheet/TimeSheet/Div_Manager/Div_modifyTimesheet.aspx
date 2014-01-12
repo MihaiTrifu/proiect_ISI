@@ -4,15 +4,16 @@
         <hgroup class="title">
         <h1>
             <br />
-            <span style="font-family: Andalus; color: #3E5667; display: inline">~ Modify/Read timesheet</span></h1>
+            <span style="font-family: Andalus; color: #3E5667; display: inline">~ Modify timesheet</span></h1>
     </hgroup>
 
     <aside height: 48px; right: 4px;  0px; position: relative; top: -60px;">
         <ul style="text-align: right">
             <span style="font-family: 'Segoe UI'; font-size: large"><b>
             <li1><a id="A2009" runat="server" href="Div_addTimesheet.aspx" style="color: #7AC0DA">Add</a></li1></b> <b>
-            <li2><a id="A2010" runat="server" href="Div_modifyTimesheet.aspx" style="color: #7AC0DA">Modify</a></li2></b>
-
+            <li2><a id="A2010" runat="server" href="Div_modifyTimesheet.aspx" style="color: #7AC0DA">Modify</a></li2></b> <b>
+            <li3><a id="A2011" runat="server" href="Div_readTimesheet.aspx" style="color: #7AC0DA">Read</a></li3></b> <b>
+           <li4><a id="A2012" runat="server" href="Div_copyTimesheet.aspx" style="color: #7AC0DA">Copy</a></li4></b> <b>
         </ul>
     </aside>
        <asp:Panel ID="Panel4" runat="server" Height="398px" Width="559px">
@@ -34,17 +35,10 @@
                     </span></td>
             </tr>
             <tr>
-                <td style="width: 130px; font-family: 'Book Antiqua'; color: #3E5667; font-weight: bold; font-size: small;">Day<span style="border-width: 0; padding-right: 2em">:&nbsp;</span></td>
-                <td>
-                    <asp:DropDownList ID="dayModifyDiv" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="287px">
-                    </asp:DropDownList>
-                </td>
-            </tr>
-            <tr>
                 <td style="width: 130px">&nbsp;</td>
                 <td>
                     <p style="text-align: right">
-                        <asp:Button ID="modifyTsDiv" runat="server" Font-Size="XX-Small" Text="Modify" />
+                        <asp:Button ID="modifyTsDiv" runat="server" Font-Size="XX-Small" Text="Modify" OnClick="modifyTsDiv_Click" />
                     </p>
                 </td>
             </tr>

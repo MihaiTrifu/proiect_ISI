@@ -13,5 +13,10 @@ namespace TimeSheet.Director
         {
 
         }
+
+        protected void openReadDir_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Dir_empReadMonthly.aspx");
+        }
     }
 }
