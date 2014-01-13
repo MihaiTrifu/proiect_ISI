@@ -368,6 +368,9 @@
     <Compile Include="Administrator\Audit.aspx.designer.cs">
       <DependentUpon>Audit.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Clients.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

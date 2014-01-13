@@ -29,24 +29,17 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Projects">
-      <EntityTypeMapping TypeName="Database1Model.Projects">
-        <MappingFragment StoreEntitySet="Projects">
-          <ScalarProperty Name="ManagerID" ColumnName="ManagerID" />
-          <ScalarProperty Name="Client_name" ColumnName="Client_name" />
-          <ScalarProperty Name="Proj_name" ColumnName="Proj_name" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="Timesheets">
       <EntityTypeMapping TypeName="Database1Model.Timesheets">
         <MappingFragment StoreEntitySet="Timesheets">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Day" ColumnName="Day" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
           <ScalarProperty Name="Start_time" ColumnName="Start_time" />
           <ScalarProperty Name="Finish_time" ColumnName="Finish_time" />
           <ScalarProperty Name="Activity" ColumnName="Activity" />
-          <ScalarProperty Name="Status" ColumnName="Status" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -61,6 +54,23 @@
           <ScalarProperty Name="Mail" ColumnName="Mail" />
           <ScalarProperty Name="DeptID" ColumnName="DeptID" />
           <ScalarProperty Name="Proj_name" ColumnName="Proj_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clients">
+      <EntityTypeMapping TypeName="Database1Model.Clients">
+        <MappingFragment StoreEntitySet="Clients">
+          <ScalarProperty Name="ManagerID" ColumnName="ManagerID" />
+          <ScalarProperty Name="Client" ColumnName="Client" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Projects">
+      <EntityTypeMapping TypeName="Database1Model.Projects">
+        <MappingFragment StoreEntitySet="Projects">
+          <ScalarProperty Name="Client" ColumnName="Client" />
+          <ScalarProperty Name="ManagerID" ColumnName="ManagerID" />
+          <ScalarProperty Name="Project" ColumnName="Project" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

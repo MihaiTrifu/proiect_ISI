@@ -17,9 +17,9 @@ namespace TimeSheet.Dept_Manager
 
 
         public string status = "Open";
-        public string year = "1900";
-        public string month = "August";
-        public string day = "1";
+        public string year = Dept_addTimesheet.YearDropDownEmp;
+        public string month = Dept_addTimesheet.MonthDropDownEmp;
+        public string day = Dept_addTimesheet.DayDropDownEmp;
 
         public DropDownList[] activity = new DropDownList[12];
         public DropDownList[] timeSlotBegin = new DropDownList[12];
@@ -102,6 +102,25 @@ namespace TimeSheet.Dept_Manager
 
             hoursLabel.Text = noWorkedHours.ToString();
             extraHoursLabel.Text = noExtraHours.ToString();
+
+            if (!IsPostBack)
+            {
+                loadData();
+            }
+        }
+
+        private void loadData()
+        {
+            for (int i = 0; i < 12; i++)
+            {
+                Database1Entities bd = new Database1Entities();
+                var activityList = from c in bd.Activities select new { c.Name };
+
+                activity[i].DataValueField = "Name";
+                activity[i].DataSource = activityList.ToArray();
+
+                DataBind(); 
+            }
         }
 
         protected void addRowsButton_Click(object sender, EventArgs e)
@@ -177,6 +196,52 @@ namespace TimeSheet.Dept_Manager
         protected void monthlyViewButton_Click(object sender, EventArgs e)
         {
             Response.Redirect("Dept_monthlyView.aspx");
+        }
+
+        protected void saveButton_Click(object sender, EventArgs e)
+        {
+            Database1Entities bd = new Database1Entities();
+            Timesheets ts;
+            for (int i = 0; i < 12; i++)
+            {
+                if (timeSlotBegin[i].Enabled == true)
+                {
+                    ts = new Timesheets();
+
+                    ts.Activity = activity[i].SelectedValue;
+                    ts.Day = Dept_addTimesheet.DayDropDownEmp;
+                    ts.Month = Dept_addTimesheet.MonthDropDownEmp;
+                    ts.Year = Dept_addTimesheet.YearDropDownEmp;
+                    ts.Start_time = timeSlotBegin[i].SelectedValue;
+                    ts.Finish_time = timeSlotEnd[i].SelectedValue;
+                    ts.UserID = SiteMaster.currentUser.ID;
+                    ts.ID = SiteMaster.counter++;
+
+
+                    if (SiteMaster.logDeptMan)
+                    {
+                        using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\LogFile.txt", true))
+                        {
+                            string text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss -> ");
+                            text = text
+                                + SiteMaster.currentUser.Job.ToString()
+                                + " added activity "
+                                + activity[i].SelectedValue
+                                + " from "
+                                + timeSlotBegin[i].SelectedValue
+                                + " to "
+                                + timeSlotEnd[i].SelectedValue
+                                + " on "
+                                + ts.Day + "/" + ts.Month + "/" + ts.Year;
+                            file.WriteLine(text);
+                        }
+                    }
+
+                    bd.Timesheets.Add(ts);
+
+                    bd.SaveChanges();
+                }
+            }
         }
 
     }

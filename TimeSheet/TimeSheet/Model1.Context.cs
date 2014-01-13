@@ -28,8 +28,9 @@ namespace TimeSheet
         public DbSet<Activities> Activities { get; set; }
         public DbSet<Dept> Dept { get; set; }
         public DbSet<Divisions> Divisions { get; set; }
-        public DbSet<Projects> Projects { get; set; }
         public DbSet<Timesheets> Timesheets { get; set; }
         public DbSet<Users> Users { get; set; }
+        public DbSet<Clients> Clients { get; set; }
+        public DbSet<Projects> Projects { get; set; }
     }
 }

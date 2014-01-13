@@ -7,23 +7,31 @@
     <Schema Namespace="Database1Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityContainer Name="Database1ModelStoreContainer">
           <EntitySet Name="Activities" EntityType="Database1Model.Store.Activities" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Clients" EntityType="Database1Model.Store.Clients" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="Dept" EntityType="Database1Model.Store.Dept" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="Divisions" EntityType="Database1Model.Store.Divisions" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="Projects" EntityType="Database1Model.Store.Projects" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="Timesheets" EntityType="Database1Model.Store.Timesheets" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="Users" EntityType="Database1Model.Store.Users" store:Type="Tables" Schema="dbo" />
-          <AssociationSet Name="FK__Activitie__DeptI__4D5F7D71" Association="Database1Model.Store.FK__Activitie__DeptI__4D5F7D71">
+          <AssociationSet Name="FK__Activitie__DeptI__625A9A57" Association="Database1Model.Store.FK__Activitie__DeptI__625A9A57">
             <End Role="Dept" EntitySet="Dept" />
             <End Role="Activities" EntitySet="Activities" />
           </AssociationSet>
         </EntityContainer>
         <EntityType Name="Activities">
           <Key>
-            <PropertyRef Name="ManagerID" />
+            <PropertyRef Name="Name" />
           </Key>
           <Property Name="ManagerID" Type="varchar" Nullable="false" MaxLength="50" />
           <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
           <Property Name="DeptID" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Clients">
+          <Key>
+            <PropertyRef Name="Client" />
+          </Key>
+          <Property Name="Client" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ManagerID" Type="varchar" Nullable="false" MaxLength="50" />
         </EntityType>
         <EntityType Name="Dept">
           <Key>
@@ -44,22 +52,24 @@
         </EntityType>
         <EntityType Name="Projects">
           <Key>
-            <PropertyRef Name="ManagerID" />
+            <PropertyRef Name="Project" />
           </Key>
+          <Property Name="Project" Type="varchar" Nullable="false" MaxLength="50" />
           <Property Name="ManagerID" Type="varchar" Nullable="false" MaxLength="50" />
-          <Property Name="Client_name" Type="varchar" MaxLength="50" />
-          <Property Name="Proj_name" Type="varchar" MaxLength="50" />
+          <Property Name="Client" Type="varchar" Nullable="false" MaxLength="50" />
         </EntityType>
         <EntityType Name="Timesheets">
           <Key>
-            <PropertyRef Name="Id" />
+            <PropertyRef Name="ID" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
-          <Property Name="Date" Type="time" Nullable="false" />
-          <Property Name="Start_time" Type="int" Nullable="false" />
-          <Property Name="Finish_time" Type="int" Nullable="false" />
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="UserID" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Day" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Month" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Year" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Start_time" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Finish_time" Type="varchar" Nullable="false" MaxLength="50" />
           <Property Name="Activity" Type="varchar" Nullable="false" MaxLength="50" />
-          <Property Name="Status" Type="varchar" Nullable="false" MaxLength="50" />
         </EntityType>
         <EntityType Name="Users">
           <Key>
@@ -74,7 +84,7 @@
           <Property Name="DeptID" Type="varchar" MaxLength="50" />
           <Property Name="Proj_name" Type="varchar" MaxLength="50" />
         </EntityType>
-        <Association Name="FK__Activitie__DeptI__4D5F7D71">
+        <Association Name="FK__Activitie__DeptI__625A9A57">
           <End Role="Dept" Type="Database1Model.Store.Dept" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
           </End>
@@ -96,17 +106,18 @@
           <EntitySet Name="Activities" EntityType="Database1Model.Activities" />
           <EntitySet Name="Dept" EntityType="Database1Model.Dept" />
           <EntitySet Name="Divisions" EntityType="Database1Model.Divisions" />
-          <EntitySet Name="Projects" EntityType="Database1Model.Projects" />
           <EntitySet Name="Timesheets" EntityType="Database1Model.Timesheets" />
           <EntitySet Name="Users" EntityType="Database1Model.Users" />
           <AssociationSet Name="FK__Activitie__DeptI__4D5F7D71" Association="Database1Model.FK__Activitie__DeptI__4D5F7D71">
             <End Role="Dept" EntitySet="Dept" />
             <End Role="Activities" EntitySet="Activities" />
           </AssociationSet>
+          <EntitySet Name="Clients" EntityType="Database1Model.Clients" />
+          <EntitySet Name="Projects" EntityType="Database1Model.Projects" />
         </EntityContainer>
         <EntityType Name="Activities">
           <Key>
-            <PropertyRef Name="ManagerID" />
+            <PropertyRef Name="Name" />
           </Key>
           <Property Name="ManagerID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
           <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
@@ -131,24 +142,18 @@
           <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
           <Property Name="DivisionID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
         </EntityType>
-        <EntityType Name="Projects">
-          <Key>
-            <PropertyRef Name="ManagerID" />
-          </Key>
-          <Property Name="ManagerID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
-          <Property Name="Client_name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
-          <Property Name="Proj_name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
-        </EntityType>
         <EntityType Name="Timesheets">
           <Key>
-            <PropertyRef Name="Id" />
+            <PropertyRef Name="ID" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
-          <Property Name="Date" Type="Time" Nullable="false" Precision="7" />
-          <Property Name="Start_time" Type="Int32" Nullable="false" />
-          <Property Name="Finish_time" Type="Int32" Nullable="false" />
+          <Property Name="Start_time" Type="String" Nullable="false" />
+          <Property Name="Finish_time" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
           <Property Name="Activity" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
-          <Property Name="Status" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Type="String" Name="UserID" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Type="String" Name="Day" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Month" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Year" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="ID" Nullable="false" />
         </EntityType>
         <EntityType Name="Users">
           <Key>
@@ -177,6 +182,21 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <EntityType Name="Clients">
+          <Key>
+            <PropertyRef Name="Client" />
+          </Key>
+          <Property Type="String" Name="Client" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ManagerID" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Projects">
+          <Key>
+            <PropertyRef Name="Project" />
+          </Key>
+          <Property Type="String" Name="Project" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ManagerID" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Client" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -211,24 +231,17 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Projects">
-            <EntityTypeMapping TypeName="Database1Model.Projects">
-              <MappingFragment StoreEntitySet="Projects">
-                <ScalarProperty Name="ManagerID" ColumnName="ManagerID" />
-                <ScalarProperty Name="Client_name" ColumnName="Client_name" />
-                <ScalarProperty Name="Proj_name" ColumnName="Proj_name" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="Timesheets">
             <EntityTypeMapping TypeName="Database1Model.Timesheets">
               <MappingFragment StoreEntitySet="Timesheets">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Year" ColumnName="Year" />
+                <ScalarProperty Name="Month" ColumnName="Month" />
+                <ScalarProperty Name="Day" ColumnName="Day" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
                 <ScalarProperty Name="Start_time" ColumnName="Start_time" />
                 <ScalarProperty Name="Finish_time" ColumnName="Finish_time" />
                 <ScalarProperty Name="Activity" ColumnName="Activity" />
-                <ScalarProperty Name="Status" ColumnName="Status" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -243,6 +256,23 @@
                 <ScalarProperty Name="Mail" ColumnName="Mail" />
                 <ScalarProperty Name="DeptID" ColumnName="DeptID" />
                 <ScalarProperty Name="Proj_name" ColumnName="Proj_name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Clients">
+            <EntityTypeMapping TypeName="Database1Model.Clients">
+              <MappingFragment StoreEntitySet="Clients">
+                <ScalarProperty Name="ManagerID" ColumnName="ManagerID" />
+                <ScalarProperty Name="Client" ColumnName="Client" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Projects">
+            <EntityTypeMapping TypeName="Database1Model.Projects">
+              <MappingFragment StoreEntitySet="Projects">
+                <ScalarProperty Name="Client" ColumnName="Client" />
+                <ScalarProperty Name="ManagerID" ColumnName="ManagerID" />
+                <ScalarProperty Name="Project" ColumnName="Project" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

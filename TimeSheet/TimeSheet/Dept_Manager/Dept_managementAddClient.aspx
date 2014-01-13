@@ -29,7 +29,7 @@
                 <td style="width: 130px">&nbsp;</td>
                 <td>
                     <p style="text-align: right">
-                        <asp:Button ID="insertClient" runat="server" Font-Size="XX-Small" Text="Insert" />
+                        <asp:Button ID="insertClient" runat="server" Font-Size="XX-Small" Text="Insert" OnClick="insertClient_Click"/>
                     </p>
                 </td>
             </tr>

@@ -22,15 +22,16 @@
                 <td style="width: 82px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667; height: 40px;">Year<b>:</b></td>
                 <td style="height: 40px">
                     </span><span style="font-family: 'Segoe UI'; font-size: large">
-                    <asp:DropDownList ID="yearModifyDept" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="287px">
-                    </asp:DropDownList>
+                    <asp:DropDownList ID="selectYear" AppendDataBoundItems="true" OnSelectedIndexChanged="selectYear_SelectedIndexChanged" AutoPostBack="true" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="291px">
+                                <asp:ListItem Text="Select Year.." Selected="True" />
+                            </asp:DropDownList>
                     </span></td>
             </tr>
             </span><span style="font-family: 'Segoe UI'; font-size: large">
             <tr>
                 <td style="width: 82px; font-size: small; font-weight: bold; font-family: 'Book Antiqua'; color: #3E5667; height: 40px;">Month:</td>
                 <td style="height: 40px"><span style="font-family: 'Segoe UI'; font-size: large">
-                    <asp:DropDownList ID="monthModifyDept" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="287px">
+                    <asp:DropDownList ID="selectMonth" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="287px">
                     </asp:DropDownList>
                     </span></td>
             </tr>

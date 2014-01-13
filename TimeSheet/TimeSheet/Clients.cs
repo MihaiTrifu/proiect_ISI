@@ -12,10 +12,9 @@ namespace TimeSheet
     using System;
     using System.Collections.Generic;
     
-    public partial class Projects
+    public partial class Clients
     {
-        public string Project { get; set; }
-        public string ManagerID { get; set; }
         public string Client { get; set; }
+        public string ManagerID { get; set; }
     }
 }

@@ -37,7 +37,7 @@
                 <td style="width: 130px">&nbsp;</td>
                 <td>
                     <p style="text-align: right">
-                        <asp:Button ID="insertProject" runat="server" Font-Size="XX-Small" Text="Insert" />
+                        <asp:Button ID="insertProject" runat="server" Font-Size="XX-Small" Text="Insert" OnClick="insertProject_Click"/>
                     </p>
                 </td>
             </tr>

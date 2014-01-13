@@ -14,11 +14,13 @@ namespace TimeSheet
     
     public partial class Timesheets
     {
-        public int Id { get; set; }
-        public System.TimeSpan Date { get; set; }
-        public int Start_time { get; set; }
-        public int Finish_time { get; set; }
+        public string Start_time { get; set; }
+        public string Finish_time { get; set; }
         public string Activity { get; set; }
-        public string Status { get; set; }
+        public string UserID { get; set; }
+        public string Day { get; set; }
+        public string Month { get; set; }
+        public string Year { get; set; }
+        public int ID { get; set; }
     }
 }

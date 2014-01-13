@@ -4,17 +4,18 @@
     <EntitySet Name="Activities" EntityType="Database1Model.Activities" />
     <EntitySet Name="Dept" EntityType="Database1Model.Dept" />
     <EntitySet Name="Divisions" EntityType="Database1Model.Divisions" />
-    <EntitySet Name="Projects" EntityType="Database1Model.Projects" />
     <EntitySet Name="Timesheets" EntityType="Database1Model.Timesheets" />
     <EntitySet Name="Users" EntityType="Database1Model.Users" />
     <AssociationSet Name="FK__Activitie__DeptI__4D5F7D71" Association="Database1Model.FK__Activitie__DeptI__4D5F7D71">
       <End Role="Dept" EntitySet="Dept" />
       <End Role="Activities" EntitySet="Activities" />
     </AssociationSet>
+    <EntitySet Name="Clients" EntityType="Database1Model.Clients" />
+    <EntitySet Name="Projects" EntityType="Database1Model.Projects" />
   </EntityContainer>
   <EntityType Name="Activities">
     <Key>
-      <PropertyRef Name="ManagerID" />
+      <PropertyRef Name="Name" />
     </Key>
     <Property Name="ManagerID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
     <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
@@ -39,24 +40,18 @@
     <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
     <Property Name="DivisionID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
   </EntityType>
-  <EntityType Name="Projects">
-    <Key>
-      <PropertyRef Name="ManagerID" />
-    </Key>
-    <Property Name="ManagerID" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
-    <Property Name="Client_name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
-    <Property Name="Proj_name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
-  </EntityType>
   <EntityType Name="Timesheets">
     <Key>
-      <PropertyRef Name="Id" />
+      <PropertyRef Name="ID" />
     </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" />
-    <Property Name="Date" Type="Time" Nullable="false" Precision="7" />
-    <Property Name="Start_time" Type="Int32" Nullable="false" />
-    <Property Name="Finish_time" Type="Int32" Nullable="false" />
+    <Property Name="Start_time" Type="String" Nullable="false" />
+    <Property Name="Finish_time" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
     <Property Name="Activity" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
-    <Property Name="Status" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Type="String" Name="UserID" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Type="String" Name="Day" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Month" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Year" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
   </EntityType>
   <EntityType Name="Users">
     <Key>
@@ -85,4 +80,19 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <EntityType Name="Clients">
+    <Key>
+      <PropertyRef Name="Client" />
+    </Key>
+    <Property Type="String" Name="Client" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ManagerID" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Projects">
+    <Key>
+      <PropertyRef Name="Project" />
+    </Key>
+    <Property Type="String" Name="Project" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ManagerID" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Client" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
 </Schema>
