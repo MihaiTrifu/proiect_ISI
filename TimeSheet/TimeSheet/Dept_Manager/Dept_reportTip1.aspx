@@ -25,7 +25,7 @@
                     </asp:DropDownList>
                 </td>
                 <td rowspan="2" style="width: 175px">
-                    <asp:Button ID="okReportTip1Dept" runat="server" Font-Size="XX-Small" Text="OK" />
+                    <asp:Button ID="okReportTip1Dept" runat="server" Font-Size="XX-Small" Text="OK" OnClick="okReportTip1Dept_Click"/>
                     <asp:Button ID="resetReportTip1Dept" runat="server" Font-Size="XX-Small" Text="Reset" OnClick="resetReportTip1Dept_Click" />
                 </td>
             </tr>
@@ -40,21 +40,23 @@
                             <tr>
                                 <td>Year:&nbsp;&nbsp;</td>
                                 <td>
-                                    <asp:DropDownList ID="yearBeginTip1Dept" runat="server" Height="16px" Width="93px">
+                                    <asp:DropDownList ID="yearBegin" AppendDataBoundItems="true" AutoPostBack="true" OnSelectedIndexChanged="yearBegin_SelectedIndexChanged" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="93px" CausesValidation="True">
+                                        <asp:ListItem Text="Select Year.." Selected="True" />
                                     </asp:DropDownList>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Month:</td>
                                 <td>
-                                    <asp:DropDownList ID="monthBeginTip1Dept" runat="server" Height="16px" style="margin-left: 1px" Width="93px">
+                                    <asp:DropDownList ID="monthBegin" AppendDataBoundItems="true" AutoPostBack="true" OnSelectedIndexChanged="monthBegin_SelectedIndexChanged" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="93px" CausesValidation="True">
+                                        <asp:ListItem Text="Select Month.." Selected="True" />
                                     </asp:DropDownList>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Day:</td>
                                 <td>
-                                    <asp:DropDownList ID="dayBeginTip1Dept" runat="server" Height="16px" style="margin-left: 0px" Width="93px">
+                                    <asp:DropDownList ID="dayBegin" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="93px" CausesValidation="True">
                                     </asp:DropDownList>
                                 </td>
                             </tr>
@@ -71,21 +73,23 @@
                             <tr>
                                 <td>Year:&nbsp;&nbsp;</td>
                                 <td>
-                                    <asp:DropDownList ID="yearEndTip1Dept" runat="server" Height="16px" Width="93px">
+                                    <asp:DropDownList ID="yearEnd" AppendDataBoundItems="true" AutoPostBack="true" OnSelectedIndexChanged="yearEnd_SelectedIndexChanged" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="93px" CausesValidation="True">
+                                        <asp:ListItem Text="Select Year.." Selected="True" />
                                     </asp:DropDownList>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Month:</td>
                                 <td>
-                                    <asp:DropDownList ID="monthEndTip1Dept" runat="server" Height="16px" style="margin-left: 1px" Width="93px">
+                                    <asp:DropDownList ID="monthEnd" AppendDataBoundItems="true" AutoPostBack="true" OnSelectedIndexChanged="monthEnd_SelectedIndexChanged" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="93px" CausesValidation="True">
+                                        <asp:ListItem Text="Select Month.." Selected="True" />
                                     </asp:DropDownList>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Day:</td>
                                 <td>
-                                    <asp:DropDownList ID="dayEndTip1Dept" runat="server" Height="16px" style="margin-left: 0px" Width="93px">
+                                    <asp:DropDownList ID="dayEnd" runat="server" Height="19px" style="margin-left: 3px" ViewStateMode="Enabled" Width="93px" CausesValidation="True">
                                     </asp:DropDownList>
                                 </td>
                             </tr>

@@ -85,31 +85,31 @@ namespace TimeSheet.Dept_Manager {
         protected global::System.Web.UI.WebControls.Panel Panel1;
         
         /// <summary>
-        /// yearBeginTip1Dept control.
+        /// yearBegin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList yearBeginTip1Dept;
+        protected global::System.Web.UI.WebControls.DropDownList yearBegin;
         
         /// <summary>
-        /// monthBeginTip1Dept control.
+        /// monthBegin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList monthBeginTip1Dept;
+        protected global::System.Web.UI.WebControls.DropDownList monthBegin;
         
         /// <summary>
-        /// dayBeginTip1Dept control.
+        /// dayBegin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dayBeginTip1Dept;
+        protected global::System.Web.UI.WebControls.DropDownList dayBegin;
         
         /// <summary>
         /// Panel2 control.
@@ -121,30 +121,30 @@ namespace TimeSheet.Dept_Manager {
         protected global::System.Web.UI.WebControls.Panel Panel2;
         
         /// <summary>
-        /// yearEndTip1Dept control.
+        /// yearEnd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList yearEndTip1Dept;
+        protected global::System.Web.UI.WebControls.DropDownList yearEnd;
         
         /// <summary>
-        /// monthEndTip1Dept control.
+        /// monthEnd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList monthEndTip1Dept;
+        protected global::System.Web.UI.WebControls.DropDownList monthEnd;
         
         /// <summary>
-        /// dayEndTip1Dept control.
+        /// dayEnd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dayEndTip1Dept;
+        protected global::System.Web.UI.WebControls.DropDownList dayEnd;
     }
 }

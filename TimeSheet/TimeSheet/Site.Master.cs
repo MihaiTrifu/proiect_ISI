@@ -20,7 +20,7 @@ namespace TimeSheet
         public static bool logDivMan = false;
         public static bool logDir = false;
         public static bool logAdmin = false;
-        public static int counter = 0;
+        public static int counter = 100;
 
         protected void Page_Init(object sender, EventArgs e)
         {
@@ -76,9 +76,9 @@ namespace TimeSheet
         protected void Page_Load(object sender, EventArgs e)
         {
             currentUser = new Users();
-            currentUser.ID = "ipo";
-            currentUser.Job = "Sef Departamanet";
-            currentUser.DeptID = "Dept11";
+            //currentUser.ID = "ipo";
+            //currentUser.Job = "Sef Departamanet";
+            //currentUser.DeptID = "Dept11";
         }
     }
 }
